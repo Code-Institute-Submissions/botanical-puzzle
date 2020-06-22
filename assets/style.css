@@ -25,6 +25,7 @@ body {
 
     position: relative;
     height: 100vh;
+    z-index: -1;
 }
 
 .navbar {
@@ -53,4 +54,16 @@ body {
 
 #btn-freestyle:hover {
     background-color: #44aa99;
+}
+
+.counter-display {
+    background-color: rgb(29, 150, 75);
+    color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left:50px;
+    top:50px;
+    z-index: 1;
 }

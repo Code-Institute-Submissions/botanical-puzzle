@@ -48,3 +48,13 @@ OxeyeDaisyCollect();{
     OxeyeDaisy.onclick = function(){
         
     }}
+
+
+    //Click Counter function//
+
+    var counter = 0;
+    function add(){
+        counter += 1;}
+
+document.getElementById("counter").innerHTML = counter;
+    
