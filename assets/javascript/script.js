@@ -42,3 +42,9 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+OxeyeDaisyCollect();{
+    OxeyeDaisy.onclick = function(){
+        
+    }}

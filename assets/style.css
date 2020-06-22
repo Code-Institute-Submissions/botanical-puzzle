@@ -1,0 +1,30 @@
+#gamescreen {
+  position: absolute;
+}
+
+#gamescreenplant-map {
+    cursor: move;
+    margin: 10px;
+}
+
+body {
+    background-color: #4A9463;
+    margin: 0;
+}
+
+.background-container{
+    background: url("images/plants.jpg") no-repeat right center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    height: 100vh;
+} {
+    height: 
+}
