@@ -1,0 +1,13 @@
+#gamescreen {
+  position: absolute;
+}
+
+#gamescreenplant-map {
+    cursor: move;
+    margin: 10px;
+}
+
+body {
+    background-color: #4A9463;
+    margin: 0;
+}
