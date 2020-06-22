@@ -54,7 +54,8 @@ OxeyeDaisyCollect();{
 
     var counter = 0;
     function add(){
-        counter += 1;}
+        counter += 1;
+    }
 
 document.getElementById("counter").innerHTML = counter;
     
