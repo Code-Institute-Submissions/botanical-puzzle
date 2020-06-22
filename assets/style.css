@@ -25,6 +25,32 @@ body {
 
     position: relative;
     height: 100vh;
-} {
-    height: 
+}
+
+.navbar {
+    background-color: #4A9463;
+    color: #fff;
+    }
+
+#btn-freestyle, #btn-timed {
+    font-size: 25px;
+    background-color: #4A9463;
+    color: #fff;
+    border: none;
+    padding: 40px 10px 40px 10px;
+    border-radius: 100px;
+    margin-right: 25px;
+}
+
+#btn-timed {
+    padding: 40px 25px 40px 25px;
+    margin-left: 25px;
+}
+
+#btn-timed:hover {
+    background-color: #44aa99;
+}
+
+#btn-freestyle:hover {
+    background-color: #44aa99;
 }
