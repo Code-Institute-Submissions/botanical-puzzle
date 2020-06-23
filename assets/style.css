@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #4A9463;
+    background-color: #009933;
     margin: 0;
 }
 
@@ -29,13 +29,13 @@ body {
 }
 
 .navbar {
-    background-color: #4A9463;
+    background-color: #009933;
     color: #fff;
     }
 
 #btn-freestyle, #btn-timed {
     font-size: 25px;
-    background-color: #4A9463;
+    background-color: #009933;
     color: #fff;
     border: none;
     padding: 40px 10px 40px 10px;
@@ -49,15 +49,15 @@ body {
 }
 
 #btn-timed:hover {
-    background-color: #44aa99;
+    background-color: #009933;
 }
 
 #btn-freestyle:hover {
-    background-color: #44aa99;
+    background-color: #009933;
 }
 
 .counter-display {
-    background-color: rgb(29, 150, 75);
+    background-color: #009933;
     color: #fff;
     border-radius: 50%;
     width: 150px;
@@ -69,7 +69,7 @@ body {
 }
 
 .exit-button {
-    background-color: rgb(29, 150, 75);
+    background-color:#009933;
     color: #fff;
     font-size: 30px;
     border: none;
