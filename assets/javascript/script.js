@@ -1,6 +1,6 @@
 //This code to drag an element is adapted from w3schools : https://www.w3schools.com/howto/howto_js_draggable.asp
 //Make the DIV element draggagle:
-
+function dragFunction(){
 dragElement(document.getElementById("gamescreen"));
 
 function dragElement(elmnt) {
@@ -42,7 +42,7 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
-}
+}}
 
 
     //Click Counter function//
