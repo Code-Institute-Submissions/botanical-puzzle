@@ -1,5 +1,6 @@
 //This code to drag an element is adapted from w3schools : https://www.w3schools.com/howto/howto_js_draggable.asp
 //Make the DIV element draggagle:
+
 dragElement(document.getElementById("gamescreen"));
 
 function dragElement(elmnt) {
@@ -19,19 +20,19 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
+  //   call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
   }
 
-  function elementDrag(e) {
+    function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
-    // calculate the new cursor position:
+   // calculate the new cursor position:
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
     pos4 = e.clientY;
-    // set the element's new position:
+  //   set the element's new position:
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
@@ -42,12 +43,6 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-
-OxeyeDaisyCollect();{
-    OxeyeDaisy.onclick = function(){
-        
-    }}
 
 
     //Click Counter function//
