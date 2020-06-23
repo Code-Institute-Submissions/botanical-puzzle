@@ -81,3 +81,10 @@ body {
     bottom:30px;
     z-index: 1;
 }
+
+.image-display {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+}
