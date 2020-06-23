@@ -33,27 +33,34 @@ body {
     color: #fff;
     }
 
-#btn-freestyle, #btn-timed {
+.button-freestyle, .button-timed {
     font-size: 25px;
     background-color: #009933;
     color: #fff;
     border: none;
-    padding: 40px 10px 40px 10px;
-    border-radius: 100px;
+    border-radius: 150px;
     margin-right: 25px;
 }
 
-#btn-timed {
+.button-timed {
     padding: 40px 25px 40px 25px;
     margin-left: 25px;
 }
 
-#btn-timed:hover {
+.button-freestyle {
+    padding: 40px 10px 40px 10px;
+}
+
+.button-timed:hover {
     background-color: #009933;
 }
 
-#btn-freestyle:hover {
+.button-freestyle:hover {
     background-color: #009933;
+}
+
+.instructions {
+    margin: 20px;
 }
 
 .counter-display {

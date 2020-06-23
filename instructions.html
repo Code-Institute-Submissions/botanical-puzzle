@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Wild Plants</title>
 </head>
 
@@ -33,20 +32,27 @@
         </div>
     </nav>
 
-    <a href="game.html"><button type="button">GAME</button></a>
-
-    <section id="home" class="background-container">
-        <div class="row">
-            <div class="col-6">
-                <a class="btn btn-lg btn-success button-freestyle" role="button" href="game.html">Freestyle</a>
+    <section id="instructions" class="background-container">
+        <row>
+        <div class="col-8 instructions-text">
+                <div class="instructions">
+                    <img src="assets/images/instructions/instruction-1.jpg">
+                </div>
+                <div class="instructions">
+                    <img src="assets/images/instructions/instruction-2.jpg">
+                </div>
+                <div class="instructions">
+                    <img src="assets/images/instructions/instruction-3.jpg">
+                </div>
+                <div>
+                    <a class="btn btn-lg btn-success button-timed" role="button" href="game.html">Play</a>
+                </div>
+                
             </div>
-            <div class="col-6">
-                <a class="btn btn-lg btn-success button-timed" role="button" href="game.html">Timed</a>
-            </div>
-        </div>
+        </row>
     </section>
 
-<script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
