@@ -1,8 +1,8 @@
 
 // Make the plant map draggable
-  $( function() {
-    $( "#plant-map" ).draggable();
-  } );
+ // $( function() {
+ //   $( "#plant-map" ).draggable();
+//  } );
 
   let plants = [
         {
@@ -37,7 +37,7 @@
       },
       {
             'name': 'Beech',
-            'description': 'A tree which particularly likes chalky soil. Smooth grey bark and bright green leaves. Nuts from September-October. The nuts can be eaten or used to make beechnut oil and butter; the young leaves can be used to make liquor or eaten in salads; and the wood can be used for fuel and making furniture.',
+            'description': 'A tree found all over the British Isles. Smooth grey bark and bright green leaves. Nuts from September-October. The nuts can be eaten or used to make beechnut oil and butter; the young leaves can be used to make liquor or eaten in salads; and the wood can be used for fuel and making furniture.',
             'image_name': 'beech.jpg',
             'boundary': '2078,243,2253,331',
       },
@@ -49,3 +49,32 @@
       },
 
   ]
+
+  let basket = [
+
+  ]
+
+  /* Game flow
+
+1. Show a random image to user
+2. Wait for user to click on an image on the main canvas
+3. Score the user and update the scoreboard
+// Pop the plant from the plants array and put it in the basket
+4. (Not necessarily in the flow if in freestyle mode)
+  If user clicks on X, then take them to the basket
+  4 (i) Show the plants in cards that contain each plant's image and description
+5. Game is over when user has found all the plants.
+
+*/
+
+
+// Generate a random integer between 0 and a given number.
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    
+}
+console.log(getRandomInt(0,plants.length));
+
