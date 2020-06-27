@@ -79,20 +79,24 @@ function getRandomPlant() {
     
 }
 
+window.onload = showImage;
+
 function showImage(){
 //Use the random number to select a plant object
     let selectedPlantIndex = (getRandomInt(0, plants.length));
-    let selectedPlant = plants[selectedPlantIndex];
 //Get the image src from selectedPlant
-    const tokenImage = baseImagePath + selectedPlant.image_name;
+    let selectedPlant = plants[selectedPlantIndex];
+
 // Put image into DOM
-    var token = document.createElement("IMG");
-    token.setAttribute("src", tokenImage);
-    document.#token.appendChild(token);
+//create image element to attach to div
+    var img = document.createElement("img");
+//specify the image to be attached
+    img.src = baseImagePath + selectedPlant.image_name;
+//get the div and attach image
+    var src = document.getElementById("token");
+    src.appendChild(img);
+
+
 }
 
 
-
-
-
- // Pop the plant from the plants array and put it in the basket
