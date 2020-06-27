@@ -1,8 +1,8 @@
 
 // Make the plant map draggable
- // $( function() {
- //   $( "#plant-map" ).draggable();
-//  } );
+ $( function() {
+             $( "#plant-map" ).draggable();
+                } );
 
   let plants = [
         {
@@ -82,7 +82,7 @@ function getRandomInt(min, max) {
 
 // Show an image ('token') to match to image on the picture map
 
-window.onload = plantClick;
+
 function showImage(){
 // Use the random number to select a plant object
     let selectedPlantIndex = (getRandomInt(0, plants.length));
@@ -97,13 +97,15 @@ function showImage(){
 // Get the div and attach image
     var src = document.getElementById("token");
     src.appendChild(img);
-
-
 }
 
 
+// function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
+// return true or false
+// if true, increment counter by 1, move plant object to 'basket' array & getRandomInt again
+// if false, 'try again' message.
 
-//Event Handler for the user clicking on any plant on the plant image map
+//Example Event Handler for the user clicking on any plant on the plant image map - not to be kept
 function plantClick() {
 
     var plantmap = document.getElementById('plantmap');
@@ -119,3 +121,17 @@ function plantClick() {
     }
 
 }
+
+function Score(){
+
+}
+
+function completeGame(){
+
+}
+
+
+
+
+plantClick();
+showImage();

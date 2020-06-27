@@ -2,7 +2,7 @@
  //https://www.w3schools.com/howto/howto_js_draggable.asp//
  
 
-    dragElement(document.getElementById("map-div"));
+  /*  dragElement(document.getElementById("map-div"));
 
   function dragMouseDown(e) {
     e = e || window.event;
@@ -35,3 +35,4 @@
   }
 
 
+*/
