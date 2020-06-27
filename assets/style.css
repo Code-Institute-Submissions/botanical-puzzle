@@ -15,7 +15,7 @@ body {
   position: absolute;
 }
 
-#plant-map {
+#plant-map-div {
     cursor: move;
     margin: 10px;
 }

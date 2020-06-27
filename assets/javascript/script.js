@@ -79,24 +79,41 @@ function getRandomPlant() {
     
 }
 
+// Show an image ('token') to match to image on the picture map
 window.onload = showImage;
 
 function showImage(){
-//Use the random number to select a plant object
+// Use the random number to select a plant object
     let selectedPlantIndex = (getRandomInt(0, plants.length));
-//Get the image src from selectedPlant
+// Get the image src from selectedPlant
     let selectedPlant = plants[selectedPlantIndex];
 
-// Put image into DOM
-//create image element to attach to div
+// Put image into DOM...
+// Create image element to attach to div
     var img = document.createElement("img");
-//specify the image to be attached
+// Specify the image to be attached
     img.src = baseImagePath + selectedPlant.image_name;
-//get the div and attach image
+// Get the div and attach image
     var src = document.getElementById("token");
     src.appendChild(img);
 
-
 }
 
+//Event Handler for the user clicking on the plant image map
 
+window.onload = plantClick;
+function plantClick() {
+
+    var plantmap = document.getElementById('plantmap');
+
+    plantmap.addEventListener('click', anyPlantClick, false);
+
+    function anyPlantClick(e) {
+        if (e.target !== e.currentTarget) {
+            var clickedBtn = e.target.id;
+            alert("Button: " + clickedBtn);
+    }
+        e.stopPropagation();
+    }
+
+}
