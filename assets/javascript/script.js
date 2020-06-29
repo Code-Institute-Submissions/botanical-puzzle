@@ -1,9 +1,8 @@
 
 // Make the plant map draggable
- $( function() {
-             $( "#plant-map" ).draggable();
-                } );
 
+//???
+  //
   let plants = [
         {
             'name': 'Alexanders',
@@ -54,9 +53,8 @@
       },
 
   ]
-
+// this is where plants will be pushed to once they have been found by user:
   let basket = [
-
   ]
 
   const baseImagePath = 'assets/images/tokens/';
@@ -80,24 +78,25 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Show an image ('token') to match to image on the picture map
 
-
-function showImage(){
 // Use the random number to select a plant object
-    let selectedPlantIndex = (getRandomInt(0, plants.length));
-// Get the image src from selectedPlant
-    let selectedPlant = plants[selectedPlantIndex];
-
-// Put image into DOM...
+const selectedPlantIndex = (getRandomInt(0, plants.length));
+// Get the selectedPlant
+const selectedPlant = plants[selectedPlantIndex];
+console.log(selectedPlant.name);
+// Show an image ('token') to match to an image on the picture map
+function showPlantImage(){
 // Create image element to attach to div
-    var img = document.createElement("img");
+    const img = document.createElement("img");
 // Specify the image to be attached
     img.src = baseImagePath + selectedPlant.image_name;
 // Get the div and attach image
-    var src = document.getElementById("token");
+    const src = document.getElementById("token");
     src.appendChild(img);
-}
+    console.log(selectedPlant.name);
+    };
+
+window.onload = showPlantImage();
 
 
 // function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
@@ -105,33 +104,24 @@ function showImage(){
 // if true, increment counter by 1, move plant object to 'basket' array & getRandomInt again
 // if false, 'try again' message.
 
-//Example Event Handler for the user clicking on any plant on the plant image map - not to be kept
-function plantClick() {
+//Example Event Handler for the user clicking on a plant: true or false
 
-    var plantmap = document.getElementById('plantmap');
+    const plantmap = document.querySelector('#plantmap');
 
-    plantmap.addEventListener('click', anyPlantClick, false);
-
-    function anyPlantClick(selectedPlant) {
-        if (selectedPlant.target !== selectedPlant.currentTarget) {
-            var clickedBtn = selectedPlant.target.title;
-            alert("You found " + clickedBtn + " !");
-    }
+    plantmap.addEventListener('click', (e) => {
+        //e.preventDefault();
+        
+        if (e.target.title === selectedPlant.name) {
+            
+            alert("You found " + selectedPlant.name + " !");
+        } else {
+            alert("Try again!");
+        }
+    })
+        
+     /*   e.target;
+        var clickedPlant = e.target.title;
+        alert("You found " + clickedPlant + " !");
         selectedPlant.stopPropagation();
-    }
-
-}
-
-function Score(){
-
-}
-
-function completeGame(){
-
-}
-
-
-
-
-plantClick();
-showImage();
+    });
+*/
