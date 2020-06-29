@@ -1,8 +1,3 @@
-
-// Make the plant map draggable
-
-//???
-  //
   let plants = [
         {
             'name': 'Alexanders',
@@ -64,8 +59,7 @@
 2. Wait for user to click on an image on the main canvas
 3. Score the user and update the scoreboard
 // Pop the plant from the plants array and put it in the basket
-4. (Not necessarily in the flow if in freestyle mode)
-  If user clicks on X, then take them to the basket
+4. If user clicks on X, then take them to the basket
   4 (i) Show the plants in cards that contain each plant's image and description
 5. Game is over when user has found all the plants.
 
@@ -80,48 +74,55 @@ function getRandomInt(min, max) {
 
 
 // Use the random number to select a plant object
-const selectedPlantIndex = (getRandomInt(0, plants.length));
+let selectedPlantIndex = (getRandomInt(0, plants.length));
 // Get the selectedPlant
-const selectedPlant = plants[selectedPlantIndex];
-console.log(selectedPlant.name);
+let selectedPlant = plants[selectedPlantIndex];
+
+
+window.onload = showPlantImage();
+
 // Show an image ('token') to match to an image on the picture map
-function showPlantImage(){
-// Create image element to attach to div
+function showPlantImage(index = null){
+    if (index === null){
+        // Create image element to attach to div
     const img = document.createElement("img");
 // Specify the image to be attached
     img.src = baseImagePath + selectedPlant.image_name;
 // Get the div and attach image
     const src = document.getElementById("token");
-    src.appendChild(img);
+    src.appendChild(img);   } else {
+        // Create image element to attach to div
+    const img = document.createElement("img");
+// Specify the image to be attached
+    img.src = baseImagePath + getRandomInt(0,plants.length).image_name;
+// Get the div and attach image
+    const src = document.getElementById("token");
+    src.appendChild(img);  
+    }
+
     console.log(selectedPlant.name);
     };
 
-window.onload = showPlantImage();
+
 
 
 // function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
-// return true or false
-// if true, increment counter by 1, move plant object to 'basket' array & getRandomInt again
-// if false, 'try again' message.
-
-//Example Event Handler for the user clicking on a plant: true or false
 
     const plantmap = document.querySelector('#plantmap');
 
     plantmap.addEventListener('click', (e) => {
-        //e.preventDefault();
-        
-        if (e.target.title === selectedPlant.name) {
-            
-            alert("You found " + selectedPlant.name + " !");
-        } else {
+        e.preventDefault();
+        // if false, 'try again' message.
+       
+        if (e.target.title !== selectedPlant.name) {
             alert("Try again!");
+         // if true, push item to basket array (remove item from plants array) and generate new image from plant array
+        } else {
+            basket.push(selectedPlant);
+            console.log(selectedPlant);
+            newIndex = plants[getRandomInt(0,plants.length)];
+            showPlantImage(newIndex);
         }
-    })
-        
-     /*   e.target;
-        var clickedPlant = e.target.title;
-        alert("You found " + clickedPlant + " !");
-        selectedPlant.stopPropagation();
     });
-*/
+console.log(basket);
+console.log(plants);
