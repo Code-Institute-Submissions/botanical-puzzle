@@ -1,4 +1,4 @@
-  let plants = [
+  const plants = [
         {
             'name': 'Alexanders',
             'description': 'Found in hedgebanks and waste places near the sea. Edible stems, leaves and flower buds. Flowers April-June.',
@@ -65,27 +65,33 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let selectedPlantIndex = (getRandomInt(0, plants.length));
+let selectedPlant = plants[selectedPlantIndex];
 
+function getRandomPlant(){
 // Use the random number to select a plant object
 selectedPlantIndex = (getRandomInt(0, plants.length));
 
 // Get the selectedPlant
+selectedPlant = plants[selectedPlantIndex];
 
+console.log(selectedPlant);
+}
 
-
+getRandomPlant();
 
 console.log(selectedPlant);
 
 // Show an image ('token') to match to an image on the picture map
 let img = document.getElementById("token");
 
+window.onload = showPlantImage();
 
 function showPlantImage(){
 // Specify the image to be attached
         img.src = baseImagePath + selectedPlant.image_name;
-        } 
 
-window.onload = showPlantImage();
+        } 
 
 console.log(selectedPlant.name);
 
@@ -105,14 +111,13 @@ console.log(selectedPlant.name);
          // if true, push item to basket array (remove item from plants array) and generate new image from plant array
         } else {
             basket.push(selectedPlant);
-            getRandomInt(0, plants.length);
-            newSelectedPlant();
+            getRandomPlant();
             showPlantImage();
             console.log(basket);
         }
     });
 
-    let selectedPlant = plants[selectedPlantIndex];
+    
     
     console.log(plants);
     console.log(basket);
