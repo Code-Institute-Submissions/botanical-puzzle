@@ -719,6 +719,7 @@ function showPlantImage() {
 
 window.onload = showPlantImage();
 
+//function to update scoreboard
 var scoreboard = document.getElementById("score");
 var score = 0;
     
@@ -738,8 +739,10 @@ const plantmap = document.querySelector('#plantmap');
             } else {
             basket.push(selectedPlant);
             plants.splice(selectedPlantIndex, 1);
-                score ++;
-                drawScore();
+            
+            score ++;
+            drawScore();
+            
             getRandomPlant();
             showPlantImage();
             console.log(basket);

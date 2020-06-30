@@ -30,7 +30,7 @@ a {
     height: 100vh;
     z-index: -1;
 }
-/* Game */
+/*----------------------------- Game -----------------------*/
 #gamescreen {
     position: absolute;
 }
@@ -51,22 +51,27 @@ body {
     text-align: center;
     
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    right:100px;
-    bottom:100px;
     z-index: 1;
+}
+
+.counter {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30%;
+    margin-bottom: 30%;
 }
 
 .exit-button {
     background-color:#009933;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     border: none;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     right:30px;
     bottom:30px;
