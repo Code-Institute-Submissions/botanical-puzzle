@@ -122,7 +122,7 @@ const plantmap = document.querySelector('#plantmap');
 
     plantmap.addEventListener('click', (e) => {
         e.preventDefault();       
-            if (e.target.title !== selectedPlant.name) {
+            if (e.target.id !== selectedPlant.name) {
             alert("Try again!");
 // if correct, push item to basket array; remove item from plants array; generate new image from plant array
             } else {

@@ -1,4 +1,4 @@
-/*fonts*/
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -13,9 +13,26 @@ body {
 a {
     text-decoration: none;
 }
+
+/*-----Background for homescreen*/
+.background-container{
+    background: url("images/wallpaper.jpg") no-repeat right center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+}
 /* Game */
 #gamescreen {
-  position: absolute;
+    position: absolute;
 }
 
 #plant-map-div {
@@ -63,20 +80,24 @@ body {
     left: 30px;
 }
 
-.background-container{
-    background: url("images/wallpaper.jpg") no-repeat right center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-    display: flex;
-    align-items: center;
+/*---------------- Gamescreen Try Again Modal ----------------*/
+.try-again-modal {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position:fixed;
+    text-align: center;
+}
+
+.try-again-contents {
     justify-content: center;
-
-    position: relative;
-    height: 100vh;
-    z-index: -1;
+    margin-top: 40vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #009933;
 }
 
  /* main navbar*/
