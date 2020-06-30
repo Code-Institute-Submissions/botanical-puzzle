@@ -14,7 +14,7 @@
       {
             'name': 'Aurum Lilly',
             'description': 'Found in shady places. Arrow-shaped glossy leaves, with shiny orange berries in late summer. Poisonous. If the root is baked until dry, it is harmless and can be used like arrowroot.',
-            'image_name': 'aurumlilly.jpg',
+            'image_name': 'aurumlilly.png',
             'boundary': '1071,609,1166,759',
             'id': 'aurumlilly'
       },
@@ -38,13 +38,6 @@
             'image_name': 'beech.png',
             'boundary': '2078,243,2253,331',
             'id': 'beech'
-      },
-      {
-            'name': 'Whorled Mint',
-            'description': 'Found in damp places. A cross between water mint and corn mint. Edible.',
-            'image_name': 'whorledmint.png',
-            'boundary': '94,98,230,321',
-            'id': 'whorledmint'
       },
 
   ]
@@ -74,34 +67,27 @@ function getRandomInt(min, max) {
 
 
 // Use the random number to select a plant object
-let selectedPlantIndex = (getRandomInt(0, plants.length));
-// Get the selectedPlant
-let selectedPlant = plants[selectedPlantIndex];
+selectedPlantIndex = (getRandomInt(0, plants.length));
 
+// Get the selectedPlant
+
+
+
+
+console.log(selectedPlant);
+
+// Show an image ('token') to match to an image on the picture map
+let img = document.getElementById("token");
+
+
+function showPlantImage(){
+// Specify the image to be attached
+        img.src = baseImagePath + selectedPlant.image_name;
+        } 
 
 window.onload = showPlantImage();
 
-// Show an image ('token') to match to an image on the picture map
-function showPlantImage(index = null){
-    if (index === null){
-        // Create image element to attach to div
-    const img = document.createElement("img");
-// Specify the image to be attached
-    img.src = baseImagePath + selectedPlant.image_name;
-// Get the div and attach image
-    const src = document.getElementById("token");
-    src.appendChild(img);   } else {
-        // Create image element to attach to div
-    const img = document.createElement("img");
-// Specify the image to be attached
-    img.src = baseImagePath + getRandomInt(0,plants.length).image_name;
-// Get the div and attach image
-    const src = document.getElementById("token");
-    src.appendChild(img);  
-    }
-
-    console.log(selectedPlant.name);
-    };
+console.log(selectedPlant.name);
 
 
 
@@ -119,10 +105,15 @@ function showPlantImage(index = null){
          // if true, push item to basket array (remove item from plants array) and generate new image from plant array
         } else {
             basket.push(selectedPlant);
-            console.log(selectedPlant);
-            newIndex = plants[getRandomInt(0,plants.length)];
-            showPlantImage(newIndex);
+            getRandomInt(0, plants.length);
+            newSelectedPlant();
+            showPlantImage();
+            console.log(basket);
         }
     });
-console.log(basket);
-console.log(plants);
+
+    let selectedPlant = plants[selectedPlantIndex];
+    
+    console.log(plants);
+    console.log(basket);
+
