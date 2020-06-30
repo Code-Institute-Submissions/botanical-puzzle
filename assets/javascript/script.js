@@ -719,6 +719,12 @@ function showPlantImage() {
 
 window.onload = showPlantImage();
 
+var scoreboard = document.getElementById("score");
+var score = 0;
+    
+function drawScore() {
+        scoreboard.textContent = (score);
+}
 
 // function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
 
@@ -731,12 +737,13 @@ const plantmap = document.querySelector('#plantmap');
 // if correct, push item to basket array; remove item from plants array; generate new image from plant array
             } else {
             basket.push(selectedPlant);
-            plants.splice(selectedPlantIndex, 1)
+            plants.splice(selectedPlantIndex, 1);
+                score ++;
+                drawScore();
             getRandomPlant();
             showPlantImage();
             console.log(basket);
             console.log(plants);
         }
     });
-
 
