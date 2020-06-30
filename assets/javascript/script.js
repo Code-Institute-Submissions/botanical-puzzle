@@ -69,7 +69,7 @@
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 // Global selectedPlant values
@@ -80,12 +80,13 @@ let selectedPlant = plants[selectedPlantIndex];
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
+    
     console.log(selectedPlant);
+    
 }
 
 // Call the function
 getRandomPlant();
-
 
 
 // Show an image of the plant object which has been selected
