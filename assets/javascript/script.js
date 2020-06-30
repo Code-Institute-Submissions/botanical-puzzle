@@ -68,7 +68,7 @@
             'description': '',
             'image_name': 'bittercress.png',
             'coords': '1779,1196,1906,1423',
-        },
+        },*/
         {
             'name': 'Bitter Vetch',
             'description': '',
@@ -122,13 +122,13 @@
             'description': '',
             'image_name': 'chamomile.png',
             'coords': '1557,269,1657,462',
-        },
+        },/*
         {
             'name': 'Chickweed',
             'description': '',
             'image_name': 'chickweed.png',
             'coords': '1205,1477,1301,1600',
-        },
+        },*/
         {
             'name': 'Chicory',
             'description': '',
@@ -158,7 +158,7 @@
             'description': '',
             'image_name': 'comfrey.png',
             'coords': '540,24,668,187',
-        },
+        },/*
         {
             'name': 'Corn Mint',
             'description': '',
@@ -374,13 +374,13 @@
             'description': '',
             'image_name': 'maidenhairfern.png',
             'coords': '1324,1361,1467,1503',
-        },
+        },*/
         {
             'name': 'Mallow',
             'description': '',
             'image_name': 'mallow.png',
             'coords': '2126,1270,2238,1458',
-        },
+        },/*
         {
             'name': 'Marchthistle',
             'description': '',
@@ -440,13 +440,13 @@
             'description': '',
             'image_name': 'oak.png',
             'coords': '1494,1234,1595,1397',
-        },
+        },*/
         {
             'name': 'Orache',
             'description': '',
             'image_name': 'orache.png',
             'coords': '2697,70,2797,295',
-        },
+        },/*
         {
             'name': 'Oregon Grape',
             'description': '',
@@ -506,13 +506,13 @@
             'description': '',
             'image_name': 'plantain.png',
             'coords': '2078,60,2186,213',
-        },
+        },*/
         {
             'name': 'Poppy',
             'description': '',
             'image_name': 'poppy.png',
             'coords': '1114,1297,1259,1415',
-        },
+        },/*
         {
             'name': 'Purple Orchid',
             'description': '',
@@ -602,13 +602,13 @@
             'description': '',
             'image_name': 'scotslovage.png',
             'coords': '297,524,415,780',
-        },
+        },*/
         {
             'name': 'Scurvygrass',
             'description': '',
             'image_name': 'scurvygrass.png',
             'coords': '1277,1784,1367,1915',
-        },
+        },/*
         {
             'name': 'Sea Beet',
             'description': '',
