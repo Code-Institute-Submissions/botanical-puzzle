@@ -1,10 +1,10 @@
     
   /* Game flow
 
-1. Show a random image to user
-2. Wait for user to click on an image on the main canvas
-3. Score the user and update the scoreboard
-// Pop the plant from the plants array and put it in the basket
+1. Show a random image to user x
+2. Wait for user to click on an image on the main canvas x
+3. Score the user and update the scoreboard x
+// Pop the plant from the plants array and put it in the basket x
 4. If user clicks on X, then take them to the basket
   4 (i) Show the plants in cards that contain each plant's image and description
 5. Game is over when user has found all the plants.
@@ -679,7 +679,7 @@
   let basket = [
   ]
 
-  //Image base path for 'plants to find' image:
+//Image base path for 'plants to find' image:
   const baseImagePath = 'assets/images/tokens/';
 
 
@@ -695,17 +695,12 @@ let selectedPlantIndex = (getRandomInt(0, plants.length -1));
 let selectedPlant = plants[selectedPlantIndex];
 
 
-
-
-// Function to generate a new Global value
+// Function to generate a new plant Global value
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
-    
     console.log(selectedPlant);
-    
 }
-
 // Call the function
 getRandomPlant();
 
@@ -721,8 +716,8 @@ function showPlantImage() {
         console.log(selectedPlant.name);
         }
 
+// Call the showPlantImage Function when the window is loaded
 window.onload = showPlantImage();
-
 
 
 //function to update scoreboard
@@ -733,16 +728,20 @@ function drawScore() {
         scoreboard.textContent = (score);
 }
 
+// Function to show Try Again Modal
 
-// function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
+//...
 
+
+// function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
 const plantmap = document.querySelector('#plantmap');
 
     plantmap.addEventListener('click', (e) => {
         e.preventDefault();       
             if (e.target.id !== selectedPlant.name) {
             alert("Try again!");
-// if correct, push item to basket array; remove item from plants array; generate new image from plant array
+
+// If correct, push item to basket array; remove item from plants array; generate new image from plant array
             } else {
             basket.push(selectedPlant);
             plants.splice(selectedPlantIndex, 1);
