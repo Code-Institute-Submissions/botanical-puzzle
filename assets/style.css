@@ -85,6 +85,12 @@ body {
     left: 30px;
 }
 
+.plant-name-display {
+    font-size: 25px;
+    color:#009933;
+    font-weight: 400;
+}
+
 
 /*---------------- Gamescreen Try Again Modal ----------------*/
 .try-again-modal {

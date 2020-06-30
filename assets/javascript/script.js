@@ -694,6 +694,9 @@ function getRandomInt(min, max) {
 let selectedPlantIndex = (getRandomInt(0, plants.length -1));
 let selectedPlant = plants[selectedPlantIndex];
 
+
+
+
 // Function to generate a new Global value
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
@@ -714,10 +717,13 @@ let img = document.getElementById("token");
 
 function showPlantImage() {
         img.src = baseImagePath + selectedPlant.image_name;
+        
         console.log(selectedPlant.name);
         }
 
 window.onload = showPlantImage();
+
+
 
 //function to update scoreboard
 var scoreboard = document.getElementById("score");
@@ -726,6 +732,7 @@ var score = 0;
 function drawScore() {
         scoreboard.textContent = (score);
 }
+
 
 // function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
 
