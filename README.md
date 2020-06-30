@@ -5,3 +5,7 @@ wireframes can be viewed here: https://xd.adobe.com/view/5c23c360-4653-4a02-8cd0
 
 used https://www.image-map.net/ to create coordinates for the image.
 used w3schools.com for drag function.
+
+background woodland sounds: https://freesound.org/people/klankbeeld/
+
+bloop sound https://freesound.org/people/FawfulGrox/sounds/103336/, licence: https://creativecommons.org/licenses/by/3.0/

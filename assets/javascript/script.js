@@ -25,35 +25,50 @@
             'description': 'Apple-scented mint which is tasty in cold drinks.',
             'image_name': 'applemint.png',
             'boundary': '94,98,230,321',
-      },
-      {
+        },
+        {
             'name': 'Aurum Lilly',
             'description': 'Found in shady places. Arrow-shaped glossy leaves, with shiny orange berries in late summer. Poisonous. If the root is baked until dry, it is harmless and can be used like arrowroot.',
             'image_name': 'aurumlilly.png',
             'boundary': '1071,609,1166,759',
             'id': 'aurumlilly'
-      },
-      {
+        },
+        {
             'name': 'Balm',
             'description': 'Found near hedges in shady places. Yellow-green pointed leaves, white/yellow flowers July-September. Lemon-scented leaves add lemon flaour to food, make a refreshing tea, and can be added to salads.',
             'image_name': 'balm.png',
             'boundary': '260,1260,440,1438',
             'id': 'balm'
-      },
-      {
+        },
+        /*{
             'name': 'Bath Asparagus',
             'description': 'Found around Bath and Wiltshire. Greyish leaves and pale yellow and green flower spikes from May-July. The unopened flower spikes can be cooked and eaten like asparagus. Belongs to the lily family and is also called Spiked Star-of-Bethlehem.',
             'image_name': 'bathasparagus.png',
             'boundary': '951,1802,823,1539',
             'id': 'bathasparagus'
-      },
-      {
+        },*/
+        {
             'name': 'Beech',
             'description': 'A tree found all over the British Isles. Smooth grey bark and bright green leaves. Nuts from September-October. The nuts can be eaten or used to make beechnut oil and butter; the young leaves can be used to make liquor or eaten in salads; and the wood can be used for fuel and making furniture.',
             'image_name': 'beech.png',
             'boundary': '2078,243,2253,331',
             'id': 'beech'
-      },
+        },
+        {
+            'name': 'Bilberry',
+            'description': '',
+            'image_name': 'bilberry.png',
+            'boundary': '778,41,923,327',
+            'id': 'bilberry'
+        },
+        {
+            'name': 'Bistort',
+            'description': '',
+            'image_name': 'bistort.png',
+            'boundary': '2316,937,2431,1170',
+            'id': 'bistort'
+        },
+
 
   ]
 // this is where plants will be pushed once they have been found by user:
@@ -62,7 +77,6 @@
 
   //Image base path for 'plants to find' image:
   const baseImagePath = 'assets/images/tokens/';
-
 
 
 // Generate a random integer between 0 and plants.length
