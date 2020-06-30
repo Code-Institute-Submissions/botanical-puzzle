@@ -1,3 +1,18 @@
+    
+  /* Game flow
+
+1. Show a random image to user
+2. Wait for user to click on an image on the main canvas
+3. Score the user and update the scoreboard
+// Pop the plant from the plants array and put it in the basket
+4. If user clicks on X, then take them to the basket
+  4 (i) Show the plants in cards that contain each plant's image and description
+5. Game is over when user has found all the plants.
+
+*/
+  
+
+// array of plants to find:
   const plants = [
         {
             'name': 'Alexanders',
@@ -41,22 +56,14 @@
       },
 
   ]
-// this is where plants will be pushed to once they have been found by user:
+// this is where plants will be pushed once they have been found by user:
   let basket = [
   ]
 
+  //Image base path for 'plants to find' image:
   const baseImagePath = 'assets/images/tokens/';
-  /* Game flow
 
-1. Show a random image to user
-2. Wait for user to click on an image on the main canvas
-3. Score the user and update the scoreboard
-// Pop the plant from the plants array and put it in the basket
-4. If user clicks on X, then take them to the basket
-  4 (i) Show the plants in cards that contain each plant's image and description
-5. Game is over when user has found all the plants.
 
-*/
 
 // Generate a random integer between 0 and plants.length
 function getRandomInt(min, max) {
@@ -65,60 +72,52 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let selectedPlantIndex = (getRandomInt(0, plants.length));
+// Global selectedPlant values
+let selectedPlantIndex = (getRandomInt(0, plants.length -1));
 let selectedPlant = plants[selectedPlantIndex];
 
+// Function to generate a new Global value
 function getRandomPlant(){
-// Use the random number to select a plant object
-selectedPlantIndex = (getRandomInt(0, plants.length));
-
-// Get the selectedPlant
-selectedPlant = plants[selectedPlantIndex];
-
-console.log(selectedPlant);
+    selectedPlantIndex = (getRandomInt(0, plants.length));
+    selectedPlant = plants[selectedPlantIndex];
+    console.log(selectedPlant);
 }
 
+// Call the function
 getRandomPlant();
 
-console.log(selectedPlant);
 
-// Show an image ('token') to match to an image on the picture map
+
+// Show an image of the plant object which has been selected
+
+// Where the image will be placed in the DOM:
 let img = document.getElementById("token");
 
-window.onload = showPlantImage();
-
-function showPlantImage(){
-// Specify the image to be attached
+function showPlantImage() {
         img.src = baseImagePath + selectedPlant.image_name;
+        console.log(selectedPlant.name);
+        }
 
-        } 
-
-console.log(selectedPlant.name);
-
-
+window.onload = showPlantImage();
 
 
 // function to check if plant clicked is the same plant that was randomly generated... 'name' will be the same as html 'title'.
 
-    const plantmap = document.querySelector('#plantmap');
+const plantmap = document.querySelector('#plantmap');
 
     plantmap.addEventListener('click', (e) => {
-        e.preventDefault();
-        // if false, 'try again' message.
-       
-        if (e.target.title !== selectedPlant.name) {
+        e.preventDefault();       
+            if (e.target.title !== selectedPlant.name) {
             alert("Try again!");
-         // if true, push item to basket array (remove item from plants array) and generate new image from plant array
-        } else {
+// if correct, push item to basket array; remove item from plants array; generate new image from plant array
+            } else {
             basket.push(selectedPlant);
+            plants.splice(selectedPlantIndex, 1)
             getRandomPlant();
             showPlantImage();
             console.log(basket);
+            console.log(plants);
         }
     });
 
-    
-    
-    console.log(plants);
-    console.log(basket);
 
