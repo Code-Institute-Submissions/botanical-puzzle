@@ -786,7 +786,7 @@ const plantmap = document.querySelector('#plantmap');
                 console.log(basket);
                 console.log(plants);
 
-                removeCorrectModal()
+                //removeCorrectModal()
         }
     });
 

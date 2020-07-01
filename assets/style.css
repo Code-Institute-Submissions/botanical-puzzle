@@ -191,18 +191,9 @@ a {
 .modal-contents {
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 900;
     color: #009933;
-}
-
-#correct-answer {
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 80px;
-    font-weight: 900;
-    color: #009933;
-    
 }
 
 #correct-answer-modal {
@@ -213,4 +204,9 @@ a {
     margin-left: 15%;
     margin-top: 5%;
     padding: 50px;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #009933;
 }
