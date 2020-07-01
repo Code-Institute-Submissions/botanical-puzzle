@@ -4,7 +4,6 @@ body {
 }
 
 
-/*styling*/
 .row {
     margin: 0;
     padding:0;
@@ -14,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-/*-----Background for homescreen*/
+/*------------Background for homescreen ----------------------*/
 .background-container{
     background: url("images/wallpaper.jpg") no-repeat right center fixed; 
     -webkit-background-size: cover;
@@ -28,8 +27,89 @@ a {
 
     position: relative;
     height: 100vh;
-    z-index: -1;
+
+    opacity: 95%;
 }
+
+
+ /*--------------------- Index main navbar ----------------------*/
+.navbar {
+    background-color: rgba(0, 153, 51);
+    color: #fff;
+    }
+
+/*-------------------- Index Buttons ------------------------------*/
+.button-freestyle, .button-timed {
+    font-size: 25px;
+    font-weight: 400;
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    border-radius: 150px;
+    margin: 80px;
+}
+
+.button-timed {
+    padding-top: 60px;
+    padding-right:40px;
+    padding-bottom: 60px;
+    padding-left:40px;
+}
+
+.button-freestyle {
+    padding-top: 60px;
+    padding-right: 25px;
+    padding-bottom: 60px;
+    padding-left:25px;
+}
+
+.button-timed:hover,
+.button-freestyle:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color:#009933;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+
+/*----------------------- Instructions -----------------------------*/
+.instruction {
+    width: 100%;
+    margin: 20px;
+    background-color: #009933;
+    border-radius: 30px;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+
+
+
+/*---------------------------- Credits Page ----------------------------*/
+.credits-text-box {
+    background: #fff;
+    font-family: Raleway;
+    font-size: 25;
+    text-align: center;
+    margin: 0;
+}
+
+.creditstext {
+    margin-right: 80px;
+    margin-top: 20%;
+    margin-bottom: 80px;
+    color: #009933;
+    font-weight:300;
+    font-size: 20px;
+}
+
+.creditsimage {
+    margin-top: 20%;
+}
+
 /*----------------------------- Game -----------------------*/
 #gamescreen {
     position: absolute;
@@ -40,10 +120,10 @@ a {
     margin: 10px;
 }
 
-body {
+/*body {
     background-color: #009933;
     margin: 0;
-}
+}*/
 
 .counter-display {
     background-color: #009933;
@@ -109,76 +189,4 @@ body {
     font-size: 80px;
     font-weight: 900;
     color: #009933;
-}
-
- /* main navbar*/
-.navbar {
-    background-color: #009933;
-    color: #fff;
-    }
-
-/*buttons home page*/
-.button-freestyle, .button-timed {
-    font-size: 25px;
-    background-color: #009933;
-    color: #fff;
-    border-radius: 150px;
-    margin-right: 25px;
-}
-
-.button-timed {
-    padding: 40px 25px 40px 25px;
-    margin-left: 25px;
-}
-
-.button-freestyle {
-    padding: 40px 10px 40px 10px;
-}
-
-.button-timed:hover {
-    background-color: #009933;
-}
-
-.button-freestyle:hover {
-    background-color: #009933;
-}
-/*instructions*/
-.instruction {
-    width: 100%;
-    margin: 20px;
-    background-color: #009933;
-    border-radius: 30px;
-    color:#fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
-    padding: 20px 60px;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/*credits page*/
-.credits-text-box {
-    background: #fff;
-    font-family: Raleway;
-    font-size: 25;
-    text-align: center;
-    margin: 0;
-}
-
-.creditstext {
-    margin-right: 80px;
-    margin-top: 20%;
-    margin-bottom: 80px;
-    color: #009933;
-    font-weight:300;
-    font-size: 20px;
-}
-
-.creditsimage {
-    margin-top: 20%;
 }
