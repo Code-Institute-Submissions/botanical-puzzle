@@ -730,7 +730,15 @@ function drawScore() {
 
 // Function to show Try Again Modal
 
-//...
+//const tryagain = document.getElementById('try')
+
+function showTryAgainModal() {
+    (document.getElementById('try-again-modal')).style.visibility="visible";
+        setTimeout(function() {
+            (document.getElementById('try-again-modal')).style.visibility="hidden";
+        }, 1500);
+    }
+
 
 
 // function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
@@ -739,7 +747,7 @@ const plantmap = document.querySelector('#plantmap');
     plantmap.addEventListener('click', (e) => {
         e.preventDefault();       
             if (e.target.id !== selectedPlant.name) {
-            alert("Try again!");
+            showTryAgainModal();
 
 // If correct, push item to basket array; remove item from plants array; generate new image from plant array
             } else {

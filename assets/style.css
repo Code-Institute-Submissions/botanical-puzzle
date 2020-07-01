@@ -178,18 +178,18 @@ a {
 
 
 /*---------------- Gamescreen Try Again Modal ----------------*/
-.try-again-modal {
+#try-again-modal {
     visibility: hidden;
-    height: 100%;
-    width: 100%;
     z-index: 2;
-    position:fixed;
-    text-align: center;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
 }
 
 .try-again-contents {
     justify-content: center;
-    margin-top: 40vh;
     font-family: 'Raleway', sans-serif;
     font-size: 80px;
     font-weight: 900;
