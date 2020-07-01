@@ -728,17 +728,23 @@ function drawScore() {
         scoreboard.textContent = (score);
 }
 
-// Function to show Try Again Modal
-
-//const tryagain = document.getElementById('try')
-
+// Function to show Try Again Modal - would like to add fade in and fade out
 function showTryAgainModal() {
     (document.getElementById('try-again-modal')).style.visibility="visible";
         setTimeout(function() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
         }, 1500);
     }
-
+// Function Correct Plant Modal
+function showCorrectModal() {
+    document.getElementById('correct-answer').style.visibility="visible";
+    var correctAnswerModal = document.getElementById('correct-answer');
+    var correctAnswer = document.createTextNode("You found " + selectedPlant.name + "!");
+    correctAnswerModal.appendChild(correctAnswer);
+        setTimeout(function() {
+            (document.getElementById('correct-answer')).style.visibility="hidden";
+        }, 1500);
+}
 
 
 // function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
@@ -751,6 +757,7 @@ const plantmap = document.querySelector('#plantmap');
 
 // If correct, push item to basket array; remove item from plants array; generate new image from plant array
             } else {
+                showCorrectModal();
             basket.push(selectedPlant);
             plants.splice(selectedPlantIndex, 1);
             
