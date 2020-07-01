@@ -735,16 +735,22 @@ function showTryAgainModal() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
         }, 1500);
     }
-// Function Correct Plant Modal
+// Function Correct Plant Modal - popin/out
 function showCorrectModal() {
-    document.getElementById('correct-answer').style.visibility="visible";
-    var correctAnswerModal = document.getElementById('correct-answer');
-    var correctAnswer = document.createTextNode("You found " + selectedPlant.name + "!");
-    correctAnswerModal.appendChild(correctAnswer);
+
+        document.getElementById('correct-answer-modal').style.visibility="visible";
+
+        var correctAnswerModal = document.getElementById('correct-answer');
+    
+        var correctAnswer = document.createTextNode("You found " + selectedPlant.name + "!");
+
+        correctAnswerModal.appendChild(correctAnswer);
+        
         setTimeout(function() {
-            (document.getElementById('correct-answer')).style.visibility="hidden";
+            (document.getElementById('correct-answer-modal')).style.visibility="hidden";
         }, 1500);
-}
+
+    }
 
 
 // function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
