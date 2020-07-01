@@ -9,3 +9,5 @@ used w3schools.com for drag function.
 background woodland sounds: https://freesound.org/people/klankbeeld/
 
 bloop sound https://freesound.org/people/FawfulGrox/sounds/103336/, licence: https://creativecommons.org/licenses/by/3.0/
+
+Making plant map draggable: code adapted from https://www.w3schools.com/howto/howto_js_draggable.asp
