@@ -674,10 +674,10 @@
             'image_name': '.png',
             'coords': '',
         },*/
-  ]
+  ];
 // this is where plants will be pushed once they have been found by user:
   let basket = [
-  ]
+  ];
 
 //Image base path for 'plants to find' image:
   const baseImagePath = 'assets/images/tokens/';
@@ -735,25 +735,38 @@ function showTryAgainModal() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
         }, 1500);
     }
-// Function Correct Plant Modal - popin/out
-function showCorrectModal() {
 
+
+// Function Correct Plant Modal
+
+        let correctAnswerDisplay = document.getElementById('correct-answer-modal');
+
+        let newCorrectAnswer = document.createElement('p');
+
+        function clearAnswer() {
+                correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild)
+        };
+
+        function showCorrectModal() {
+        
         document.getElementById('correct-answer-modal').style.visibility="visible";
 
-        var correctAnswerModal = document.getElementById('correct-answer');
-    
-        var correctAnswer = document.createTextNode("You found " + selectedPlant.name + "!");
+        newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
 
-        correctAnswerModal.appendChild(correctAnswer);
+        correctAnswerDisplay.appendChild(newCorrectAnswer);
         
         setTimeout(function() {
             (document.getElementById('correct-answer-modal')).style.visibility="hidden";
-        }, 1500);
+        }, 1500,);
+        
 
     }
+            
+        
 
 
-// function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
+
+// Function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
 const plantmap = document.querySelector('#plantmap');
 
     plantmap.addEventListener('click', (e) => {
@@ -761,19 +774,23 @@ const plantmap = document.querySelector('#plantmap');
             if (e.target.id !== selectedPlant.name) {
             showTryAgainModal();
 
-// If correct, push item to basket array; remove item from plants array; generate new image from plant array
+// If correct, show modal, push item to basket array; remove item from plants array; generate new image from plant array
             } else {
                 showCorrectModal();
-            basket.push(selectedPlant);
-            plants.splice(selectedPlantIndex, 1);
+                
+                basket.push(selectedPlant);
+                plants.splice(selectedPlantIndex, 1);
             
-            score ++;
-            drawScore();
+                score ++;
+                drawScore();
+                
             
-            getRandomPlant();
-            showPlantImage();
-            console.log(basket);
-            console.log(plants);
+                getRandomPlant();
+                showPlantImage();
+                console.log(basket);
+                console.log(plants);
+
+                removeCorrectModal()
         }
     });
 
