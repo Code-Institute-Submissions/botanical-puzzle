@@ -689,6 +689,7 @@
 // Where the image will be placed in the DOM:
     let img = document.getElementById("token");
 
+// Variables for Scoreboard in Gamescreen
     var scoreboard = document.getElementById("score");
     var score = 0;
 
@@ -811,7 +812,6 @@ function drawScore() {
 }
 
 
-
 // -------------- Game Complete
 
 
@@ -831,3 +831,11 @@ function checkPlantsArray(){
     }
 }
 
+//------------- Basket
+
+function showBasketScore(){
+    let titleScore = document.getElementById('title-score');
+    titleScore.textContent(score);
+
+
+}
