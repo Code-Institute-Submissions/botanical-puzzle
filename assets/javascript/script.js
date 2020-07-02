@@ -12,7 +12,7 @@
 */
   
 
-// array of plants to find:
+// Array of plants to find:
   const plants = [
         {
             'name': 'Alexanders',
@@ -675,61 +675,82 @@
             'coords': '',
         },*/
   ];
-// this is where plants will be pushed once they have been found by user:
+// Where plants will be pushed once they have been found by user:
   let basket = [
   ];
 
-//Image base path for 'plants to find' image:
-  const baseImagePath = 'assets/images/tokens/';
+// Image base path for 'plants to find' image:
+    const baseImagePath = 'assets/images/tokens/';
+
+// Global selectedPlant values
+    let selectedPlantIndex = (getRandomInt(0, plants.length -1));
+    let selectedPlant = plants[selectedPlantIndex];
+
+// Where the image will be placed in the DOM:
+    let img = document.getElementById("token");
+
+    var scoreboard = document.getElementById("score");
+    var score = 0;
+
+// Elements for Display Correct Plant Modal
+    let body = document.getElementById('plant-map');
+    let correctAnswerDisplay = document.getElementById('correct-answer-modal');
+    let newCorrectAnswer = document.createElement('p');
+    let closeButton = document.getElementById('close');
+
+// Plantmap
+    const plantmap = document.querySelector('#plantmap');
 
 
-// ------------Generate a random integer between 0 and plants.length
+
+
+
+// ------------ Generate a random integer between 0 and plants.length
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// ------------Global selectedPlant values
-let selectedPlantIndex = (getRandomInt(0, plants.length -1));
-let selectedPlant = plants[selectedPlantIndex];
-
-
-// ------------Function to generate a new plant Global value
+// ------------ Generate a new plant Global value
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
     console.log(selectedPlant);
 }
-// Call the function
+// ------------ Get the first random plant
 getRandomPlant();
 
+// Get the next random plant
+function newRandomPlant(){
+            getRandomPlant();
+            let timeout = setTimeout(showPlantImage, 1500);
+          
 
-// ------------Show an image of the plant object which has been selected
+}
 
-// Where the image will be placed in the DOM:
-let img = document.getElementById("token");
-
+// ------------ Show an image of the current plant object
 function showPlantImage() {
         img.src = baseImagePath + selectedPlant.image_name;
         
         console.log(selectedPlant.name);
-        }
+}
 
-// Call the showPlantImage Function when the window is loaded
+
+// Call the showPlantImage Function for the first time when the window is loaded
 window.onload = showPlantImage();
 
 
-// -----------Function to update scoreboard
-var scoreboard = document.getElementById("score");
-var score = 0;
-    
+
+
+// ------------ Update 'Scoreboard'
 function drawScore() {
         scoreboard.textContent = (score);
 }
 
 
-// ------------Function to show Try Again Modal 
+
+// ------------ Show 'Try Again Modal' 
 function showTryAgainModal() {
     (document.getElementById('try-again-modal')).style.visibility="visible";
         setTimeout(function() {
@@ -738,14 +759,8 @@ function showTryAgainModal() {
     }
 
 
-// --------------Function Correct Plant Modal 
 
-// Get elements and insert p element into the DOM
-    let body = document.getElementById('plant-map');
-    let correctAnswerDisplay = document.getElementById('correct-answer-modal');
-    let newCorrectAnswer = document.createElement('p');
-    let closeButton = document.getElementById('close');
-
+// ------------ Show 'Correct Plant Modal' 
 // ---Clear the previous Correct user answer
 function clearAnswer() {
         correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
@@ -764,6 +779,7 @@ function showCorrectModal() {
             correctAnswerDisplay.style.visibility="hidden";
         }
     };
+// ---Auto Timeout on Modal
     setTimeout(function() {
          (document.getElementById('correct-answer-modal')).style.visibility="hidden";
      }, 1500,);
@@ -772,32 +788,28 @@ function showCorrectModal() {
 
 
 
-
-// -----------------Function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
-const plantmap = document.querySelector('#plantmap');
+// ------------ Check if plant clicked by user matches the plant being displayed
 
     plantmap.addEventListener('click', (e) => {
-        e.preventDefault();       
+        e.preventDefault();
+// If it does not match, show try again modal       
             if (e.target.id !== selectedPlant.name) {
             showTryAgainModal();
-
-// If correct, show modal, push item to basket array; remove item from plants array; generate new image from plant array
+// If it does match, show Correct Modal
             } else {
                 showCorrectModal();
-                
+// Push the correct plant to the 'basket' array & remove it from the 'plants' array  
                 basket.push(selectedPlant);
                 plants.splice(selectedPlantIndex, 1);
-            
+// Add 1 point to the scoreboard            
                 score ++;
                 drawScore();
-                
-            
-                getRandomPlant();
-                showPlantImage();
+// Get a new random Plant                
+                newRandomPlant();
+
                 console.log(basket);
                 console.log(plants);
-
-                //removeCorrectModal()
         }
     });
+
 
