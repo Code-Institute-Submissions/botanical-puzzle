@@ -714,10 +714,12 @@ function getRandomInt(min, max) {
 
 // ------------ Generate a new plant Global value
 function getRandomPlant(){
-    selectedPlantIndex = (getRandomInt(0, plants.length));
+    selectedPlantIndex = (getRandomInt(1, plants.length));
     selectedPlant = plants[selectedPlantIndex];
-    console.log(selectedPlant);
+    console.log(selectedPlant.name);
+    console.log(selectedPlantIndex);
 }
+
 // ------------ Get the first random plant object
 getRandomPlant();
 
@@ -731,7 +733,7 @@ function newRandomPlant(){
 function showPlantImage() {
         img.src = baseImagePath + selectedPlant.image_name;
         
-        console.log(selectedPlant.name);
+        console.log(selectedPlant);
 }
 
 
@@ -762,6 +764,7 @@ window.onload = showPlantImage();
 
                 console.log(basket);
                 console.log(plants);
+                
         }
     });
 
@@ -810,14 +813,14 @@ function drawScore() {
 
 // -------------- Game Complete
 
-
-/*if (typeof plants !== 'undefined' && plants.length < 1) {
-    endOfGameDisplay();
-
-    console.log("HELLOOOOO!!!!!");
-    // the array is defined and has less than 1 object
+function endOfGameDisplay(){
+    document.getElementById('end-game-modal').style.visibility="visible";
 }
 
-function endOfGameDisplay(){
 
-}*/
+    if (typeof plants !== 'undefined' && plants.length <= 24) {
+    endOfGameDisplay();
+    console.log("HELLOOOOO!!!!!");
+    // the array is defined and has less than 1 object
+    }
+
