@@ -171,7 +171,6 @@ a {
 }*/
 
 .instruction {
-
     position:absolute;
     
     width: 300px;
@@ -195,7 +194,6 @@ a {
     text-align: center;
 
     z-index: 4;
-
 }
 
 .instruction>a {
@@ -225,7 +223,6 @@ a {
     font-weight: 900;
 
     z-index: 2;
-
 }
 
 #correct-answer-modal {
