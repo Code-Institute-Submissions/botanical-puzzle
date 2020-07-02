@@ -208,7 +208,7 @@ a {
 }
 
 #end-game-modal {
-    visibility: hidden;
+    /*visibility: hidden;*/
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 2;
     position: fixed;
@@ -227,11 +227,20 @@ a {
 #end-game-modal>span {
     font-size: 30px;
     background-color: #009933;
-    color: #fff;
     padding: 20px;
     border-radius: 20px;
+    
 }
 #end-game-modal>span:hover {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+#end-game-modal>span>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#end-game-modal>span>a:hover {
+    text-decoration: none;
     color: #009933;
 }
