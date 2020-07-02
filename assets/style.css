@@ -73,43 +73,6 @@ a {
 }
 
 
-/*----------------------- Instructions -----------------------------*/
-.instruction {
-    width: 100%;
-    margin: 20px;
-    background-color: #009933;
-    border-radius: 30px;
-    color:#fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-.instruction>a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.instruction>a:hover {
-    font-weight: 600;
-    transition-duration: 0.5s;
-}
-
-.instruction:last-child {
-    padding:0;
-    border-radius:150px;
-    width:50%;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    margin-right: 90px;
-    margin-left: 90px;
-}
-
 
 
 /*---------------------------- Credits Page ----------------------------*/
@@ -146,15 +109,12 @@ a {
     margin: 10px;
     z-index: 2;
 }
-/*body {
-    background-color: #009933;
-    margin: 0;
-}*/
 
 .counter-display {
     background-color: #009933;
     color: #fff;
     text-align: center;
+    
     
     border-radius: 50%;
     width: 100px;
@@ -166,104 +126,160 @@ a {
 .counter {
     font-size: 30px;
     font-weight: 400;
-    margin-top: 30%;
-    margin-bottom: 30%;
+    
 }
 
 .exit-button {
     background-color:#009933;
     color: #fff;
-    font-size: 20px;
+
+    position: absolute;
+    right:30px;
+    bottom:30px;
+
     border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    position: absolute;
-    right:30px;
-    bottom:30px;
+
+    font-size: 20px;
+
     z-index: 3;
 }
 
 .image-display {
     position: absolute;
+    top: 60px;
+    left: 60px;
     z-index: 3;
-    top: 30px;
-    left: 30px;
-}
-
-.plant-name-display {
-    font-size: 25px;
-    color:#009933;
-    font-weight: 400;
 }
 
 
-/*---------------- Gamescreen Try Again Modal ----------------*/
-#try-again-modal {
+/*----------------------- Instructions -----------------------------*/
+
+.instruction-1{
     visibility: hidden;
-    z-index: 2;
-    position: fixed;
-    margin-left: 15%;
-    margin-top: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 50px;
-    font-size: 50px;
-    font-weight: 900;
-    color: #009933;
 }
-
-#correct-answer-modal {
+.instruction-2{
     visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 2;
-    position: fixed;
-    /*margin-left: 15%;
-    margin-top: 5%;**/
-    padding: 10%;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    color: #009933;
-    width: 100%;
-    height:100%;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
 }
-
-#end-game-modal {
+/*.instruction-3{
     visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 2;
-    position: fixed;
-    /*margin-left: 15%;
-    margin-top: 5%;**/
-    padding: 10%;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    color: #009933;
-    height:100%;
 }
+.instruction-4{
+    visibility: hidden;
+}*/
 
-#end-game-modal>span {
-    font-size: 30px;
-    background-color: #009933;
-    padding: 20px;
-    border-radius: 20px;
+.instruction {
+
+    position:absolute;
     
-}
-#end-game-modal>span:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 200px;
+    
+    margin-left: 30%;
+    margin-top: 15%;
+
+    background-color: #009933;
+    color:#fff;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    border-radius: 30px;
+    
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+
+    z-index: 4;
+
 }
 
-#end-game-modal>span>a {
+.instruction>a {
     text-decoration: none;
     color: #fff;
 }
 
+.instruction>a:hover {
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+/*---------------- Gamescreen Try Again Modal ----------------*/
+#try-again-modal {
+    visibility: hidden;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #009933;
+
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 15%;
+    padding: 50px;
+
+    font-size: 50px;
+    font-weight: 900;
+
+    z-index: 2;
+
+}
+
+#correct-answer-modal {
+    visibility: hidden;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #009933;
+
+    width: 100%;
+    height:100%;
+
+    position: absolute;
+    padding: 10%;
+    justify-content: center;
+
+    font-size: 50px;
+    font-weight: 900;
+    
+    z-index: 2;
+}
+
+#end-game-modal {
+    visibility: hidden;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #009933;
+
+    height:100%;
+    
+    position: absolute;
+    padding: 10%;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    
+    z-index: 2;
+}
+
+#end-game-modal>span {
+    background-color: #009933;
+
+    padding: 20px;
+    border-radius: 20px;
+
+    font-size: 30px;
+}
+#end-game-modal>span:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#end-game-modal>span>a {
+    text-decoration: none;
+    color: #fff;
+}
 #end-game-modal>span>a:hover {
     text-decoration: none;
     color: #009933;

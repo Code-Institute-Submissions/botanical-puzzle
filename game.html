@@ -10,25 +10,50 @@
     
     <title>Wild Plants</title>
 </head>
+
 <body>
 
+<!-- Instructions -->
+    
+
+        <div class="instruction instruction-1">
+            <h1><i class="far fa-hand-point-up"></i></h1>
+            <p>move around the page<br>to find the wild plants</p>
+        </div>
+
+        <div class="instruction instruction-2">
+            <h1><i class="fas fa-mouse-pointer"></i></h1>
+            <p>click to collect plants
+            <br>in your basket</p>
+        </div>
+
+        <div class=" instruction instruction-3">
+            <h1><i class="fas fa-graduation-cap"></i></h1>
+            <p>learn about wild plants!</p>
+        </div>
+
+        <div class="instruction instruction-4">
+            <a href="game.html">OK, Let's go!</a>
+        </div>
+
+    
+
+
+
 <!-- Modals -->
-    <div class="row">
-        <div id="try-again-modal" class="col-12">
-            <p class="modal-contents">Try Again!</p>
-        </div>
+    
+    <div id="try-again-modal">
+        <p class="modal-contents">Try Again!</p>
     </div>
 
-    <div id="correct-answer-div" class="row">
-        <div id="correct-answer-modal" class="col-12">
+    <div id="correct-answer-modal" class="row">
+        <div  class="col-12">
         </div>
     </div>
-
-    <div id="end-game-div" class="row">
-        <div id="end-game-modal" class="col-12">
-            <p>Well Done!<br>You found all the wild plants!</p>
-            <span class="button basket-button"><a href="basket.html">next</a></span>
-        </div>
+    
+    <div id="end-game-modal">
+        <p>Well Done!<br>You found all the wild plants!</p>
+        <span class="button basket-button"><a href="basket.html">next</a></span>
     </div>
 
 
@@ -36,7 +61,7 @@
     <div class="game-displays">
 
         <div class="image-display">
-            <img id="token" src="."><p class="plant-name-display"></p></div>
+            <img id="token" src="."></div>
 
         <div class="counter-display">
             <p class="counter" id="score">0</p></div>
@@ -189,8 +214,7 @@
 
 <script src="assets/javascript/dragElement.js"></script>
 <script src="assets/javascript/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+<script src="https://kit.fontawesome.com/490ea72588.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
