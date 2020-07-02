@@ -718,10 +718,10 @@ function getRandomPlant(){
     selectedPlant = plants[selectedPlantIndex];
     console.log(selectedPlant);
 }
-// ------------ Get the first random plant
+// ------------ Get the first random plant object
 getRandomPlant();
 
-// Get the next random plant
+// ------------ Get the next random plant object
 function newRandomPlant(){
             getRandomPlant();
             let timeout = setTimeout(showPlantImage, 1500);
@@ -743,11 +743,29 @@ window.onload = showPlantImage();
 
 
 
-// ------------ Update 'Scoreboard'
-function drawScore() {
-        scoreboard.textContent = (score);
-}
+// ------------ Check if plant clicked by user matches the plant being displayed
 
+    plantmap.addEventListener('click', (e) => {
+        e.preventDefault();
+// If it does not match, show try again modal       
+            if (e.target.id !== selectedPlant.name) {
+            showTryAgainModal();
+// If it does match, show Correct Modal
+            } else {
+                showCorrectModal();
+// Push the correct plant to the 'basket' array & remove it from the 'plants' array  
+                basket.push(selectedPlant);
+                plants.splice(selectedPlantIndex, 1);
+// Add 1 point to the scoreboard            
+                score ++;
+                drawScore();
+// Get a new random Plant                
+                newRandomPlant();
+
+                console.log(basket);
+                console.log(plants);
+        }
+    });
 
 
 // ------------ Show 'Try Again Modal' 
@@ -757,7 +775,6 @@ function showTryAgainModal() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
         }, 800);
     }
-
 
 
 // ------------ Show 'Correct Plant Modal' 
@@ -786,30 +803,9 @@ function showCorrectModal() {
 
     }
 
-
-
-// ------------ Check if plant clicked by user matches the plant being displayed
-
-    plantmap.addEventListener('click', (e) => {
-        e.preventDefault();
-// If it does not match, show try again modal       
-            if (e.target.id !== selectedPlant.name) {
-            showTryAgainModal();
-// If it does match, show Correct Modal
-            } else {
-                showCorrectModal();
-// Push the correct plant to the 'basket' array & remove it from the 'plants' array  
-                basket.push(selectedPlant);
-                plants.splice(selectedPlantIndex, 1);
-// Add 1 point to the scoreboard            
-                score ++;
-                drawScore();
-// Get a new random Plant                
-                newRandomPlant();
-
-                console.log(basket);
-                console.log(plants);
-        }
-    });
-
+    
+// ------------ Update 'Scoreboard'
+function drawScore() {
+        scoreboard.textContent = (score);
+}
 
