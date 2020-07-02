@@ -714,10 +714,9 @@ function getRandomInt(min, max) {
 
 // ------------ Generate a new plant Global value
 function getRandomPlant(){
-    selectedPlantIndex = (getRandomInt(1, plants.length));
+    selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
     console.log(selectedPlant.name);
-    console.log(selectedPlantIndex);
 }
 
 // ------------ Get the first random plant object
@@ -752,6 +751,8 @@ window.onload = showPlantImage();
             showTryAgainModal();
 // If it does match, show Correct Modal
             } else {
+                checkPlantsArray();
+
                 showCorrectModal();
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
                 basket.push(selectedPlant);
@@ -817,10 +818,16 @@ function endOfGameDisplay(){
     document.getElementById('end-game-modal').style.visibility="visible";
 }
 
-
-    if (typeof plants !== 'undefined' && plants.length <= 24) {
+//-------------- Check to see if the Plants Array is empty
+function checkPlantsArray(){
+    let plantArrayLength = plants.length;
+    if (plantArrayLength <= 1) {
     endOfGameDisplay();
+    console.log(plantArrayLength);
     console.log("HELLOOOOO!!!!!");
     // the array is defined and has less than 1 object
+    } else {
+        console.log(plantArrayLength);
     }
+}
 
