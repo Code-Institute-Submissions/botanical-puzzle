@@ -776,7 +776,7 @@ function showTryAgainModal() {
     (document.getElementById('try-again-modal')).style.visibility="visible";
         setTimeout(function() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
-        }, 800);
+        }, 1000);
     }
 
 
@@ -833,9 +833,3 @@ function checkPlantsArray(){
 
 //------------- Basket
 
-function showBasketScore(){
-    let titleScore = document.getElementById('title-score');
-    titleScore.textContent(score);
-
-
-}
