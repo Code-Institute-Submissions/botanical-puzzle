@@ -188,14 +188,6 @@ a {
     padding: 50px;
 }
 
-.modal-contents {
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    color: #009933;
-}
-
 #correct-answer-modal {
     visibility: hidden;
     background-color: rgba(255, 255, 255, 0.5);
@@ -211,9 +203,35 @@ a {
     color: #009933;
     width: 100%;
     height:100%;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 
-#close {
-    float: right;
-   
+#end-game-modal {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    position: fixed;
+    /*margin-left: 15%;
+    margin-top: 5%;**/
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #009933;
+    height:100%;
+}
+
+#end-game-modal>span {
+    font-size: 30px;
+    background-color: #009933;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+#end-game-modal>span:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #009933;
 }

@@ -724,9 +724,7 @@ getRandomPlant();
 // ------------ Get the next random plant object
 function newRandomPlant(){
             getRandomPlant();
-            let timeout = setTimeout(showPlantImage, 1500);
-          
-
+            setTimeout(showPlantImage, 1500);
 }
 
 // ------------ Show an image of the current plant object
@@ -803,9 +801,23 @@ function showCorrectModal() {
 
     }
 
-    
 // ------------ Update 'Scoreboard'
 function drawScore() {
         scoreboard.textContent = (score);
 }
 
+
+
+// -------------- Game Complete
+
+
+/*if (typeof plants !== 'undefined' && plants.length < 1) {
+    endOfGameDisplay();
+
+    console.log("HELLOOOOO!!!!!");
+    // the array is defined and has less than 1 object
+}
+
+function endOfGameDisplay(){
+
+}*/
