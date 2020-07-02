@@ -751,7 +751,7 @@ window.onload = showPlantImage();
             showTryAgainModal();
 // If it does match, show Correct Modal
             } else {
-                checkPlantsArray();
+                setTimeout(checkPlantsArray, 1500);
 
                 showCorrectModal();
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
@@ -814,6 +814,7 @@ function drawScore() {
 
 // -------------- Game Complete
 
+
 function endOfGameDisplay(){
     document.getElementById('end-game-modal').style.visibility="visible";
 }
@@ -825,7 +826,6 @@ function checkPlantsArray(){
     endOfGameDisplay();
     console.log(plantArrayLength);
     console.log("HELLOOOOO!!!!!");
-    // the array is defined and has less than 1 object
     } else {
         console.log(plantArrayLength);
     }
