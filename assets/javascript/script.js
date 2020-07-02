@@ -728,38 +728,49 @@ function drawScore() {
         scoreboard.textContent = (score);
 }
 
-// ------------Function to show Try Again Modal - would like to add fade in and fade out
+
+// ------------Function to show Try Again Modal 
 function showTryAgainModal() {
     (document.getElementById('try-again-modal')).style.visibility="visible";
         setTimeout(function() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
-        }, 1500);
+        }, 800);
     }
 
 
 // --------------Function Correct Plant Modal 
 
 // Get elements and insert p element into the DOM
+    let body = document.getElementById('plant-map');
     let correctAnswerDisplay = document.getElementById('correct-answer-modal');
     let newCorrectAnswer = document.createElement('p');
+    let closeButton = document.getElementById('close');
 
-// Clear the previous Correct user answer
+// ---Clear the previous Correct user answer
 function clearAnswer() {
-        correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild)
-    };
+        correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
+    }
 
-// Display a modal when the user clicks the correct plant
+// ---Display a modal when the user clicks the correct plant
 function showCorrectModal() {
         
-    document.getElementById('correct-answer-modal').style.visibility="visible";
+    correctAnswerDisplay.style.visibility="visible";
     newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
     correctAnswerDisplay.appendChild(newCorrectAnswer);
 
-        setTimeout(function() {
-            (document.getElementById('correct-answer-modal')).style.visibility="hidden";
-        }, 1500,);
-
+// ---Close the modal when user clicks anywhere on the screen
+    window.onclick = function(event) {
+        if (event.target == correctAnswerDisplay) {
+            correctAnswerDisplay.style.visibility="hidden";
+        }
     };
+    setTimeout(function() {
+         (document.getElementById('correct-answer-modal')).style.visibility="hidden";
+     }, 1500,);
+
+    }
+
+
 
 
 // -----------------Function to check if plant clicked by user is the same plant that was randomly generated... 'name' will be the same as html 'title'.
