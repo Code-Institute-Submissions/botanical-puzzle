@@ -726,27 +726,25 @@ function startInstructions() {
     nextButton2.onclick = function slideTwo(){
             instruction1.style.visibility="hidden";
             instruction2.style.visibility="visible";
-        }
+        };
 
     nextButton3.onclick = function slideThree(){
             instruction2.style.visibility="hidden";
             instruction3.style.visibility="visible";
-        }
+        };
 
     nextButton4.onclick = function slideFour(){
             instruction3.style.visibility="hidden";
             instruction4.style.visibility="visible";
-        }
+        };
 
-    letsGo.onclick = function startGame() {
-            instruction4.style.visibility="hidden";
-    }
     backLetsGo.onclick = function goBack() {
-    style.visibility="hidden";
-        insruction1.style.v;isibility="visible";
+        instruction4.style.visibility="hidden";
+        instruction1.style.visibility="visible";
+    };
 
 //
-    letsGo.onclick = showPlantImage(), startGame();    
+       
 
 // ------------ Generate a random integer between 0 and plants.length
 function getRandomInt(min, max) {
@@ -780,6 +778,11 @@ function showPlantImage() {
         
         console.log(selectedPlant);
 }
+
+letsGo.onclick = function startGame() {
+            instruction4.style.visibility="hidden";
+            showPlantImage();
+    };
 
 
 // Call the showPlantImage Function for the first time when the window is loaded
@@ -875,7 +878,3 @@ function checkPlantsArray(){
         console.log(plantArrayLength);
     }
 }
-
-
-
-;}
