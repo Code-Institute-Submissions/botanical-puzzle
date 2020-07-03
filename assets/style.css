@@ -300,12 +300,13 @@ a {
 
 #end-game-modal>span {
     background-color:#009933;
-
+    color: #fff;
     padding:20px;
     border-radius:20px;
 
     font-size:30px;
 }
+
 #end-game-modal>span:hover {
     background-color:rgba(255, 255, 255, 0.5);
 }

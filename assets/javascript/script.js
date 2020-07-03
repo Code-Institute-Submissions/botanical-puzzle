@@ -700,7 +700,12 @@
 // Plantmap Variable
     const plantmap = document.querySelector('#plantmap');
 
-// 
+// Sounds
+
+  const music = document.querySelector('#summer-forest');
+
+    
+
 // ------------ Instructions Variables
 
 var instruction1 = document.querySelector('.instruction-1');
@@ -786,8 +791,9 @@ function showPlantImage() {
 letsGo.onclick = function startGame() {
         instruction4.style.visibility="hidden";
         showPlantImage();
+        music.play();
     };
-
+//letsGo.addEventListener("click", function(){ music.play(); });
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
