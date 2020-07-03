@@ -1,17 +1,17 @@
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family:'Raleway', sans-serif;
     
 }
 
 
 .row {
-    margin: 0;
+    margin:0;
     padding:0;
 }
 
 a {
-    text-decoration: none;
+    text-decoration:none;
 }
 
 
@@ -19,18 +19,18 @@ a {
 /*------------Background for homescreen ----------------------*/
 .background-container{
     background: url("images/wallpaper.jpg") no-repeat right center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
 
-    position: relative;
-    height: 100vh;
+    position:relative;
+    height:100vh;
 
-    opacity: 100%;
+    opacity:100%;
 }
 
 
@@ -42,25 +42,25 @@ a {
 
 /*-------------------- Index Buttons ------------------------------*/
 .button-freestyle, .button-timed {
-    font-size: 25px;
-    font-weight: 400;
+    font-size:25px;
+    font-weight:400;
     background-color: rgba(0, 153, 51, 1);
     color: #fff;
-    border-radius: 150px;
-    margin: 80px;
+    border-radius:150px;
+    margin:80px;
 }
 
 .button-timed {
-    padding-top: 60px;
+    padding-top:60px;
     padding-right:40px;
-    padding-bottom: 60px;
+    padding-bottom:60px;
     padding-left:40px;
 }
 
 .button-freestyle {
-    padding-top: 60px;
-    padding-right: 25px;
-    padding-bottom: 60px;
+    padding-top:60px;
+    padding-right:25px;
+    padding-bottom:60px;
     padding-left:25px;
 }
 
@@ -68,8 +68,8 @@ a {
 .button-freestyle:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color:#009933;
-    font-weight: 600;
-    transition-duration: 0.4s;
+    font-weight:600;
+    transition-duration:0.4s;
 }
 
 
@@ -77,139 +77,139 @@ a {
 
 /*---------------------------- Credits Page ----------------------------*/
 .credits-text-box {
-    background: #fff;
-    font-family: Raleway;
-    font-size: 25;
-    text-align: center;
-    margin: 0;
+    background:#fff;
+    font-family:Raleway;
+    font-size:25;
+    text-align:center;
+    margin:0;
 }
 
 .creditstext {
-    margin-right: 80px;
-    margin-top: 20%;
-    margin-bottom: 80px;
-    color: #009933;
+    margin-right:80px;
+    margin-top:20%;
+    margin-bottom:80px;
+    color:#009933;
     font-weight:300;
-    font-size: 20px;
+    font-size:20px;
 }
 
 .creditsimage {
-    margin-top: 20%;
+    margin-top:20%;
 }
 
 /*----------------------------- Game -----------------------*/
 
 #plant-map {
-    position: absolute;
-    z-index: 1;
+    position:absolute;
+    z-index:1;
 }
 
 #plant-map-image {
-    position: relative;
-    cursor: move;
-    margin: 10px;
-    z-index: 2;
+    position:relative;
+    cursor:move;
+    margin:10px;
+    z-index:2;
 }
 
 .counter-display {
-    background-color: #009933;
-    color: #fff;
-    text-align: center;
+    background-color:#009933;
+    color:#fff;
+    text-align:center;
     
     
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    z-index: 3;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    position:fixed;
+    z-index:3;
 }
 
 .counter {
-    font-size: 30px;
-    font-weight: 400;
+    font-size:30px;
+    font-weight:400;
     
 }
 
 .exit-button {
     background-color:#009933;
-    color: #fff;
+    color:#fff;
 
-    position: fixed;
+    position:fixed;
     right:5%;
     bottom:5%;
 
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
 
-    font-size: 20px;
+    font-size:20px;
 
-    z-index: 3;
+    z-index:3;
 }
 
 .image-display {
-    position: fixed;
-    top: 60px;
-    left: 60px;
-    z-index: 3;
+    position:fixed;
+    top:60px;
+    left:60px;
+    z-index:3;
 }
 
 
 /*----------------------- Instructions -----------------------------*/
 
 .instruction-1{
-    visibility: hidden;
+    visibility:hidden;
 }
 .instruction-2{
-    visibility: hidden;
+    visibility:hidden;
 }
 
 .instruction-3{
-    visibility: hidden;
+    visibility:hidden;
 }
 
 .instruction-4{
-    visibility: hidden;
+    visibility:hidden;
 }
 
 .instruction {
     position:fixed;
     
-    width: 300px;
-    height: auto;
+    width:300px;
+    height:auto;
     
-    margin-left: 30%;
-    margin-top: 15%;
+    margin-left:30%;
+    margin-top:15%;
 
-    background-color: #009933;
+    background-color:#009933;
     color:#fff;
     
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:30px;
+    padding-right:30px;
     
-    border-radius: 30px;
+    border-radius:30px;
     
-    font-size: 25px;
-    font-weight: 300;
-    text-align: center;
+    font-size:25px;
+    font-weight:300;
+    text-align:center;
 
-    z-index: 4;
+    z-index:4;
 }
 
 .instructions-nav {
-    font-size: 30px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size:30px;
+    font-weight:400;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .nav-arrow {
-    font-size: 40px;
-    margin-right: 20px;
+    font-size:40px;
+    margin-right:20px;
     margin-left:20px;
 }
 
@@ -218,112 +218,130 @@ a {
 }
 
 .nav-button.nav-back {
-    font-size: 20px;
+    font-size:20px;
 }
 
 .ok-lets-go {
-    font-weight: 500;
+    font-weight:500;
     font-size:40px;
 }
 
 #lets-go {
-    background-color: #fff;
-    color: #009933;
-    padding: 15px;
+    background-color:#fff;
+    color:#009933;
+    padding:15px;
 }
 
 #lets-go:hover {
-    background-color: #009933;
-    color: #fff;
+    background-color:#009933;
+    color:#fff;
 }
 
 
 /*---------------- Gamescreen Modals ----------------*/
 #try-again-modal {
-    visibility: hidden;
+    visibility:hidden;
 
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #009933;
+    background-color:rgba(255, 255, 255, 0.8);
+    color:#009933;
 
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 20%;
-    padding: 50px;
-    justify-content: center;
+    position:fixed;
+    top:30%;
+    left:30%;
+    
+    padding:50px;
+    justify-content:center;
 
     font-size: 50px;
-    font-weight: 900;
+    font-weight:900;
 
-    z-index: 2;
+    z-index:2;
 }
 
 #correct-answer-modal {
-    visibility: hidden;
+    visibility:hidden;
 
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #009933;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:#009933;
 
-    width: 100%;
+    width:100%;
     height:100%;
 
-    margin: 0;
-    position: absolute;
-    padding: 20%;
-    justify-content: center;
+    position:fixed;
+    margin:0;
 
-    font-size: 50px;
-    font-weight: 900;
+    padding:30%;
+    justify-content:center;
+
+    font-size:50px;
+    font-weight:900;
     
-    z-index: 2;
+    z-index:2;
 }
 
 #end-game-modal {
-    visibility: hidden;
+    visibility:hidden;
 
     background-color: rgba(255, 255, 255, 0.5);
     color: #009933;
 
     height:100%;
     
-    position: absolute;
-    padding: 10%;
-    justify-content: center;
+    position:fixed;
+    padding:10%;
+    justify-content:center;
 
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
+    text-align:center;
+    font-size:50px;
+    font-weight:900;
     
-    z-index: 2;
+    z-index:2;
 }
 
 #end-game-modal>span {
-    background-color: #009933;
+    background-color:#009933;
 
-    padding: 20px;
-    border-radius: 20px;
+    padding:20px;
+    border-radius:20px;
 
-    font-size: 30px;
+    font-size:30px;
 }
 #end-game-modal>span:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.5);
 }
 #end-game-modal>span>a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration:none;
+    color:#fff;
 }
 #end-game-modal>span>a:hover {
-    text-decoration: none;
-    color: #009933;
+    text-decoration:none;
+    color:#009933;
 }
 
 
 /* Bakset*/
 
-.title-score{
+.basket {
+    position:fixed;
+    top:30%;
+    left:30%;
+    
+    width:auto;
+    height:auto;
+    
+    
 
+    background-color:#009933;
+    color:#fff;
+    
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:30px;
+    padding-right:30px;
+    
+    font-size:25px;
+    font-weight:300;
+    text-align:center;
 
-}
-
-.learn-display{
-
+    z-index:4;
 }

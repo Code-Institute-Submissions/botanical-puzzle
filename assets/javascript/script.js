@@ -691,17 +691,17 @@
     var scoreboard = document.getElementById("score");
     var score = 0;
 
-// Elements for Display Correct Plant Modal
+// Variables for Display Correct Plant Modal
     let body = document.getElementById('plant-map');
     let correctAnswerDisplay = document.getElementById('correct-answer-modal');
     let newCorrectAnswer = document.createElement('p');
     let closeButton = document.getElementById('close');
 
-// Plantmap
+// Plantmap Variable
     const plantmap = document.querySelector('#plantmap');
 
 // 
-//------------- Instructions
+// ------------ Instructions Variables
 
 var instruction1 = document.querySelector('.instruction-1');
 var instruction2 = document.querySelector('.instruction-2');
@@ -715,36 +715,44 @@ var nextButton4 = document.querySelector('.nav-next-4');
 var letsGo = document.querySelector('#lets-go');
 var backLetsGo = document.querySelector('.nav-back');
 
+// ------------ Basket Variables
+var basketButton = document.querySelector('.basket-button');
 
+
+// ------------ Basket Functions
+basketButton.onclick = function goToBasket() {
+    document.querySelector('');
+}
+
+
+
+
+
+// ------------ Window On Load Instructions
 window.onload = startInstructions();
 
 function startInstructions() {
     instruction1.style.visibility="visible";
 
 }
-
     nextButton2.onclick = function slideTwo(){
             instruction1.style.visibility="hidden";
             instruction2.style.visibility="visible";
         };
-
     nextButton3.onclick = function slideThree(){
             instruction2.style.visibility="hidden";
             instruction3.style.visibility="visible";
         };
-
     nextButton4.onclick = function slideFour(){
             instruction3.style.visibility="hidden";
             instruction4.style.visibility="visible";
         };
-
     backLetsGo.onclick = function goBack() {
         instruction4.style.visibility="hidden";
         instruction1.style.visibility="visible";
     };
 
     
-
 //
        
 
@@ -781,23 +789,15 @@ function showPlantImage() {
         console.log(selectedPlant);
 }
 
+//
 
-// Start the game
+
+// ------------ Start the game
 letsGo.onclick = function startGame() {
         instruction4.style.visibility="hidden";
         showPlantImage();
     };
 
-
-
-
-
-
-// Call the showPlantImage Function for the first time when the window is loaded
-
-//window.onload = showPlantImage();
-
-//
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
@@ -867,14 +867,6 @@ function drawScore() {
         scoreboard.textContent = (score);
 }
 
-
-// -------------- Game Complete
-
-
-function endOfGameDisplay(){
-    document.getElementById('end-game-modal').style.visibility="visible";
-}
-
 //-------------- Check to see if the Plants Array is empty
 function checkPlantsArray(){
     let plantArrayLength = plants.length;
@@ -885,4 +877,11 @@ function checkPlantsArray(){
     } else {
         console.log(plantArrayLength);
     }
+}
+
+
+// -------------- Game Complete
+
+function endOfGameDisplay(){
+    document.getElementById('end-game-modal').style.visibility="visible";
 }
