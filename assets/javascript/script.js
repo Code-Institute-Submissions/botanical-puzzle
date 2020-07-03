@@ -682,9 +682,7 @@
 // Image base path for 'plants to find' image:
     const baseImagePath = 'assets/images/tokens/';
 
-// Global selectedPlant values
-    let selectedPlantIndex = (getRandomInt(0, plants.length -1));
-    let selectedPlant = plants[selectedPlantIndex];
+
 
 // Where the image will be placed in the DOM:
     let img = document.getElementById("token");
@@ -743,14 +741,12 @@ function startInstructions() {
     letsGo.onclick = function startGame() {
             instruction4.style.visibility="hidden";
     }
-
     backLetsGo.onclick = function goBack() {
-        instruction4.style.visibility="hidden";
-        instruction1.style.visibility="visible";
-    }
+    style.visibility="hidden";
+        insruction1.style.v;isibility="visible";
 
-
-
+//
+    letsGo.onclick = showPlantImage(), startGame();    
 
 // ------------ Generate a random integer between 0 and plants.length
 function getRandomInt(min, max) {
@@ -760,6 +756,9 @@ function getRandomInt(min, max) {
 }
 
 // ------------ Generate a new plant Global value
+// Global selectedPlant values
+    let selectedPlantIndex = (getRandomInt(0, plants.length -1));
+    let selectedPlant = plants[selectedPlantIndex];
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
@@ -787,8 +786,7 @@ function showPlantImage() {
 
 //window.onload = showPlantImage();
 
-
-
+//
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
@@ -880,4 +878,4 @@ function checkPlantsArray(){
 
 
 
-
+;}
