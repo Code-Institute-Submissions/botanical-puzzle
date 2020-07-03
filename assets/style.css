@@ -226,6 +226,17 @@ a {
     font-size:40px;
 }
 
+#lets-go {
+    background-color: #fff;
+    color: #009933;
+    padding: 15px;
+}
+
+#lets-go:hover {
+    background-color: #009933;
+    color: #fff;
+}
+
 
 /*---------------- Gamescreen Modals ----------------*/
 #try-again-modal {

@@ -13,7 +13,7 @@
   
 
 // Array of plants to find:
-  const plants = [
+  var plants = [
         {
             'name': 'Alexanders',
             'description': 'Found in hedgebanks and waste places near the sea. Edible stems, leaves and flower buds. Flowers April-June.',
@@ -680,7 +680,7 @@
   ];
 
 // Image base path for 'plants to find' image:
-    const baseImagePath = 'assets/images/tokens/';
+    var baseImagePath = 'assets/images/tokens/';
 
 
 
@@ -703,17 +703,17 @@
 // 
 //------------- Instructions
 
-const instruction1 = document.querySelector('.instruction-1');
-const instruction2 = document.querySelector('.instruction-2');
-const instruction3 = document.querySelector('.instruction-3');
-const instruction4 = document.querySelector('.instruction-4');
+var instruction1 = document.querySelector('.instruction-1');
+var instruction2 = document.querySelector('.instruction-2');
+var instruction3 = document.querySelector('.instruction-3');
+var instruction4 = document.querySelector('.instruction-4');
 
-const nextButton2 = document.querySelector('.nav-next-2');
-const nextButton3 = document.querySelector('.nav-next-3');
-const nextButton4 = document.querySelector('.nav-next-4');
+var nextButton2 = document.querySelector('.nav-next-2');
+var nextButton3 = document.querySelector('.nav-next-3');
+var nextButton4 = document.querySelector('.nav-next-4');
 
-const letsGo = document.querySelector('#lets-go');
-const backLetsGo = document.querySelector('.nav-back');
+var letsGo = document.querySelector('#lets-go');
+var backLetsGo = document.querySelector('.nav-back');
 
 
 window.onload = startInstructions();
@@ -742,6 +742,8 @@ function startInstructions() {
         instruction4.style.visibility="hidden";
         instruction1.style.visibility="visible";
     };
+
+    
 
 //
        
@@ -779,10 +781,16 @@ function showPlantImage() {
         console.log(selectedPlant);
 }
 
+
+// Start the game
 letsGo.onclick = function startGame() {
-            instruction4.style.visibility="hidden";
-            showPlantImage();
+        instruction4.style.visibility="hidden";
+        showPlantImage();
     };
+
+
+
+
 
 
 // Call the showPlantImage Function for the first time when the window is loaded
