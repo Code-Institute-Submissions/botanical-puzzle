@@ -724,8 +724,15 @@ basketButton.onclick = function goToBasket() {
     document.querySelector('');
 }
 
+let basketScoreSpan = document.querySelector('.basket-score-span');
 
+function displayBasketScore() {
+    scoreDisplay.textContent = (score);
+    basketScoreSpan.appendChild(scoreDisplay);
+}
 
+console.log(displayBasketScore);
+//---------//
 
 
 // ------------ Window On Load Instructions
@@ -789,7 +796,6 @@ function showPlantImage() {
         console.log(selectedPlant);
 }
 
-//
 
 
 // ------------ Start the game
