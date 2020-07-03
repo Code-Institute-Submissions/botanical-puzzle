@@ -322,6 +322,7 @@ a {
 /* Bakset*/
 
 .basket {
+    visibility: hidden;
     position:fixed;
     top:30%;
     left:30%;

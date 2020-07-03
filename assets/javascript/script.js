@@ -719,22 +719,6 @@ var backLetsGo = document.querySelector('.nav-back');
 var basketButton = document.querySelector('.basket-button');
 
 
-// ------------ Basket Functions
-basketButton.onclick = function goToBasket() {
-    document.querySelector('');
-}
-
-let basketScoreSpan = document.querySelector('.basket-score-span');
-
-function displayBasketScore() {
-    scoreDisplay.textContent = (score);
-    basketScoreSpan.appendChild(scoreDisplay);
-}
-
-console.log(displayBasketScore);
-//---------//
-
-
 // ------------ Window On Load Instructions
 window.onload = startInstructions();
 
