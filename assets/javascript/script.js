@@ -870,7 +870,7 @@ function endOfGameDisplay(){
 //-------------- Check to see if the Plants Array is empty
 function checkPlantsArray(){
     let plantArrayLength = plants.length;
-    if (plantArrayLength <= 1) {
+    if (plantArrayLength < 1) {
     endOfGameDisplay();
     console.log(plantArrayLength);
     console.log("HELLOOOOO!!!!!");
