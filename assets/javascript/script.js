@@ -702,7 +702,36 @@
 // Plantmap
     const plantmap = document.querySelector('#plantmap');
 
+// 
+//------------- Instructions
 
+const instruction1 = document.querySelector('.instruction-1');
+const instruction2 = document.querySelector('.instruction-2');
+const instruction3 = document.querySelector('.instruction-3');
+const instruction4 = document.querySelector('.instruction-4');
+
+const nextButton2 = document.querySelector('.nav-next-2');
+const nextButton3 = document.querySelector('.nav-next-3');
+const nextButton4 = document.querySelector('.nav-next-4');
+
+
+function startInstructions() {
+    instruction1.style.visibility="visible";
+}
+nextButton2.onclick = function slideTwo(){
+    instruction1.style.visibility="hidden";
+    instruction2.style.visibility="visible";
+}
+nextButton3.onclick = function slideThree(){
+    instruction2.style.visibility="hidden";
+    instruction3.style.visibility="visible";
+}
+nextButton4.onclick = function slideFour(){
+    instruction3.style.visibility="hidden";
+    instruction4.style.visibility="visible";
+}
+
+window.onload = startInstructions();
 
 
 
@@ -738,7 +767,8 @@ function showPlantImage() {
 
 
 // Call the showPlantImage Function for the first time when the window is loaded
-window.onload = showPlantImage();
+
+//window.onload = showPlantImage();
 
 
 
@@ -831,5 +861,6 @@ function checkPlantsArray(){
     }
 }
 
-//------------- Basket
+
+
 
