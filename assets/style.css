@@ -199,29 +199,13 @@ a {
     z-index: 4;
 }
 
-#lets-go {
-    text-decoration: none;
-    
-    padding-bottom: 80px;
-}
-#lets-go>a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#lets-go:hover {
-    font-weight: 400;
-    transition-duration: 0.5s;
-}
-
 .instructions-nav {
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .nav-arrow {
     font-size: 40px;
@@ -230,12 +214,16 @@ a {
 }
 
 .nav-next {
-    padding-left: 10px;
+    font-size:50px;
 }
 
-.nav-button:hover {
+.nav-button.nav-back {
     font-size: 20px;
-    font-weight: 600;
+}
+
+.ok-lets-go {
+    font-weight: 500;
+    font-size:40px;
 }
 
 

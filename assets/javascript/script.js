@@ -714,24 +714,41 @@ const nextButton2 = document.querySelector('.nav-next-2');
 const nextButton3 = document.querySelector('.nav-next-3');
 const nextButton4 = document.querySelector('.nav-next-4');
 
+const letsGo = document.querySelector('#lets-go');
+const backLetsGo = document.querySelector('.nav-back');
+
+
+window.onload = startInstructions();
 
 function startInstructions() {
     instruction1.style.visibility="visible";
-}
-nextButton2.onclick = function slideTwo(){
-    instruction1.style.visibility="hidden";
-    instruction2.style.visibility="visible";
-}
-nextButton3.onclick = function slideThree(){
-    instruction2.style.visibility="hidden";
-    instruction3.style.visibility="visible";
-}
-nextButton4.onclick = function slideFour(){
-    instruction3.style.visibility="hidden";
-    instruction4.style.visibility="visible";
+
 }
 
-window.onload = startInstructions();
+    nextButton2.onclick = function slideTwo(){
+            instruction1.style.visibility="hidden";
+            instruction2.style.visibility="visible";
+        }
+
+    nextButton3.onclick = function slideThree(){
+            instruction2.style.visibility="hidden";
+            instruction3.style.visibility="visible";
+        }
+
+    nextButton4.onclick = function slideFour(){
+            instruction3.style.visibility="hidden";
+            instruction4.style.visibility="visible";
+        }
+
+    letsGo.onclick = function startGame() {
+            instruction4.style.visibility="hidden";
+    }
+
+    backLetsGo.onclick = function goBack() {
+        instruction4.style.visibility="hidden";
+        instruction1.style.visibility="visible";
+    }
+
 
 
 
