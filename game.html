@@ -57,20 +57,20 @@
     </div>
 
     <div id="correct-answer-modal" class="modal">
-        <div  class="col-12 correct-answer">
+        <div  class="correct-answer">
         </div>
+
     </div>
     
     <div id="end-game-modal" class="modal">
         <p>Well Done!<br>You found all the wild plants!</p>
-        <span type="button" class="button basket-button">next</span>
+        <span type="button" id="basket-button" class="button basket-button">next</span>
     </div>
 
 <!-- Basket -->
-    <div class="basket">
-        <div class="basket-title">Well done!<br>You found <span></span> plants!</div>
-        <table>
-        </table>
+    <div id="basket">
+        <!--<div class="basket-title">Well done!<br>You found <span></span> plants!</div>-->
+
     </div>
 
 
@@ -83,9 +83,9 @@
         <div class="counter-display">
             <p class="counter" id="score">0</p></div>
 
-        <form action="index.html">
-            <button type="submit" class="exit-button" id="exit-button"> X </button>
-        </form>
+        <div class="basket-button" >
+            <span type="button" id="exit-button"> X </span>
+        </div>
 
         <div class="music-controls">
             <span type="button" class="sound-button" id="sound-off"><i class="fas fa-volume-mute"></i></span>

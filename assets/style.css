@@ -137,20 +137,23 @@ white: rega(255, 255, 255, 1)
     
 }
 
-.exit-button {
+#exit-button {
     background-color:rgba(0, 153, 51, 1);
     color:#fff;
 
     position:fixed;
     right:5%;
     bottom:5%;
+    text-align: center;
 
     border:none;
     border-radius:50%;
-    width:50px;
+    width:70px;
     height:50px;
+    padding-top: 20px;
 
-    font-size:20px;
+    font-size:25px;
+    font-weight: 600;
 
     z-index:3;
 }
@@ -317,11 +320,13 @@ white: rega(255, 255, 255, 1)
     color:#009933;
 }
 
-
+.correct-answer-description {
+    font-size: 25px;
+}
 
 /* Bakset*/
 
-.basket {
+#basket {
     visibility: hidden;
     position:fixed;
     top:30%;

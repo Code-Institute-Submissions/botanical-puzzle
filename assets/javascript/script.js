@@ -13,7 +13,7 @@
   
 
 // Array of plants to find:
-  var plants = [
+var plants = [
         {
             'name': 'Alexanders',
             'description': 'Found in hedgebanks and waste places near the sea. Edible stems, leaves and flower buds. Flowers April-June.',
@@ -676,29 +676,29 @@
         },*/
   ];
 // Where plants will be pushed once they have been found by user:
-  let basket = [
+let basket = [
   ];
 
 // Image base path for 'plants to find' image:
-    var baseImagePath = 'assets/images/tokens/';
+var baseImagePath = 'assets/images/tokens/';
 
 
 
 // Where the image will be placed in the DOM:
-    let img = document.getElementById("token");
+let img = document.getElementById("token");
 
 // Variables for Scoreboard in Gamescreen
-    var scoreboard = document.getElementById("score");
-    var score = 0;
+var scoreboard = document.getElementById("score");
+var score = 0;
 
 // Variables for Display Correct Plant Modal
-    let body = document.getElementById('plant-map');
-    let correctAnswerDisplay = document.getElementById('correct-answer-modal');
-    let newCorrectAnswer = document.createElement('p');
-    let closeButton = document.getElementById('close');
+let body = document.getElementById('plant-map');
+let correctAnswerDisplay = document.getElementById('correct-answer-modal');
+let newCorrectAnswer = document.createElement('p');
+let closeButton = document.getElementById('close');
 
 // Plantmap Variable
-    const plantmap = document.querySelector('#plantmap');
+const plantmap = document.querySelector('#plantmap');
 
 
 
@@ -718,33 +718,29 @@ var nextButton4 = document.querySelector('.nav-next-4');
 var letsGo = document.querySelector('#lets-go');
 var backLetsGo = document.querySelector('.nav-back');
 
-// ------------ Basket Variables
-var basketButton = document.querySelector('.basket-button');
-
 
 // ------------ Window On Load Instructions
 window.onload = startInstructions();
 
 function startInstructions() {
     instruction1.style.visibility="visible";
-
 }
-    nextButton2.onclick = function slideTwo(){
-            instruction1.style.visibility="hidden";
-            instruction2.style.visibility="visible";
-        };
-    nextButton3.onclick = function slideThree(){
-            instruction2.style.visibility="hidden";
-            instruction3.style.visibility="visible";
-        };
-    nextButton4.onclick = function slideFour(){
-            instruction3.style.visibility="hidden";
-            instruction4.style.visibility="visible";
-        };
-    backLetsGo.onclick = function goBack() {
-        instruction4.style.visibility="hidden";
-        instruction1.style.visibility="visible";
-    };
+nextButton2.onclick = function slideTwo(){
+    instruction1.style.visibility="hidden";
+    instruction2.style.visibility="visible";
+};
+nextButton3.onclick = function slideThree(){
+    instruction2.style.visibility="hidden";
+    instruction3.style.visibility="visible";
+};
+nextButton4.onclick = function slideFour(){
+    instruction3.style.visibility="hidden";
+    instruction4.style.visibility="visible";
+};
+backLetsGo.onclick = function goBack() {
+    instruction4.style.visibility="hidden";
+    instruction1.style.visibility="visible";
+};
 
     
 //
@@ -759,8 +755,9 @@ function getRandomInt(min, max) {
 
 // ------------ Generate a new plant Global value
 // Global selectedPlant values
-    let selectedPlantIndex = (getRandomInt(0, plants.length -1));
-    let selectedPlant = plants[selectedPlantIndex];
+let selectedPlantIndex = (getRandomInt(0, plants.length -1));
+let selectedPlant = plants[selectedPlantIndex];
+
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
@@ -772,15 +769,15 @@ getRandomPlant();
 
 // ------------ Get the next random plant object
 function newRandomPlant(){
-            getRandomPlant();
-            setTimeout(showPlantImage, 1500);
+    getRandomPlant();
+    setTimeout(showPlantImage, 1500);
 }
 
 // ------------ Show an image of the current plant object
 function showPlantImage() {
-        img.src = baseImagePath + selectedPlant.image_name;
+    img.src = baseImagePath + selectedPlant.image_name;
         
-        console.log(selectedPlant);
+    console.log(selectedPlant);
 }
 
 
@@ -797,10 +794,10 @@ letsGo.onclick = function startGame() {
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
-    plantmap.addEventListener('click', (e) => {
-        e.preventDefault();
+plantmap.addEventListener('click', (e) => {
+    e.preventDefault();
 // If it does not match, show try again modal       
-            if (e.target.id !== selectedPlant.name) {
+        if (e.target.id !== selectedPlant.name) {
             showTryAgainModal();
 // If it does match, show Correct Modal
             } else {
@@ -819,8 +816,8 @@ letsGo.onclick = function startGame() {
                 console.log(basket);
                 console.log(plants);
                 
-        }
-    });
+            }
+});
 
 
 // ------------ Show 'Try Again Modal' 
@@ -845,6 +842,7 @@ function showCorrectModal() {
     newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
     correctAnswerDisplay.appendChild(newCorrectAnswer);
 
+
 // ---Close the modal when user clicks anywhere on the screen
     window.onclick = function(event) {
         if (event.target == correctAnswerDisplay) {
@@ -856,7 +854,7 @@ function showCorrectModal() {
          (document.getElementById('correct-answer-modal')).style.visibility="hidden";
      }, 1500,);
 
-    }
+}
 
 // ------------ Update 'Scoreboard'
 function drawScore() {
@@ -866,7 +864,7 @@ function drawScore() {
 //-------------- Check to see if the Plants Array is empty
 function checkPlantsArray(){
     let plantArrayLength = plants.length;
-    if (plantArrayLength < 1) {
+    if (plantArrayLength < 24) {
     endOfGameDisplay();
     console.log(plantArrayLength);
     console.log("HELLOOOOO!!!!!");
@@ -884,11 +882,27 @@ function endOfGameDisplay(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Sounds
 
  // ---------------------- Atmos Sounds
 
- const music = document.querySelector('#summer-forest');
+const music = document.querySelector('#summer-forest');
 function soundOfTheForest(){
     music.loop = true;
     music.play()
