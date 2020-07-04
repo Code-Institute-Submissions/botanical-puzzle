@@ -324,7 +324,7 @@ white: rega(255, 255, 255, 1)
     font-size: 25px;
 }
 
-/* Bakset*/
+/* Bakset
 
 #basket {
     visibility: hidden;
@@ -348,6 +348,17 @@ white: rega(255, 255, 255, 1)
     text-align:center;
 
     z-index:4;
-}
+}*/
+
+table {
+        border-collapse: collapse;
+        background-color: #009933;
+        color: #fff;
+
+      }
+      table tr td {
+        border: 1px solid #fff;
+        padding: 10px;
+      }
 
 

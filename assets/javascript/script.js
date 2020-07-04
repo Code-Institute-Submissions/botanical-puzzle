@@ -881,7 +881,29 @@ function endOfGameDisplay(){
 }
 
 
+// ------------ Basket
 
+
+
+function createTable() {
+  var html="<table border='1|1'>";
+  for (var i=0; i< basket.length; i++){
+      html+= "<tr>";
+      html+= "<td>"+ basket[i].name + "</td>";
+      html+= "<td>"+ basket[i].description + "</td>";
+      html+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
+
+      html+="</tr>"
+  }
+
+  html+="</table>";
+
+  document.getElementById('container').innerHTML = html;
+}
+
+document.querySelector('#basket-button').onclick = function() {
+    createTable();
+}
 
 
 
