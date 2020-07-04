@@ -895,24 +895,19 @@ function createTable() {
 
   html+="</table>";
 
-  document.getElementById('container').innerHTML = html;
+document.getElementById('container').innerHTML = html;
 }
 
 document.querySelector('#basket-button').onclick = function() {
     createTable();
+    document.querySelector('#home-button').style.visibility = "visible";
+    document.querySelector('#playagain-button').style.visibility = "visible";
+    document.querySelector('#end-game-modal').style.visibility = "hidden";
 }
 
 document.querySelector('#exit-button').onclick = function() {
     createTable();
 }
-
-
-
-
-
-
-
-
 
 
 
