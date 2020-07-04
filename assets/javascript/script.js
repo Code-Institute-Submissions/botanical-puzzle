@@ -802,8 +802,8 @@ plantmap.addEventListener('click', (e) => {
 // If it does match, show Correct Modal
             } else {
                 setTimeout(checkPlantsArray, 1500);
-
                 showCorrectModal();
+                
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
                 basket.push(selectedPlant);
                 plants.splice(selectedPlantIndex, 1);
@@ -829,6 +829,7 @@ function showTryAgainModal() {
     }
 
 
+
 // ------------ Show 'Correct Plant Modal' 
 // ---Clear the previous Correct user answer
 function clearAnswer() {
@@ -837,7 +838,6 @@ function clearAnswer() {
 
 // ---Display a modal when the user clicks the correct plant
 function showCorrectModal() {
-        
     correctAnswerDisplay.style.visibility="visible";
     newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
     correctAnswerDisplay.appendChild(newCorrectAnswer);
@@ -915,13 +915,14 @@ document.querySelector('#exit-button').onclick = function() {
 }
 
 
-
-
-
-
-
-
 // Sounds
+// ----------- Correct Sound
+    //-------- Correct sound
+const correctSound = document.querySelector('#correct');
+function correct(){
+    correctSound.play = true;
+    correctSound.play();
+}
 
  // ---------------------- Atmos Sounds
 
