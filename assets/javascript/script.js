@@ -16,13 +16,13 @@
 var plants = [
         {
             'name': 'Alexanders',
-            'description': 'Found in hedgebanks and waste places near the sea. Edible stems, leaves and flower buds. Flowers April-June.',
+            'description': 'Found in hedgebanks and waste places near the sea. Stems, leaves and flower buds are edible. Flowers April-June.',
             'image_name': 'alexanders.png',
             'coords': '776,1926,655,1726',
         },
         {
             'name': 'Apple Mint',
-            'description': 'Apple-scented mint which is tasty in cold drinks.',
+            'description': 'Apple-scented mint, tasty in cold drinks.',
             'image_name': 'applemint.png',
             'coords': '94,98,230,321',
         },
@@ -34,38 +34,38 @@ var plants = [
         },
         {
             'name': 'Balm',
-            'description': 'Found near hedges in shady places. Yellow-green pointed leaves, white/yellow flowers July-September. Lemon-scented leaves add lemon flaour to food, make a refreshing tea, and can be added to salads.',
+            'description': 'Found near hedges in shady places. Yellow-green pointed leaves, white/yellow flowers July-Sept. Lemon-scented leaves add lemon flaour to food, make a refreshing tea, and can be added to salads.',
             'image_name': 'balm.png',
             'coords': '260,1260,440,1438',
         },
-        /*{
+        {
             'name': 'Bath Asparagus',
-            'description': 'Found around Bath and Wiltshire. Greyish leaves and pale yellow and green flower spikes from May-July. The unopened flower spikes can be cooked and eaten like asparagus. Belongs to the lily family and is also called Spiked Star-of-Bethlehem.',
+            'description': 'Found around Bath and Wiltshire. Greyish leaves and pale yellow and green flower spikes from May-July. The unopened flower spikes can be cooked and eaten like asparagus. Belongs to the lily family and is also called <em>Spiked Star-of-Bethlehem</em>.',
             'image_name': 'bathasparagus.png',
             'coords': '951,1802,823,1539',
-        },*/
+        },
         {
             'name': 'Beech',
-            'description': 'A tree found all over the British Isles. Smooth grey bark and bright green leaves. Nuts from September-October. The nuts can be eaten or used to make beechnut oil and butter; the young leaves can be used to make liquor or eaten in salads; and the wood can be used for fuel and making furniture.',
+            'description': 'A tree found all over the British Isles. Smooth grey bark and bright green leaves. Nuts from Sept-Oct. The nuts can be eaten or used to make beechnut oil and butter; the young leaves can be used to make liquor or eaten in salads.',
             'image_name': 'beech.png',
             'coords': '2078,243,2253,331',
         },
         {
             'name': 'Bilberry',
-            'description': '',
+            'description': 'A low shrub (20-50cm), usually found on heaths and moors. The flowers are drooping and green-pink, the berries small and blue-black in color, July-Sept. Smaller and with more flavour that shop bought blueberries.',
             'image_name': 'bilberry.png',
             'coords': '778,41,923,327',
         },
         {
             'name': 'Bistort',
-            'description': '',
+            'description': 'Also known as dock, found in mid and northern parts of British Isles, arrow-shaped leaves and spikes of pink flowers; grows to about 60cm. Used to make a traditional savoury Easter pudding, <em>Dock Pudding</em>, in parts of northern England.',
             'image_name': 'bistort.png',
             'coords': '2316,937,2431,1170',
         },
         /*
         {
             'name': 'Bitter Cress',
-            'description': '',
+            'description': 'Also called <em>Hairy Bitter-cress</em> common in Europe, grows up to 25cm. Cress-like leaves and small white flowers Feb-Sept. Similar in flavour to cress, but more peppery.',
             'image_name': 'bittercress.png',
             'coords': '1779,1196,1906,1423',
         },*/
