@@ -284,7 +284,7 @@ white: rega(255, 255, 255, 1)
 
 
 /*---------------- Gamescreen Modals ----------------*/
-#try-again-modal {
+.modal {
     visibility:hidden;
 
     background-color:rgba(255, 255, 255, 0.8);
@@ -300,27 +300,6 @@ white: rega(255, 255, 255, 1)
     font-size: 50px;
     font-weight:900;
 
-    z-index:2;
-}
-
-#correct-answer-modal {
-    visibility:hidden;
-
-    background-color:rgba(255, 255, 255, 0.5);
-    color:rgba(0, 153, 51, 1);
-
-    width:100%;
-    height:100%;
-
-    position:fixed;
-    margin:0;
-
-    padding:30%;
-    justify-content:center;
-
-    font-size:50px;
-    font-weight:900;
-    
     z-index:2;
 }
 
