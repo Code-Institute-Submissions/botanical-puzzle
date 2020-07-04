@@ -882,9 +882,6 @@ function endOfGameDisplay(){
 
 
 // ------------ Basket
-
-
-
 function createTable() {
   var html="<table border='1|1'>";
   for (var i=0; i< basket.length; i++){
@@ -902,6 +899,10 @@ function createTable() {
 }
 
 document.querySelector('#basket-button').onclick = function() {
+    createTable();
+}
+
+document.querySelector('#exit-button').onclick = function() {
     createTable();
 }
 

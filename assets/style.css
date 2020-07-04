@@ -354,11 +354,23 @@ table {
         border-collapse: collapse;
         background-color: #009933;
         color: #fff;
-
       }
-      table tr td {
+table tr td {
         border: 1px solid #fff;
         padding: 10px;
       }
 
+#learn-about-plants {
+}
+#home-button {
+    color: #fff;
+    background-color: #009933;
+    font-weight: 400;
+    font-size: 20px;
+
+    height: 400px;
+    width: 800px;
+    border-radius: 40%;
+
+}
 
