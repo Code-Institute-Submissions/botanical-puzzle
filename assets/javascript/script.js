@@ -908,6 +908,10 @@ document.querySelector('#basket-button').onclick = function() {
 
 document.querySelector('#exit-button').onclick = function() {
     createTable();
+    document.querySelector('#home-button').style.visibility = "visible";
+    document.querySelector('#playagain-button').style.visibility = "visible";
+    document.querySelector('#end-game-modal').style.visibility = "hidden";
+    img.style.visibility = "hidden";
 }
 
 
