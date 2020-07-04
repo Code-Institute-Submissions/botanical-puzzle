@@ -363,11 +363,11 @@ table tr td {
 
 #learn-about-plants {
     position:fixed;
-    top:30%;
-    left:30%;
+    top:10%;
+    left:15%;
 
     padding:50px;
-    z-index:2;
+    z-index:3;
 }
 
 .home-button {
