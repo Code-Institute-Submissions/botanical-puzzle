@@ -792,14 +792,8 @@ letsGo.onclick = function startGame() {
         soundOfTheForest();
     };
 
-function soundOfTheForest() {
-    const music = document.querySelector('#summer-forest');
-    music.loop = true;
-    music.play()
-}
- 
 
-  //letsGo.addEventListener("click", function(){ music.play(); });
+
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
@@ -886,4 +880,30 @@ function checkPlantsArray(){
 
 function endOfGameDisplay(){
     document.getElementById('end-game-modal').style.visibility="visible";
+}
+
+
+
+// Sounds
+
+ // ---------------------- Atmos Sounds
+
+ const music = document.querySelector('#summer-forest');
+function soundOfTheForest(){
+    music.loop = true;
+    music.play()
+    
+}
+
+const buttonOff = document.querySelector('#sound-off').onclick = function(){
+    music.pause();
+    document.querySelector('#sound-off').style.visibility="hidden";
+    document.querySelector('#sound-on').style.visibility="visible";
+}
+
+const buttonOn = document.querySelector('#sound-on').onclick = function(){
+    music.play();
+    document.querySelector('#sound-off').style.visibility="visible";
+    document.querySelector('#sound-on').style.visibility="hidden";
+
 }
