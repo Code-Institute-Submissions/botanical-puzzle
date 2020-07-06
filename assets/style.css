@@ -363,8 +363,8 @@ white: rgba(255, 255, 255, 1)
 .instruction {
     position:fixed;
     
-    width:300px;
-    height:auto;
+    width: 280px;
+    height: 300px;
     
     margin-left:30%;
     margin-top:15%;

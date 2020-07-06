@@ -783,15 +783,12 @@ function showPlantImage() {
 }
 
 
-
 // ------------ Start the game
 letsGo.onclick = function startGame() {
         instruction4.style.visibility="hidden";
         showPlantImage();
         soundOfTheForest();
     };
-
-
 
 
 // ------------ Check if plant clicked by user matches the plant being displayed
@@ -802,9 +799,9 @@ plantmap.addEventListener('click', (e) => {
         if (e.target.id !== selectedPlant.name) {
             showTryAgainModal();
 // If it does match, show Correct Modal
-            } else {
-                setTimeout(checkPlantsArray, 1500);
+        } else {setTimeout(checkPlantsArray, 1500);
                 showCorrectModal();
+                bling();
                 
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
                 basket.push(selectedPlant);
@@ -814,10 +811,10 @@ plantmap.addEventListener('click', (e) => {
                 drawScore();
 // Get a new random Plant                
                 newRandomPlant();
+                
 
                 console.log(basket);
                 console.log(plants);
-                
             }
 });
 
@@ -867,11 +864,9 @@ function drawScore() {
 function checkPlantsArray(){
     let basketArrayLength = basket.length;
     if (basketArrayLength == 20) {
-    endOfGameDisplay();
-    console.log(plantArrayLength);
-    console.log("HELLOOOOO!!!!!");
+        endOfGameDisplay();
     } else {
-        console.log(plantArrayLength);
+        console.log("game continue");
     }
 }
 
@@ -891,12 +886,9 @@ function createTable() {
       plantTable+= "<td>"+ basket[i].name + "</td>";
       plantTable+= "<td>"+ basket[i].description + "</td>";
       plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
-
       plantTable+="</tr>"
   }
-
-  plantTable+="</table>";
-
+plantTable+="</table>";
 document.getElementById('container').innerHTML = plantTable;
 }
 
@@ -919,12 +911,10 @@ document.querySelector('#exit-button').onclick = function() {
 
 // Sounds
 // ----------- Correct Sound
-    //-------- Correct sound
-const correctSound = document.querySelector('#correct');
-function correct(){
-    correctSound.play = true;
-    correctSound.play();
-}
+const blingSound = document.querySelector('#correct');
+    function bling(){
+        blingSound.play();
+    }
 
  // ---------------------- Atmos Sounds
 
@@ -932,7 +922,6 @@ const music = document.querySelector('#summer-forest');
 function soundOfTheForest(){
     music.loop = true;
     music.play()
-    
 }
 
 const buttonOff = document.querySelector('#sound-off').onclick = function(){
