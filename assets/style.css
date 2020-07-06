@@ -158,6 +158,25 @@ white: rgba(255, 255, 255, 1)
     margin-top:20%;
 }
 
+
+/* gotogame button*/
+.gotogame>a {
+    display: inline-block;
+    text-decoration:none;
+    color:#fff;
+    background-color:#009933;
+    font-weight:400;
+    font-size:20px;
+    padding:30px;
+    border-radius:5%;
+    margin:10px;
+}
+
+.gotogame>a:hover {
+    color:#009933;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
 /*----------------------------- Game -----------------------*/
 
 #plant-map {
