@@ -372,31 +372,117 @@ white: rgba(255, 255, 255, 1)
 .instruction-4{
     visibility:hidden;
 }
+@media (max-width: 576px){
+    .instruction {
+        position:fixed;
+    
+        width: 280px;
+        height: 300px;
+    
+        margin-left:2%;
+        margin-top:1%;
 
-.instruction {
-    position:fixed;
+        background-color:rgba(0, 153, 51, 1);
+        color:#fff;
     
-    width: 280px;
-    height: 300px;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:10px;
+        padding-right:10px;
     
-    margin-left:30%;
-    margin-top:15%;
+        border-radius:30px;
+    
+        font-size:20px;
+        font-weight:300;
+        text-align:center;
 
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
-    
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:30px;
-    padding-right:30px;
-    
-    border-radius:30px;
-    
-    font-size:25px;
-    font-weight:300;
-    text-align:center;
+        z-index:4;
+}
+}
 
-    z-index:4;
+@media (min-width: 768px){
+    .instruction {
+        position:fixed;
+    
+        width: 280px;
+        height: 300px;
+    
+        margin-left:7%;
+        margin-top:5%;
+
+        background-color:rgba(0, 153, 51, 1);
+        color:#fff;
+    
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:30px;
+        padding-right:30px;
+    
+        border-radius:30px;
+    
+        font-size:25px;
+        font-weight:300;
+        text-align:center;
+
+        z-index:4;
+}
+}
+
+@media (min-width:992px){
+    .instruction {
+        position:fixed;
+    
+        width: 280px;
+        height: 300px;
+    
+        margin-left:7%;
+        margin-top:5%;
+
+        background-color:rgba(0, 153, 51, 1);
+        color:#fff;
+    
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:30px;
+        padding-right:30px;
+    
+        border-radius:30px;
+    
+        font-size:25px;
+        font-weight:300;
+        text-align:center;
+
+        z-index:4;
+}
+}
+
+
+@media (min-width:992px){
+    .instruction {
+        position:fixed;
+    
+        width: 280px;
+        height: 300px;
+    
+        margin-left:35%;
+        margin-top:10%;
+
+        background-color:rgba(0, 153, 51, 1);
+        color:#fff;
+    
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:30px;
+        padding-right:30px;
+    
+        border-radius:30px;
+    
+        font-size:25px;
+        font-weight:300;
+        text-align:center;
+
+        z-index:4;
+}
 }
 
 .instructions-nav {

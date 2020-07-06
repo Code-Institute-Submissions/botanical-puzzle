@@ -38,12 +38,12 @@ var plants = [
             'image_name': 'balm.png',
             'coords': '260,1260,440,1438',
         },
-        {
+        /*{
             'name': 'Bath Asparagus',
             'description': 'Found around Bath and Wiltshire. Greyish leaves and pale yellow and green flower spikes from May-July. Belongs to the lily family.',
-            'image_name': 'bathasparagus.png',
+            'image_name': '',
             'coords': '951,1802,823,1539',
-        },
+        },*/
         {
             'name': 'Beech',
             'description': 'A tree found all over the British Isles. Smooth grey bark and bright green leaves. Nuts from Sept-Oct. The nuts can be eaten.',
