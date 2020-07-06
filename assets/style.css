@@ -1,17 +1,15 @@
 
 body {
-    font-family:'Raleway', sans-serif;
-    
+  font-family: 'Raleway', sans-serif;
 }
 
-
 .row {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration:none;
+  text-decoration: none;
 }
 
 /*----- colors
@@ -24,608 +22,525 @@ white: rgba(255, 255, 255, 1)
 #ffffff---------*/
 
 /*------------Background for homescreen ----------------------*/
-.background-container{
-    background: url("images/wallpaper.jpg") no-repeat center center fixed; 
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-
-    position:relative;
-    height:100vh;
-
-    opacity:100%;
-    padding:0;
-    margin:0;
+.background-container {
+  background: url("images/wallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  opacity: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 
  /*--------------------- Index main navbar ----------------------*/
 .navbar {
-    background-color: rgba(0, 153, 51);
-    color: #fff;
-    }
+  background-color: rgba(0, 153, 51);
+  color: #fff;
+}
 
 /*-------------------- Index Buttons ------------------------------*/
 
 
 .button-play, .button-about {
-    font-size:25px;
-    font-weight:400;
-    background-color: rgba(0, 153, 51, 1);
-    color: #fff;
-    border-radius:150px;
-    margin:60px;
-    padding-top:60px;
-    padding-bottom:60px;
+  font-size: 25px;
+  font-weight: 400;
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
+  border-radius: 150px;
+  margin: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .button-about {
-    padding-right: 45px;
-    padding-left: 45px;
-    font-weight: 300;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-weight: 300;
 }
 
 .button-play {
-    padding-right: 55px;
-    padding-left: 55px;
-    font-weight: 600;
-    transform: scale(1);
-	animation: pulse 2s infinite;
+  padding-right: 55px;
+  padding-left: 55px;
+  font-weight: 600;
+  transform: scale(1);
+  animation: pulse 2s infinite;
 }
 
-
 @keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
 
-	50% {
-		transform: scale(1.1);
-	}
+  50% {
+    transform: scale(1.1);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 
 .button-about:hover,
 .button-play:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color:rgba(0, 153, 51, 1);
-    font-weight:600;
-    transition-duration:0.4s;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 153, 51, 1);
+  font-weight: 600;
+  transition-duration: 0.4s;
 }
-
 
 @media (min-width:992px) {
-    .homescreen-options {
-        position: absolute;
-        box-sizing: border-box;
-        display: inline-flex;
-        margin: 0 auto;
-        left:50%;
-        top:50%;
-        margin-left:-250px;
-        margin-top:-250px;
-    }
+  .homescreen-options {
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+  }
 }
-@media (min-width: 768px){
-    .homescreen-options {
-        position: absolute;
-        box-sizing: border-box;
-        display: inline-flex;
-        margin: 0 auto;
-        left:40%;
-        top:50%;
-        margin-left:-250px;
-        margin-top:-250px;   
-    }
+
+@media (min-width: 768px) {
+  .homescreen-options {
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 0 auto;
+    left: 40%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+  }
 }
-@media (max-width 540px) {
-    .homescreen-options {
-        position: absolute;
-        box-sizing: border-box;
-        display: inline-flex;
-        margin: 0 auto;
-        left:70%;
-        top:40%;
-        margin-left:-250px;
-        margin-top:-250px; 
-    }
+
+@media (max-width: 540px) {
+  .homescreen-options {
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 0 auto;
+    left: 70%;
+    top: 40%;
+    margin-left: -250px;
+    margin-top: -250px;
+  }
 }
 
 
 /*---------------------------- Credits Page ----------------------------*/
 .credits-text-box {
-    background:#fff;
-    font-family:Raleway;
-    font-size:25;
-    text-align:center;
-    margin:0;
+  background: #fff;
+  font-family: Raleway;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
 }
 
 .creditstext {
-    margin-right:80px;
-    margin-top:20%;
-    margin-bottom:80px;
-    color:rgba(0, 153, 51, 1);
-    font-weight:300;
-    font-size:20px;
+  margin-right: 80px;
+  margin-top: 20%;
+  margin-bottom: 80px;
+  color: rgba(0, 153, 51, 1);
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .creditsimage {
-    margin-top:20%;
+  margin-top: 20%;
 }
 
 
 /* gotogame button*/
 .gotogame>a {
-    display: inline-block;
-    text-decoration:none;
-    color:#fff;
-    background-color:#009933;
-    font-weight:400;
-    font-size:20px;
-    padding:30px;
-    border-radius:5%;
-    margin:10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #009933;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 5%;
+  margin: 10px;
 }
 
 .gotogame>a:hover {
-    color:#009933;
-    background-color:rgba(255, 255, 255, 0.8);
+  color: #009933;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*----------------------------- Game -----------------------*/
 
 #plant-map {
-    position:absolute;
-    z-index:1;
+  position: absolute;
+  z-index: 1;
 }
 
 /*@media (min-width: 577px){*/
-    #plant-map-image {
-        position:relative;
-        cursor:move;
-        margin:10px;
-        z-index:2;
-        max-height: 70%;
-    }
-
-
-/*@media (max-width: 576px) {
-    #plant-map-image {
-        position:relative;
-        cursor:move;
-        margin:10px;
-        z-index:2;
-    }
+#plant-map-image {
+  position: relative;
+  cursor: move;
+  margin: 10px;
+  z-index: 2;
+  max-height: 70%;
 }
-*/
+
 
 /* scoreboard */
 
 .counter-display {
-    visibility: hidden;
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
-    text-align:center;
-    
-    border-radius:50%;
-    width:100px;
-    height:100px;
-    position:fixed;
-    z-index:3;
-    }
+  visibility: hidden;
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  z-index: 3;
+}
 
-@media (min-width:576px){
-    .counter-display {
-        width:100px;
-        height:100px;
-    }
+@media (min-width:576px) {
+  .counter-display {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 576px) {
-.counter-display {
+  .counter-display {
     width: 50px;
     height: 50px;
-    }
-}
-    
-
-@media (min-width:576px){
-    .counter {
-        font-size:30px;
-        font-weight:400;
-    }
+  }
 }
 
-@media (max-width:576px){
-    .counter {
-        font-size:20px;
-        margin-top: 10px;
-    }
-}
-
-/* exit button */
-#exit-button {
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
-
-    position:fixed;
-    right:1%;
-    top:90%;
-    text-align: center;
-
-    border:none;
-    border-radius:50%;
-    width:70px;
-    height:50px;
-    padding-top: 20px;
-
-    font-size:25px;
-    font-weight: 600;
-
-    z-index:3;
+@media (min-width:576px) {
+  .counter {
+    font-size: 30px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width:576px) {
-    #exit-button {
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
+  .counter {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
 
-    position:fixed;
-    right:1%;
-    top:90%;
+/* --------------exit button---------------- */
+#exit-button {
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
+  position: fixed;
+  right: 1%;
+  top: 90%;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 50px;
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  z-index: 3;
+}
+
+@media (max-width:576px) {
+  #exit-button {
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    position: fixed;
+    right: 1%;
+    top: 90%;
     text-align: center;
-
-    border:none;
-    border-radius:50%;
-    width:50px;
-    height:30px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
     padding-top: 20px;
-
     font-size: 10px;
     font-weight: 600;
-
-    z-index:3;
-    }
+    z-index: 3;
+  }
 }
 
-/* plant to find display */
+/* --------------------plant to find display--------------- */
 @media (max-width:576px) {
-    #token {
-        width:150px;
-    }
-    .image-display {
-        visibility:hidden;
-        position: fixed;
-        top: 27px;
-        left: 27px;
-        z-index: 3;
-    }
+  #token {
+    width: 150px;
+  }
+
+  .image-display {
+    visibility: hidden;
+    position: fixed;
+    top: 27px;
+    left: 27px;
+    z-index: 3;
+  }
 }
 
-@media (min-width:576px){
-    .image-display {
-        visibility:hidden;
-        position:fixed;
-        top:60px;
-        left:60px;
-        z-index:3;
-    }
+@media (min-width:576px) {
+  .image-display {
+    visibility: hidden;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+  }
 }
 
 
 /* Music Controls */
 
 .sound-button {
-    background-color:rgba(255, 255, 255, 0.5);
-    color:rgba(0, 153, 51, 1);
-    text-align:center;
-    
-    border-radius:50%;
-    width:60px;
-    height:50px;
-    padding-top:10px;
-
-    position:fixed;
-    right:1%;
-    top:1%;
-    z-index:3;
-
-    font-size:35px;
-    
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 153, 51, 1);
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  padding-top: 10px;
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  z-index: 3;
+  font-size: 35px;
 }
 
 .sound-button:hover,
 .sound-button:active,
-.sound-button:visited{
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
+.sound-button:visited {
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
 }
 
-
 #sound-on {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #sound-off {
-    visibility: visible;
+  visibility: visible;
 }
 
 
 /*----------------------- Instructions -----------------------------*/
 
-.instruction-1{
-    visibility:hidden;
-}
-.instruction-2{
-    visibility:hidden;
+.instruction-1 {
+  visibility: hidden;
 }
 
-.instruction-3{
-    visibility:hidden;
+.instruction-2 {
+  visibility: hidden;
 }
 
-.instruction-4{
-    visibility:hidden;
-}
-@media (max-width: 576px){
-    .instruction {
-        position:fixed;
-    
-        width: 280px;
-        height: 300px;
-    
-        margin-left:2%;
-        margin-top:1%;
-
-        background-color:rgba(0, 153, 51, 1);
-        color:#fff;
-    
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-left:10px;
-        padding-right:10px;
-    
-        border-radius:30px;
-    
-        font-size:20px;
-        font-weight:300;
-        text-align:center;
-
-        z-index:4;
-}
+.instruction-3 {
+  visibility: hidden;
 }
 
-@media (min-width: 768px){
-    .instruction {
-        position:fixed;
-    
-        width: 280px;
-        height: 300px;
-    
-        margin-left:7%;
-        margin-top:5%;
-
-        background-color:rgba(0, 153, 51, 1);
-        color:#fff;
-    
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-left:30px;
-        padding-right:30px;
-    
-        border-radius:30px;
-    
-        font-size:25px;
-        font-weight:300;
-        text-align:center;
-
-        z-index:4;
-}
+.instruction-4 {
+  visibility: hidden;
 }
 
-@media (min-width:992px){
-    .instruction {
-        position:fixed;
-    
-        width: 280px;
-        height: 300px;
-    
-        margin-left:7%;
-        margin-top:5%;
-
-        background-color:rgba(0, 153, 51, 1);
-        color:#fff;
-    
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-left:30px;
-        padding-right:30px;
-    
-        border-radius:30px;
-    
-        font-size:25px;
-        font-weight:300;
-        text-align:center;
-
-        z-index:4;
-}
+@media (max-width: 576px) {
+  .instruction {
+    position: fixed;
+    width: 280px;
+    height: 300px;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 4;
+  }
 }
 
-
-@media (min-width:992px){
-    .instruction {
-        position:fixed;
-    
-        width: 280px;
-        height: 300px;
-    
-        margin-left:35%;
-        margin-top:10%;
-
-        background-color:rgba(0, 153, 51, 1);
-        color:#fff;
-    
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-left:30px;
-        padding-right:30px;
-    
-        border-radius:30px;
-    
-        font-size:25px;
-        font-weight:300;
-        text-align:center;
-
-        z-index:4;
+@media (min-width: 768px) {
+  .instruction {
+    position: fixed;
+    width: 280px;
+    height: 300px;
+    margin-left: 7%;
+    margin-top: 5%;
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 4;
+  }
 }
+
+@media (min-width:992px) {
+  .instruction {
+    position: fixed;
+    width: 280px;
+    height: 300px;
+    margin-left: 7%;
+    margin-top: 5%;
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 4;
+  }
+}
+
+@media (min-width:992px) {
+  .instruction {
+    position: fixed;
+    width: 280px;
+    height: 300px;
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: rgba(0, 153, 51, 1);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 4;
+  }
 }
 
 .instructions-nav {
-    font-size:30px;
-    font-weight:400;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-arrow {
-    font-size:40px;
-    margin-right:20px;
-    margin-left:20px;
+  font-size: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .nav-next {
-    font-size:50px;
+  font-size: 50px;
 }
 
 .nav-button.nav-back {
-    font-size:20px;
+  font-size: 20px;
 }
 
 .ok-lets-go {
-    font-weight:500;
-    font-size:40px;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 #lets-go {
-    background-color:#fff;
-    color:rgba(0, 153, 51, 1);
-    padding:15px;
+  background-color: #fff;
+  color: rgba(0, 153, 51, 1);
+  padding: 15px;
 }
 
 #lets-go:hover {
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
 }
 
 
 /*---------------- Gamescreen Modals ----------------*/
 .modal {
-    visibility:hidden;
-
-    background-color:rgba(255, 255, 255, 0.8);
-    color:rgba(0, 153, 51, 1);
-
-    position:fixed;
-    top:30%;
-    left:30%;
-    
-    padding:50px;
-    justify-content:center;
-    text-align: center;
-    font-size: 50px;
-    font-weight:900;
-
-    z-index:2;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 153, 51, 1);
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  z-index: 2;
 }
 
 #end-game-modal>span {
-    background-color:rgba(0, 153, 51, 1);
-    color: #fff;
-    padding:20px;
-    border-radius:20px;
-
-    font-size:30px;
+  background-color: rgba(0, 153, 51, 1);
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
 }
 
 #end-game-modal>span:hover {
-    background-color:rgba(255, 255, 255, 0.5);
-    color:#009933;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #009933;
 }
 
 .correct-answer-description {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-/* Bakset
-
-#basket {
-    visibility: hidden;
-    position:fixed;
-    top:30%;
-    left:30%;
-    
-    width:auto;
-    height:auto;
-    
-    background-color:rgba(0, 153, 51, 1);
-    color:#fff;
-    
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:30px;
-    padding-right:30px;
-    
-    font-size:25px;
-    font-weight:300;
-    text-align:center;
-
-    z-index:4;
-}*/
+/* -----Basket Table ----*/
 
 table {
-    border-collapse:collapse;
-    background-color:#009933;
-    color:#fff;
+  border-collapse: collapse;
+  background-color: #009933;
+  color: #fff;
 }
 
 table tr td {
-    border: 1px solid #fff;
-    padding: 10px;
+  border: 1px solid #fff;
+  padding: 10px;
 }
 
 #learn-about-plants {
-    position:fixed;
-    top:10%;
-    left:15%;
-
-    padding:50px;
-    z-index:3;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  padding: 50px;
+  z-index: 3;
 }
 
+/* ---- Basket options----*/
 .home-button {
-    visibility:hidden;
+  visibility: hidden;
 }
 
 .home-button>a {
-    display: inline-block;
-    color:#fff;
-    background-color:#009933;
-    font-weight:400;
-    font-size:20px;
-    padding:30px;
-    border-radius:5%;
-    margin:10px;
+  display: inline-block;
+  color: #fff;
+  background-color: #009933;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 5%;
+  margin: 10px;
 }
 
-
 .home-button>a:hover {
-    color:#009933;
-    background-color:rgba(255, 255, 255, 0.8);
+  color: #009933;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
