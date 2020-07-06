@@ -132,7 +132,7 @@ white: rgba(255, 255, 255, 1)
 }
 
 
-/*---------------------------- Credits Page ----------------------------*/
+/*---------------------------- Credits Page -----------------------*/
 .credits-text-box {
   background: #fff;
   font-family: Raleway;
@@ -180,7 +180,6 @@ white: rgba(255, 255, 255, 1)
   z-index: 1;
 }
 
-/*@media (min-width: 577px){*/
 #plant-map-image {
   position: relative;
   cursor: move;
@@ -295,7 +294,7 @@ white: rgba(255, 255, 255, 1)
 }
 
 
-/* Music Controls */
+/* ------------------Music Controls--------------------- */
 
 .sound-button {
   background-color: rgba(255, 255, 255, 0.5);
@@ -429,7 +428,7 @@ white: rgba(255, 255, 255, 1)
     z-index: 4;
   }
 }
-
+/*------------------- instructions navigation------*/
 .instructions-nav {
   font-size: 30px;
   font-weight: 400;
@@ -502,7 +501,7 @@ white: rgba(255, 255, 255, 1)
   font-size: 25px;
 }
 
-/* -----Basket Table ----*/
+/* --------------------Basket Table -----------------*/
 
 table {
   border-collapse: collapse;
@@ -523,7 +522,7 @@ table tr td {
   z-index: 3;
 }
 
-/* ---- Basket options----*/
+/* -------------------- Basket options------------------*/
 .home-button {
   visibility: hidden;
 }

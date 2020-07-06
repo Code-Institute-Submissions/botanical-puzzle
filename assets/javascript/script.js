@@ -843,21 +843,20 @@ function showCorrectModal() {
 
 
 // ---Close the modal when user clicks anywhere on the screen
-    window.onclick = function(event) {
-        if (event.target == correctAnswerDisplay) {
-            correctAnswerDisplay.style.visibility="hidden";
-        }
-    };
+window.onclick = function(event) {
+    if (event.target == correctAnswerDisplay) {
+        correctAnswerDisplay.style.visibility="hidden";
+    }
+};
 // ---Auto Timeout on Modal
-    setTimeout(function() {
-         (document.getElementById('correct-answer-modal')).style.visibility="hidden";
-     }, 1500,);
-
+setTimeout(function() {
+    (document.getElementById('correct-answer-modal')).style.visibility="hidden";
+        }, 1500,);
 }
 
 // ------------ Update 'Scoreboard'
 function drawScore() {
-        scoreboard.textContent = (score);
+    scoreboard.textContent = (score);
 }
 
 //-------------- Check to see if the Plants Array is empty
