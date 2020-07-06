@@ -20,24 +20,23 @@ green: rgba(0, 153, 51, 1)
 #009933
 white clear: rgba(255, 255, 255, 0.5)
 white semi: rgba(255, 255, 255, 0.8)
-white: rega(255, 255, 255, 1)
+white: rgba(255, 255, 255, 1)
 #ffffff---------*/
 
 /*------------Background for homescreen ----------------------*/
 .background-container{
-    background: url("images/wallpaper.jpg") no-repeat right center fixed; 
+    background: url("images/wallpaper.jpg") no-repeat center center fixed; 
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
 
-    display:flex;
-    align-items:center;
-
     position:relative;
     height:100vh;
 
     opacity:100%;
+    padding:0;
+    margin:0;
 }
 
 
@@ -48,31 +47,50 @@ white: rega(255, 255, 255, 1)
     }
 
 /*-------------------- Index Buttons ------------------------------*/
-.button-freestyle, .button-timed {
+
+
+.button-play, .button-about {
     font-size:25px;
     font-weight:400;
     background-color: rgba(0, 153, 51, 1);
     color: #fff;
     border-radius:150px;
-    margin:80px;
-}
-
-.button-timed {
+    margin:60px;
     padding-top:60px;
-    padding-right:40px;
     padding-bottom:60px;
-    padding-left:40px;
 }
 
-.button-freestyle {
-    padding-top:60px;
-    padding-right:25px;
-    padding-bottom:60px;
-    padding-left:25px;
+.button-about {
+    padding-right: 45px;
+    padding-left: 45px;
+    font-weight: 300;
 }
 
-.button-timed:hover,
-.button-freestyle:hover {
+.button-play {
+    padding-right: 55px;
+    padding-left: 55px;
+    font-weight: 600;
+    transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.button-about:hover,
+.button-play:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color:rgba(0, 153, 51, 1);
     font-weight:600;
@@ -80,6 +98,42 @@ white: rega(255, 255, 255, 1)
 }
 
 
+@media (min-width:992px) {
+    .homescreen-options {
+        position: absolute;
+        box-sizing: border-box;
+        display: inline-flex;
+        margin: 0 auto;
+        left:50%;
+        top:50%;
+        margin-left:-250px;
+        margin-top:-250px;
+    }
+}
+@media (min-width: 768px){
+    .homescreen-options {
+        position: absolute;
+        box-sizing: border-box;
+        display: inline-flex;
+        margin: 0 auto;
+        left:40%;
+        top:50%;
+        margin-left:-250px;
+        margin-top:-250px;   
+    }
+}
+@media (max-width 540px) {
+    .homescreen-options {
+        position: absolute;
+        box-sizing: border-box;
+        display: inline-flex;
+        margin: 0 auto;
+        left:70%;
+        top:40%;
+        margin-left:-250px;
+        margin-top:-250px; 
+    }
+}
 
 
 /*---------------------------- Credits Page ----------------------------*/
@@ -121,10 +175,10 @@ white: rega(255, 255, 255, 1)
 
 /* scoreboard */
 .counter-display {
+    visibility: hidden;
     background-color:rgba(0, 153, 51, 1);
     color:#fff;
     text-align:center;
-    
     
     border-radius:50%;
     width:100px;
@@ -140,12 +194,13 @@ white: rega(255, 255, 255, 1)
     }
 }
 
-@media (max-width:540px) {
-    .counter-display {
-        width:60px;
-        height:60px;
+@media (max-width: 540px) {
+.counter-display {
+    width: 50px;
+    height: 50px;
     }
 }
+    
 
 @media (min-width:550px){
     .counter {
@@ -157,6 +212,7 @@ white: rega(255, 255, 255, 1)
 @media (max-width:540px){
     .counter {
         font-size:20px;
+        margin-top: 10px;
     }
 }
 
@@ -208,16 +264,25 @@ white: rega(255, 255, 255, 1)
 /* plant to find display */
 @media (max-width:540px) {
     #token {
-        width:100px;
-
+        width:120px;
+    }
+    .image-display {
+        visibility:hidden;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        z-index: 3;
     }
 }
 
-.image-display {
-    position:fixed;
-    top:60px;
-    left:60px;
-    z-index:3;
+@media (min-width:550px){
+    .image-display {
+        visibility:hidden;
+        position:fixed;
+        top:60px;
+        left:60px;
+        z-index:3;
+    }
 }
 
 

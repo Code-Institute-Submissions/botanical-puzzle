@@ -775,6 +775,8 @@ function newRandomPlant(){
 
 // ------------ Show an image of the current plant object
 function showPlantImage() {
+    document.querySelector('.image-display').style.visibility = "visible";
+    document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
         
     console.log(selectedPlant);
@@ -863,8 +865,8 @@ function drawScore() {
 
 //-------------- Check to see if the Plants Array is empty
 function checkPlantsArray(){
-    let plantArrayLength = plants.length;
-    if (plantArrayLength < 24) {
+    let basketArrayLength = basket.length;
+    if (basketArrayLength == 20) {
     endOfGameDisplay();
     console.log(plantArrayLength);
     console.log("HELLOOOOO!!!!!");
@@ -883,19 +885,19 @@ function endOfGameDisplay(){
 
 // ------------ Basket
 function createTable() {
-  var html="<table border='1|1'>";
+  var plantTable="<table border='1|1'>";
   for (var i=0; i< basket.length; i++){
-      html+= "<tr>";
-      html+= "<td>"+ basket[i].name + "</td>";
-      html+= "<td>"+ basket[i].description + "</td>";
-      html+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
+      plantTable+= "<tr>";
+      plantTable+= "<td>"+ basket[i].name + "</td>";
+      plantTable+= "<td>"+ basket[i].description + "</td>";
+      plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
 
-      html+="</tr>"
+      plantTable+="</tr>"
   }
 
-  html+="</table>";
+  plantTable+="</table>";
 
-document.getElementById('container').innerHTML = html;
+document.getElementById('container').innerHTML = plantTable;
 }
 
 document.querySelector('#basket-button').onclick = function() {
