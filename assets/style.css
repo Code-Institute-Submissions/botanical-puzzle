@@ -184,13 +184,25 @@ white: rgba(255, 255, 255, 1)
     z-index:1;
 }
 
-#plant-map-image {
-    position:relative;
-    cursor:move;
-    margin:10px;
-    z-index:2;
-}
+/*@media (min-width: 577px){*/
+    #plant-map-image {
+        position:relative;
+        cursor:move;
+        margin:10px;
+        z-index:2;
+        max-height: 70%;
+    }
 
+
+/*@media (max-width: 576px) {
+    #plant-map-image {
+        position:relative;
+        cursor:move;
+        margin:10px;
+        z-index:2;
+    }
+}
+*/
 
 /* scoreboard */
 .counter-display {
@@ -206,14 +218,14 @@ white: rgba(255, 255, 255, 1)
     z-index:3;
     }
 
-@media (min-width:550px){
+@media (min-width:576px){
     .counter-display {
         width:100px;
         height:100px;
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
 .counter-display {
     width: 50px;
     height: 50px;
@@ -221,14 +233,14 @@ white: rgba(255, 255, 255, 1)
 }
     
 
-@media (min-width:550px){
+@media (min-width:576px){
     .counter {
         font-size:30px;
         font-weight:400;
     }
 }
 
-@media (max-width:540px){
+@media (max-width:576px){
     .counter {
         font-size:20px;
         margin-top: 10px;
@@ -281,20 +293,20 @@ white: rgba(255, 255, 255, 1)
 }
 
 /* plant to find display */
-@media (max-width:540px) {
+@media (max-width:576px) {
     #token {
-        width:120px;
+        width:150px;
     }
     .image-display {
         visibility:hidden;
         position: fixed;
-        top: 30px;
-        left: 30px;
+        top: 27px;
+        left: 27px;
         z-index: 3;
     }
 }
 
-@media (min-width:550px){
+@media (min-width:576px){
     .image-display {
         visibility:hidden;
         position:fixed;
