@@ -770,7 +770,7 @@ getRandomPlant();
 // ------------ Get the next random plant object
 function newRandomPlant(){
     getRandomPlant();
-    setTimeout(showPlantImage, 1500);
+    showPlantImage();
 }
 
 // ------------ Show an image of the current plant object
@@ -791,6 +791,9 @@ letsGo.onclick = function startGame() {
     };
 
 
+
+    //-------------- Check to see if the Plants Array is empty
+
 // ------------ Check if plant clicked by user matches the plant being displayed
 
 plantmap.addEventListener('click', (e) => {
@@ -809,10 +812,15 @@ plantmap.addEventListener('click', (e) => {
 // Add 1 point to the scoreboard            
                 score ++;
                 drawScore();
-// Get a new random Plant                
-                newRandomPlant();
-                
-
+                function checkPlantsArray(){
+                    let basketArrayLength = basket.length;
+                    if (basketArrayLength == 20) {
+                        endOfGameDisplay();
+                        } else {
+                        // Get a new random Plant  
+                            newRandomPlant();;
+                }
+}
                 console.log(basket);
                 console.log(plants);
             }
@@ -826,8 +834,6 @@ function showTryAgainModal() {
             (document.getElementById('try-again-modal')).style.visibility="hidden";
         }, 1000);
     }
-
-
 
 // ------------ Show 'Correct Plant Modal' 
 // ---Clear the previous Correct user answer
@@ -859,15 +865,7 @@ function drawScore() {
     scoreboard.textContent = (score);
 }
 
-//-------------- Check to see if the Plants Array is empty
-function checkPlantsArray(){
-    let basketArrayLength = basket.length;
-    if (basketArrayLength == 20) {
-        endOfGameDisplay();
-    } else {
-        console.log("game continue");
-    }
-}
+
 
 
 // -------------- Game Complete
