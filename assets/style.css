@@ -368,7 +368,7 @@ white: rgba(255, 255, 255, 1)
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .instruction {
     position: fixed;
     width: 280px;
@@ -395,7 +395,7 @@ white: rgba(255, 255, 255, 1)
     width: 280px;
     height: 300px;
     margin-left: 7%;
-    margin-top: 5%;
+    margin-top: 8%;
     background-color: rgba(0, 153, 51, 1);
     color: #fff;
     padding-top: 20px;
@@ -410,7 +410,7 @@ white: rgba(255, 255, 255, 1)
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
   .instruction {
     position: fixed;
     width: 280px;
@@ -511,7 +511,6 @@ white: rgba(255, 255, 255, 1)
 }
 
 table {
-    
     border-collapse: collapse;
     background-color: #009933;
     color: #fff;
