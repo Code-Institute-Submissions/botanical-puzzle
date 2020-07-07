@@ -166,6 +166,18 @@ white: rgba(255, 255, 255, 1)
     }
 }
 
+@media (min-width: 768px) {
+    .creditstext {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .creditstext {
+        margin-right: 80px;
+    }
+}
+
 
 /* gotogame button*/
 .gotogame>a {
