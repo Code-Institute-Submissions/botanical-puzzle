@@ -511,6 +511,7 @@ white: rgba(255, 255, 255, 1)
 }
 
 table {
+    
     border-collapse: collapse;
     background-color: #009933;
     color: #fff;

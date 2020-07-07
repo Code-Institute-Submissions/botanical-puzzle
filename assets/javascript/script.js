@@ -1,13 +1,13 @@
     
   /* Game flow
 
-1. Show a random image to user x
-2. Wait for user to click on an image on the main canvas x
-3. Score the user and update the scoreboard x
-// Pop the plant from the plants array and put it in the basket x
+1. Show a random image to user 
+2. Wait for user to click on an image on the main canvas 
+3. Score the user and update the scoreboard 
+// Pop the plant from the plants array and put it in the basket 
 4. If user clicks on X, then take them to the basket
-  4 (i) Show the plants in cards that contain each plant's image and description
-5. Game is over when user has found all the plants.
+  4 (i) Show the plants in table that contains each plant's image and description
+5. Game is over when user has found 20 plants.
 
 */
   
@@ -377,7 +377,7 @@ var plants = [
         },*/
         {
             'name': 'Mallow',
-            'description': '',
+            'description': 'A description of the plant, where to find it and what it looks like will go here.',
             'image_name': 'mallow.png',
             'coords': '2126,1270,2238,1458',
         },/*
@@ -443,7 +443,7 @@ var plants = [
         },*/
         {
             'name': 'Orache',
-            'description': '',
+            'description': 'A description of the plant, where to find it and what it looks like will go here.',
             'image_name': 'orache.png',
             'coords': '2697,70,2797,295',
         },/*
@@ -509,7 +509,7 @@ var plants = [
         },*/
         {
             'name': 'Poppy',
-            'description': '',
+            'description': 'A description of the plant, where to find it and what it looks like will go here.',
             'image_name': 'poppy.png',
             'coords': '1114,1297,1259,1415',
         },/*
@@ -605,7 +605,7 @@ var plants = [
         },*/
         {
             'name': 'Scurvygrass',
-            'description': '',
+            'description': 'A description of the plant, where to find it and what it looks like will go here.',
             'image_name': 'scurvygrass.png',
             'coords': '1277,1784,1367,1915',
         },/*
@@ -865,16 +865,11 @@ function drawScore() {
     scoreboard.textContent = (score);
 }
 
-
-
-
 // -------------- Game Complete
 
 function endOfGameDisplay(){
     document.getElementById('end-game-modal').style.visibility="visible";
-    document.getElementById('learn-about-plants').style.visibility="visible";
 }
-
 
 // ------------ Basket
 function createTable() {
@@ -886,12 +881,13 @@ function createTable() {
       plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
       plantTable+="</tr>"
   }
-plantTable+="</table>";
-document.getElementById('container').innerHTML = plantTable;
+    plantTable+="</table>";
+    document.getElementById('container').innerHTML = plantTable;
 }
 
 document.querySelector('#basket-button').onclick = function() {
     createTable();
+    document.querySelector('#learn-about-plants').style.visibility="visible";
     document.querySelector('#home-button').style.visibility = "visible";
     document.querySelector('#playagain-button').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
@@ -900,6 +896,7 @@ document.querySelector('#basket-button').onclick = function() {
 
 document.querySelector('#exit-button').onclick = function() {
     createTable();
+    document.querySelector('#learn-about-plants').style.visibility="visible";
     document.querySelector('#home-button').style.visibility = "visible";
     document.querySelector('#playagain-button').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
