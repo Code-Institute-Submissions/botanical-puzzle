@@ -538,9 +538,6 @@ table {
     border-collapse: collapse;
     background-color: #009933;
     color: #fff;
-    /* overflow: scroll; */
-    /* height: 50%; */
-    /* width: 80%; */
     margin-left: 80px;
     margin-top: 80px;
     border-radius: 1%;
@@ -559,12 +556,12 @@ td>img {
 
 
 /* -------------------- Basket options------------------*/
+
 .basket-buttons-div {
     margin-left: 80px;
+    visibility:hidden;
 }
-.home-button {
-  visibility: hidden;
-}
+
 
 .home-button>a {
   display: inline-block;

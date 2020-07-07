@@ -682,27 +682,22 @@ let basket = [
 // Image base path for 'plants to find' image:
 var baseImagePath = 'assets/images/tokens/';
 
-
-
 // Where the image will be placed in the DOM:
-let img = document.getElementById("token");
+let img = document.querySelector("#token");
 
 // Variables for Scoreboard in Gamescreen
-var scoreboard = document.getElementById("score");
+var scoreboard = document.querySelector("#score");
 var score = 0;
 
 // Variables for Display Correct Plant Modal
-let body = document.getElementById('plant-map');
-let correctAnswerDisplay = document.getElementById('correct-answer-modal');
+let body = document.querySelector('#plant-map');
+let correctAnswerDisplay = document.querySelector('#correct-answer-modal');
 let newCorrectAnswer = document.createElement('p');
-let closeButton = document.getElementById('close');
+let closeButton = document.querySelector('#close');
 
 // Plantmap Variable
 const plantmap = document.querySelector('#plantmap');
 
-
-
-    
 
 // ------------ Instructions Variables
 
@@ -748,8 +743,6 @@ backLetsGo.onclick = function goBack() {
 
 // ------------ Generate a random integer between 0 and plants.length
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -768,7 +761,7 @@ function getRandomPlant(){
 getRandomPlant();
 
 // ------------ Get the next random plant object
-function newRandomPlant(){
+function showNextRandomPlant(){
     getRandomPlant();
     showPlantImage();
 }
@@ -778,7 +771,7 @@ function showPlantImage() {
     document.querySelector('.image-display').style.visibility = "visible";
     document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
-        
+ 
     console.log(selectedPlant);
 }
 
@@ -792,7 +785,7 @@ letsGo.onclick = function startGame() {
 
 
 
-    //-------------- Check to see if the Plants Array is empty
+//-------------- Check to see if the Plants Array is empty
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 
@@ -802,47 +795,47 @@ plantmap.addEventListener('click', (e) => {
         if (e.target.id !== selectedPlant.name) {
             showTryAgainModal();
 // If it does match, show Correct Modal
-        } else {setTimeout(checkPlantsArray, 1500);
-                showCorrectModal();
-                bling();
+        } else {
+            setTimeout(checkPlantsArray, 1500);
+            showCorrectAnswerModal();
+            bling();
                 
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
-                basket.push(selectedPlant);
-                plants.splice(selectedPlantIndex, 1);
+            basket.push(selectedPlant);
+            plants.splice(selectedPlantIndex, 1);
 // Add 1 point to the scoreboard            
-                score ++;
-                drawScore();
-                function checkPlantsArray(){
-                    let basketArrayLength = basket.length;
-                    if (basketArrayLength == 20) {
-                        endOfGameDisplay();
+            score ++;
+            drawScore();
+
+            function checkPlantsArray(){
+                let basketArrayLength = basket.length;
+                if (basketArrayLength == 20) {
+                        showEndOfGameDisplay();
                         } else {
                         // Get a new random Plant  
-                            newRandomPlant();;
-                }
-}
-                console.log(basket);
-                console.log(plants);
-            }
+                            showNextRandomPlant();;
+                        }
+            }   
+        }
 });
 
 
 // ------------ Show 'Try Again Modal' 
 function showTryAgainModal() {
-    (document.getElementById('try-again-modal')).style.visibility="visible";
+    (document.querySelector('#try-again-modal')).style.visibility="visible";
         setTimeout(function() {
-            (document.getElementById('try-again-modal')).style.visibility="hidden";
+            (document.querySelector('#try-again-modal')).style.visibility="hidden";
         }, 1000);
     }
 
 // ------------ Show 'Correct Plant Modal' 
 // ---Clear the previous Correct user answer
-function clearAnswer() {
+function clearCorrectAnswerModal() {
         correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
     }
 
 // ---Display a modal when the user clicks the correct plant
-function showCorrectModal() {
+function showCorrectAnswerModal() {
     correctAnswerDisplay.style.visibility="visible";
     newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
     correctAnswerDisplay.appendChild(newCorrectAnswer);
@@ -856,7 +849,7 @@ window.onclick = function(event) {
 };
 // ---Auto Timeout on Modal
 setTimeout(function() {
-    (document.getElementById('correct-answer-modal')).style.visibility="hidden";
+    (document.querySelector('#correct-answer-modal')).style.visibility="hidden";
         }, 1500,);
 }
 
@@ -867,8 +860,8 @@ function drawScore() {
 
 // -------------- Game Complete
 
-function endOfGameDisplay(){
-    document.getElementById('end-game-modal').style.visibility="visible";
+function showEndOfGameDisplay(){
+    document.querySelector('#end-game-modal').style.visibility="visible";
 }
 
 // ------------ Basket
@@ -882,14 +875,14 @@ function createTable() {
       plantTable+="</tr>"
   }
     plantTable+="</table>";
-    document.getElementById('container').innerHTML = plantTable;
+    document.querySelector('#container').innerHTML = plantTable;
 }
 
+// ------- buttons that lead to the basket
 document.querySelector('#basket-button').onclick = function() {
     createTable();
     document.querySelector('#learn-about-plants').style.visibility="visible";
-    document.querySelector('#home-button').style.visibility = "visible";
-    document.querySelector('#playagain-button').style.visibility = "visible";
+    document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
 }
@@ -897,8 +890,7 @@ document.querySelector('#basket-button').onclick = function() {
 document.querySelector('#exit-button').onclick = function() {
     createTable();
     document.querySelector('#learn-about-plants').style.visibility="visible";
-    document.querySelector('#home-button').style.visibility = "visible";
-    document.querySelector('#playagain-button').style.visibility = "visible";
+    document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
 }
@@ -911,7 +903,7 @@ const blingSound = document.querySelector('#correct');
         blingSound.play();
     }
 
- // ---------------------- Atmos Sounds
+ // ---------------------- Atmos Sounds & controls
 
 const music = document.querySelector('#summer-forest');
 function soundOfTheForest(){
@@ -929,5 +921,4 @@ const buttonOn = document.querySelector('#sound-on').onclick = function(){
     music.play();
     document.querySelector('#sound-off').style.visibility="visible";
     document.querySelector('#sound-on').style.visibility="hidden";
-
 }
