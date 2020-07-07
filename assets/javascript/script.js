@@ -680,24 +680,24 @@ let basket = [
   ];
 
 // Image base path for 'plants to find' image:
-var baseImagePath = 'assets/images/tokens/';
+const baseImagePath = 'assets/images/tokens/';
 
 // Where the image will be placed in the DOM:
-let img = document.querySelector("#token");
+const img = document.querySelector("#token");
 
 // Variables for Scoreboard in Gamescreen
-var scoreboard = document.querySelector("#score");
-var score = 0;
+const scoreboard = document.querySelector("#score");
+let score = 0;
 
 // Variables for Display Correct Plant Modal
-let body = document.querySelector('#plant-map');
-let correctAnswerDisplay = document.querySelector('#correct-answer-modal');
+const body = document.querySelector('#plant-map');
+const correctAnswerDisplay = document.querySelector('#correct-answer-modal');
 let newCorrectAnswer = document.createElement('p');
-let closeButton = document.querySelector('#close');
 
 // Plantmap Variable
 const plantmap = document.querySelector('#plantmap');
 
+const numberOfPlantsToFind = 20;
 
 // ------------ Instructions Variables
 
@@ -809,11 +809,11 @@ plantmap.addEventListener('click', (e) => {
 
             function checkPlantsArray(){
                 let basketArrayLength = basket.length;
-                if (basketArrayLength == 20) {
+                if (basketArrayLength == numberOfPlantsToFind) {
                         showEndOfGameDisplay();
                         } else {
                         // Get a new random Plant  
-                            showNextRandomPlant();;
+                            showNextRandomPlant();
                         }
             }   
         }
