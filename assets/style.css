@@ -200,6 +200,8 @@ white: rgba(255, 255, 255, 1)
   width: 100px;
   height: 100px;
   position: fixed;
+  top:0.5%;
+  left:0.5%;
   z-index: 3;
 }
 
@@ -307,7 +309,7 @@ white: rgba(255, 255, 255, 1)
   position: fixed;
   right: 1%;
   top: 1%;
-  z-index: 3;
+  z-index: 4;
   font-size: 35px;
 }
 
@@ -502,11 +504,21 @@ white: rgba(255, 255, 255, 1)
 }
 
 /* --------------------Basket Table -----------------*/
+#learn-about-plants {
+    z-index: 3;
+    position: relative;
+}
 
 table {
-  border-collapse: collapse;
-  background-color: #009933;
-  color: #fff;
+    border-collapse: collapse;
+    background-color: #009933;
+    color: #fff;
+    /* overflow: scroll; */
+    /* height: 50%; */
+    /* width: 80%; */
+    margin-left: 80px;
+    margin-top: 80px;
+    border-radius: 1%;
 }
 
 table tr td {
@@ -514,15 +526,17 @@ table tr td {
   padding: 10px;
 }
 
-#learn-about-plants {
-  position: fixed;
-  top: 10%;
-  left: 15%;
-  padding: 50px;
-  z-index: 3;
+td>img {
+    height: 100px;
+    width:100px;
 }
 
+
+
 /* -------------------- Basket options------------------*/
+.basket-buttons-div {
+    margin-right: 80px;
+}
 .home-button {
   visibility: hidden;
 }
