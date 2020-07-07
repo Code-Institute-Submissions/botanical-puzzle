@@ -505,6 +505,7 @@ white: rgba(255, 255, 255, 1)
 
 /* --------------------Basket Table -----------------*/
 #learn-about-plants {
+    visibility:hidden;
     z-index: 3;
     position: relative;
 }
@@ -527,7 +528,7 @@ table tr td {
 }
 
 td>img {
-    height: 100px;
+    height:100px;
     width:100px;
 }
 
@@ -535,7 +536,7 @@ td>img {
 
 /* -------------------- Basket options------------------*/
 .basket-buttons-div {
-    margin-right: 80px;
+    margin-left: 80px;
 }
 .home-button {
   visibility: hidden;

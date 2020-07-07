@@ -874,6 +874,7 @@ function checkPlantsArray(){
 
 function endOfGameDisplay(){
     document.getElementById('end-game-modal').style.visibility="visible";
+    document.getElementById('learn-about-plants').style.visibility="visible";
 }
 
 
