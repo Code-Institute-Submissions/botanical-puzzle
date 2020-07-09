@@ -675,6 +675,8 @@ var plants = [
             'coords': '',
         },*/
   ];
+
+
 // Where plants will be pushed once they have been found by user:
 let basket = [
   ];
@@ -701,24 +703,22 @@ const numberOfPlantsToFind = 20;
 
 // ------------ Instructions Variables
 
-var instruction1 = document.querySelector('.instruction-1');
-var instruction2 = document.querySelector('.instruction-2');
-var instruction3 = document.querySelector('.instruction-3');
-var instruction4 = document.querySelector('.instruction-4');
 
-var nextButton2 = document.querySelector('.nav-next-2');
-var nextButton3 = document.querySelector('.nav-next-3');
-var nextButton4 = document.querySelector('.nav-next-4');
+const instruction1 = document.querySelector('.instruction-1');
+const instruction2 = document.querySelector('.instruction-2');
+const instruction3 = document.querySelector('.instruction-3');
+const instruction4 = document.querySelector('.instruction-4');
 
-var letsGo = document.querySelector('#lets-go');
-var backLetsGo = document.querySelector('.nav-back');
+const nextButton2 = document.querySelector('.nav-next-2');
+const nextButton3 = document.querySelector('.nav-next-3');
+const nextButton4 = document.querySelector('.nav-next-4');
 
-
-// ------------ Window On Load Instructions
-window.onload = startInstructions();
+const letsGo = document.querySelector('#lets-go');
+const letsGoBack = document.querySelector('.nav-back');
 
 function startInstructions() {
     instruction1.style.visibility="visible";
+
 }
 nextButton2.onclick = function slideTwo(){
     instruction1.style.visibility="hidden";
@@ -732,13 +732,16 @@ nextButton4.onclick = function slideFour(){
     instruction3.style.visibility="hidden";
     instruction4.style.visibility="visible";
 };
-backLetsGo.onclick = function goBack() {
+letsGoBack.onclick = function goBack() {
     instruction4.style.visibility="hidden";
     instruction1.style.visibility="visible";
 };
 
-    
-//
+
+// ------------ Window On Load Instructions
+window.onload = startInstructions();
+
+
        
 
 // ------------ Generate a random integer between 0 and plants.length
@@ -754,7 +757,6 @@ let selectedPlant = plants[selectedPlantIndex];
 function getRandomPlant(){
     selectedPlantIndex = (getRandomInt(0, plants.length));
     selectedPlant = plants[selectedPlantIndex];
-    console.log(selectedPlant.name);
 }
 
 // ------------ Get the first random plant object
@@ -771,8 +773,6 @@ function showPlantImage() {
     document.querySelector('.image-display').style.visibility = "visible";
     document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
- 
-    console.log(selectedPlant);
 }
 
 
@@ -877,6 +877,9 @@ function createTable() {
     plantTable+="</table>";
     document.querySelector('#container').innerHTML = plantTable;
 }
+
+
+
 
 // ------- buttons that lead to the basket
 document.querySelector('#basket-button').onclick = function() {

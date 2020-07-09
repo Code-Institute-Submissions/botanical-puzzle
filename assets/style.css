@@ -378,7 +378,7 @@ white: rgba(255, 255, 255, 1)
     height: 300px;
     margin-left: 2%;
     margin-top: 1%;
-    background-color: rgba(0, 153, 51, 1);
+    background-color: #009933;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -399,7 +399,7 @@ white: rgba(255, 255, 255, 1)
     height: 300px;
     margin-left: 7%;
     margin-top: 5%;
-    background-color: rgba(0, 153, 51, 1);
+    background-color: #009933;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -420,7 +420,7 @@ white: rgba(255, 255, 255, 1)
     height: 300px;
     margin-left: 7%;
     margin-top: 8%;
-    background-color: rgba(0, 153, 51, 1);
+    background-color: #009933;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -441,7 +441,7 @@ white: rgba(255, 255, 255, 1)
     height: 300px;
     margin-left: 35%;
     margin-top: 10%;
-    background-color: rgba(0, 153, 51, 1);
+    background-color: #009933;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -455,7 +455,7 @@ white: rgba(255, 255, 255, 1)
   }
 }
 /*------------------- instructions navigation------*/
-.instructions-nav {
+.instructions>button {
   font-size: 30px;
   font-weight: 400;
   display: flex;
@@ -477,20 +477,18 @@ white: rgba(255, 255, 255, 1)
   font-size: 20px;
 }
 
-.ok-lets-go {
+#lets-go {
+  background-color: #009933;
+  color: #fff;
+  padding: 15px;
   font-weight: 500;
   font-size: 40px;
 }
 
-#lets-go {
-  background-color: #fff;
-  color: rgba(0, 153, 51, 1);
-  padding: 15px;
-}
-
 #lets-go:hover {
-  background-color: rgba(0, 153, 51, 1);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #009933;
+  border-radius: 3%;
 }
 
 
@@ -498,7 +496,7 @@ white: rgba(255, 255, 255, 1)
 .modal {
   visibility: hidden;
   background-color: rgba(255, 255, 255, 0.8);
-  color: rgba(0, 153, 51, 1);
+  color: #009933;
   position: fixed;
   top: 30%;
   left: 30%;
@@ -511,7 +509,7 @@ white: rgba(255, 255, 255, 1)
 }
 
 #end-game-modal>span {
-  background-color: rgba(0, 153, 51, 1);
+  background-color: #009933;
   color: #fff;
   padding: 20px;
   border-radius: 20px;
