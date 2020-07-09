@@ -10,11 +10,10 @@
 5. Game is over when user has found 20 plants.
 
 */
-var plants;
-fetch('plants.json')
-  .then(response => response.json())
-  .then(data => plants = data);
 
+
+
+/*global PLANTS*/
 // Where plants will be pushed once they have been found by user:
 let basket = [
   ];
@@ -55,8 +54,8 @@ const letsGoBack = document.querySelector('.nav-back');
 
 
 // Global selectedPlant values
-let selectedPlantIndex = (getRandomInt(0, plants.length -1));
-let selectedPlant = plants[selectedPlantIndex];
+let selectedPlantIndex = (getRandomInt(0, PLANTS.length -1));
+let selectedPlant = PLANTS[selectedPlantIndex];
 
 
 
@@ -93,8 +92,8 @@ function getRandomInt(min, max) {
 // ------------ Generate a new plant Global value
 
 function getRandomPlant(){
-    selectedPlantIndex = (getRandomInt(0, plants.length));
-    selectedPlant = plants[selectedPlantIndex];
+    selectedPlantIndex = (getRandomInt(0, PLANTS.length));
+    selectedPlant = PLANTS[selectedPlantIndex];
 }
 
 // ------------ Get the first random plant object
@@ -111,6 +110,7 @@ function showPlantImage() {
     document.querySelector('.image-display').style.visibility = "visible";
     document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
+    console.log(selectedPlant);
 }
 
 
@@ -120,8 +120,6 @@ letsGo.onclick = function startGame() {
         showPlantImage();
         soundOfTheForest();
     };
-
-
 
 //-------------- Check to see if the Plants Array is empty
 
@@ -140,7 +138,7 @@ plantmap.addEventListener('click', (e) => {
                 
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
             basket.push(selectedPlant);
-            plants.splice(selectedPlantIndex, 1);
+            PLANTS.splice(selectedPlantIndex, 1);
 // Add 1 point to the scoreboard            
             score ++;
             drawScore();
