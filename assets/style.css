@@ -511,8 +511,8 @@ white: rgba(255, 255, 255, 1)
 @media (max-width: 576px) {
     .modal {
         position: fixed;
-        top:10%;
-        left: 5%;
+        top:15%;
+        left:5%;
         font-size: 30px;
     }
 }
@@ -520,7 +520,7 @@ white: rgba(255, 255, 255, 1)
 @media (min-width: 576px) {
     .modal {
         position: fixed;
-        top: 10%;
+        top:10%;
         left:5%;
         font-size: 35px;
     }
