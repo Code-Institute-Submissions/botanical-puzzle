@@ -24,13 +24,16 @@ const body = document.querySelector('#plant-map');
 const correctAnswerDisplay = document.querySelector('#correct-answer-modal');
 let newCorrectAnswer = document.createElement('p');
 
-// Plantmap Variable
+// Plant Map
 const plantmap = document.querySelector('#plantmap');
 
+
+// Number of plants to find
 const numberOfPlantsToFind = 20;
 
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
+
 function playBackgroundMusic(){
     music.loop = true;
     music.play()
@@ -54,11 +57,7 @@ const correctAnswerSound = document.querySelector('#correct');
     }
 
 
-
 //Start game instructions---//
-
-
-
 const instruction1 = document.querySelector('.instruction-1');
 const instruction2 = document.querySelector('.instruction-2');
 const instruction3 = document.querySelector('.instruction-3');
@@ -91,14 +90,12 @@ letsGoBack.onclick = function goBack() {
     instruction1.style.visibility="visible";
 };
 
+window.onload = startGameInstructions();
 
 
 
+//Functions for game to run-------------------------------------------------
 
-//Functions--------------------------------------------------------------------------------------
-function runGame() {
-
-}
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -120,25 +117,16 @@ function showPlantForUserToFind(){
     displayAPlantImage();
 }
 
-function checkPlantsArrayLength(){
-    let basketArrayLength = basket.length;
-        if (basketArrayLength == numberOfPlantsToFind) {
-                showEndOfGameDisplay();
-                } else { 
-                    showPlantForUserToFind();}
-}
 
 function drawScore() {
     scoreboard.textContent = (score);
 }
 
-//----------------------------------------------------------------------------------Event Handlers
-
 
 // ------------ Start the game
 letsGo.onclick = function startGame() {
         instruction4.style.visibility="hidden";
-        showPlantImage();
+        showPlantForUserToFind();
         playBackgroundMusic();
     };
 
@@ -163,8 +151,15 @@ plantmap.addEventListener('click', (e) => {
         }
 });
 
-
-
+// Check for end of game status
+function checkPlantsArrayLength(){
+    let basketArrayLength = basket.length;
+        if (basketArrayLength == numberOfPlantsToFind) {
+                showEndOfGameDisplay();
+                } else { 
+                    showPlantForUserToFind();}
+}
+//----
 
 
 //Modals----
@@ -207,7 +202,8 @@ function displayPlantsFoundEndOfGame() {
 }
 
 
-// ------- buttons that lead to the basket
+
+// ------- buttons that lead to the end of game 'basket' (plants found at end of game)
 document.querySelector('#basket-button').onclick = function() {
     createTable();
     document.querySelector('#learn-about-plants').style.visibility="visible";
@@ -223,10 +219,3 @@ document.querySelector('#exit-button').onclick = function() {
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
 }
-// ---Close the Correct modal when user clicks anywhere on the screen
-/*
-window.onclick = function(event) {
-    if (event.target == correctAnswerDisplay) {
-        correctAnswerDisplay.style.visibility="hidden";
-    }
-};*/
