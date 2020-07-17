@@ -27,7 +27,6 @@ let newCorrectAnswer = document.createElement('p');
 // Plant Map
 const plantmap = document.querySelector('#plantmap');
 
-
 // Number of plants to find
 const numberOfPlantsToFind = 20;
 
@@ -117,11 +116,9 @@ function showPlantForUserToFind(){
     displayAPlantImage();
 }
 
-
 function drawScore() {
     scoreboard.textContent = (score);
 }
-
 
 // ------------ Start the game
 letsGo.onclick = function startGame() {
