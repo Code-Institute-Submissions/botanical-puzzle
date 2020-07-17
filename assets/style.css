@@ -585,9 +585,30 @@ table {
     border-collapse: collapse;
     background-color: #009933;
     color: #fff;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-top: 12em;
     border-radius: 1%;
+}
+
+@media (max-width: 576px) {
+    table {
+        margin-left:0em;
+        margin-top: 5em;
+        width: 22em;
+    }
+}
+
+@media (min-width: 576px) {
+    table {
+        margin-left:1em;
+        width: 34em;
+    }
+}
+
+@media (min-width: 1200px) {
+    table {
+        margin-left:10em;
+        width:35em;
+    }
 }
 
 table tr td {
@@ -605,19 +626,36 @@ td>img {
 /* -------------------- Basket options------------------*/
 
 .basket-buttons-div {
-    margin-left: 80px;
+    margin-left:18em;
     visibility:hidden;
 }
 
+@media (max-width: 576px) {
+    .basket-buttons-div {
+        margin-left:0em;
+    }
+}
+
+@media (min-width: 576px) {
+    .basket-buttons-div {
+        margin-left:1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .basket-buttons-div {
+        margin-left: 20em;
+    }
+}
 .home-button>a {
-  display: inline-block;
-  color: #fff;
-  background-color: #009933;
-  font-weight: 400;
-  font-size: 20px;
-  padding: 30px;
-  border-radius: 5%;
-  margin: 10px;
+  display:inline-block;
+  color:#fff;
+  background-color:#009933;
+  font-weight:400;
+  font-size:20px;
+  padding:30px;
+  border-radius:5%;
+  margin:10px;
 }
 
 .home-button>a:hover {
