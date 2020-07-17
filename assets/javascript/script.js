@@ -29,29 +29,6 @@ const plantmap = document.querySelector('#plantmap');
 
 const numberOfPlantsToFind = 20;
 
-
-
-
-
-
-
-
-const instruction1 = document.querySelector('.instruction-1');
-const instruction2 = document.querySelector('.instruction-2');
-const instruction3 = document.querySelector('.instruction-3');
-const instruction4 = document.querySelector('.instruction-4');
-
-const nextButton2 = document.querySelector('.nav-next-2');
-const nextButton3 = document.querySelector('.nav-next-3');
-const nextButton4 = document.querySelector('.nav-next-4');
-
-const letsGo = document.querySelector('#lets-go');
-const letsGoBack = document.querySelector('.nav-back');
-
-
-
-
-
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
 function playBackgroundMusic(){
@@ -77,6 +54,21 @@ const correctAnswerSound = document.querySelector('#correct');
     }
 
 
+
+//Start game instructions---//
+
+const instruction1 = document.querySelector('.instruction-1');
+const instruction2 = document.querySelector('.instruction-2');
+const instruction3 = document.querySelector('.instruction-3');
+const instruction4 = document.querySelector('.instruction-4');
+
+const nextButton2 = document.querySelector('.nav-next-2');
+const nextButton3 = document.querySelector('.nav-next-3');
+const nextButton4 = document.querySelector('.nav-next-4');
+
+const letsGo = document.querySelector('#lets-go');
+const letsGoBack = document.querySelector('.nav-back');
+
 function startGameInstructions() {
     instruction1.style.visibility="visible";
 }
@@ -97,6 +89,10 @@ letsGoBack.onclick = function goBack() {
     instruction1.style.visibility="visible";
 };
 
+
+
+
+
 //Functions--------------------------------------------------------------------------------------
 
 function getRandomInt(min, max) {
@@ -115,40 +111,9 @@ function showPlantImage() {
     console.log(selectedPlant);
 }
 
-
-
 function showRandomPlant(){
     getRandomPlant();
     showPlantImage();
-}
- 
-function showTryAgainModal() {
-    (document.querySelector('#try-again-modal')).style.visibility="visible";
-        setTimeout(function() {
-            (document.querySelector('#try-again-modal')).style.visibility="hidden";
-        }, 1000);
-    }
-
-function clearCorrectAnswerModal() {
-        correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
-    }
-
-function showCorrectAnswerModal() {
-    correctAnswerDisplay.style.visibility="visible";
-    newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
-    correctAnswerDisplay.appendChild(newCorrectAnswer);
-
-setTimeout(function() {
-    (document.querySelector('#correct-answer-modal')).style.visibility="hidden";
-        }, 1500,);
-}
-
-function drawScore() {
-    scoreboard.textContent = (score);
-}
-
-function showEndOfGameDisplay(){
-    document.querySelector('#end-game-modal').style.visibility="visible";
 }
 
 function checkPlantsArrayLength(){
@@ -159,23 +124,10 @@ function checkPlantsArrayLength(){
                     showRandomPlant();}
 }
 
-function displayPlantsFoundEndOfGame() {
-  var plantTable="<table border='1|1'>";
-  for (var i=0; i< basket.length; i++){
-      plantTable+= "<tr>";
-      plantTable+= "<td>"+ basket[i].name + "</td>";
-      plantTable+= "<td>"+ basket[i].description + "</td>";
-      plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
-      plantTable+="</tr>"
-  }
-    plantTable+="</table>";
-    document.querySelector('#container').innerHTML = plantTable;
+function drawScore() {
+    scoreboard.textContent = (score);
 }
 
-
-
-
-            
 //----------------------------------------------------------------------------------Event Handlers
 window.onload = startGameInstructions();
 
@@ -206,6 +158,55 @@ plantmap.addEventListener('click', (e) => {
             drawScore();
         }
 });
+
+
+
+
+
+//Modals----
+function showTryAgainModal() {
+    (document.querySelector('#try-again-modal')).style.visibility="visible";
+        setTimeout(function() {
+            (document.querySelector('#try-again-modal')).style.visibility="hidden";
+        }, 1000);
+    }
+
+function clearCorrectAnswerModal() {
+        correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
+    }
+
+function showCorrectAnswerModal() {
+    correctAnswerDisplay.style.visibility="visible";
+    newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
+    correctAnswerDisplay.appendChild(newCorrectAnswer);
+
+setTimeout(function() {
+    (document.querySelector('#correct-answer-modal')).style.visibility="hidden";
+        }, 1500,);
+}
+
+function showEndOfGameDisplay(){
+    document.querySelector('#end-game-modal').style.visibility="visible";
+}
+
+
+
+function displayPlantsFoundEndOfGame() {
+  var plantTable="<table border='1|1'>";
+  for (var i=0; i< basket.length; i++){
+      plantTable+= "<tr>";
+      plantTable+= "<td>"+ basket[i].name + "</td>";
+      plantTable+= "<td>"+ basket[i].description + "</td>";
+      plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
+      plantTable+="</tr>"
+  }
+    plantTable+="</table>";
+    document.querySelector('#container').innerHTML = plantTable;
+}
+
+
+            
+
 
 // ------- buttons that lead to the basket
 document.querySelector('#basket-button').onclick = function() {
