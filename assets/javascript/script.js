@@ -57,6 +57,8 @@ const correctAnswerSound = document.querySelector('#correct');
 
 //Start game instructions---//
 
+
+
 const instruction1 = document.querySelector('.instruction-1');
 const instruction2 = document.querySelector('.instruction-2');
 const instruction3 = document.querySelector('.instruction-3');
@@ -94,26 +96,28 @@ letsGoBack.onclick = function goBack() {
 
 
 //Functions--------------------------------------------------------------------------------------
+function runGame() {
 
+}
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function getRandomPlant(){
+function getRandomPlantFromPlantsArray(){
     selectedPlantIndex = (getRandomInt(0, PLANTS.length));
     selectedPlant = PLANTS[selectedPlantIndex];
 }
 
-function showPlantImage() {
+function displayAPlantImage() {
     document.querySelector('.image-display').style.visibility = "visible";
     document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
     console.log(selectedPlant);
 }
 
-function showRandomPlant(){
-    getRandomPlant();
-    showPlantImage();
+function showPlantForUserToFind(){
+    getRandomPlantFromPlantsArray();
+    displayAPlantImage();
 }
 
 function checkPlantsArrayLength(){
@@ -121,7 +125,7 @@ function checkPlantsArrayLength(){
         if (basketArrayLength == numberOfPlantsToFind) {
                 showEndOfGameDisplay();
                 } else { 
-                    showRandomPlant();}
+                    showPlantForUserToFind();}
 }
 
 function drawScore() {
@@ -129,7 +133,7 @@ function drawScore() {
 }
 
 //----------------------------------------------------------------------------------Event Handlers
-window.onload = startGameInstructions();
+
 
 // ------------ Start the game
 letsGo.onclick = function startGame() {
@@ -189,8 +193,6 @@ function showEndOfGameDisplay(){
     document.querySelector('#end-game-modal').style.visibility="visible";
 }
 
-
-
 function displayPlantsFoundEndOfGame() {
   var plantTable="<table border='1|1'>";
   for (var i=0; i< basket.length; i++){
@@ -203,9 +205,6 @@ function displayPlantsFoundEndOfGame() {
     plantTable+="</table>";
     document.querySelector('#container').innerHTML = plantTable;
 }
-
-
-            
 
 
 // ------- buttons that lead to the basket
