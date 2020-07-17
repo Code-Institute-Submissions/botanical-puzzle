@@ -49,8 +49,7 @@ The user can then navigate back to the homepage, where they can find out more on
 
 **Client perspective:** The homepage is informative and easy to navigate. The game is clearly explained and provides an interesting educational experience. The background sounds enhance the user experience, providing a topical and relaxing soundtrack to their 'wild plant forage'. They will learn about familiar and not so familiar plants from the British Isles, and gain an interest in the environment around them.
 
-**Business perspective:** The homepage provides an opportunity to promote the materials and information behind the project and allows the user to easily navigae to the game. The game provides a wide variety of information on different plants and promotes a positive association with the plant life they are learning about. This is helped by the experience-oriented soundtrack and calming atmosphere. They will learn about familiar and not so familiar plants from the British Isles, and gain an interest in the environment around them.
-
+**Business perspective:** The homepage provides an opportunity to promote the materials and information behind the project and allows the user to easily navigae to the game. The game provides a wide variety of information on different plants and promotes a positive association with the plant life they are learning about. This is helped by the experience-oriented soundtrack and calming atmosphere. They will learn about familiar and not so familiar plants from the British Isles, and gain an interest in and appreciation of the environment around them.
 
 
 
