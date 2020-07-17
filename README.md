@@ -60,16 +60,19 @@ The user can then navigate back to the homepage, where they can find out more on
 Wireframes for mobile, iPad and Desktop can be seen [HERE](https://xd.adobe.com/view/5c23c360-4653-4a02-8cd0-d7dbf0153f9e-0970/).
 
 ### Features (& Rationale)
+## Home Page
+* pulsing 'play' button
+* 'about' button to encourage user to explore more on the topic
 
+## About
+* Information on the book which inspired this project, with credits to the artists whose work is included.
+* Information on where to purchase the book, and therefore find out more.
+* Game instructions and pulsing 'play' button.
 
-### Home Page
-
-
-### About
-
-
-### Game
-
+## Game
+* gamescreen can be resized to switch between seeing the plants in more detail and viewing the wider plant map.
+* background sound can be switched on and off
+* over 100 different plants to learn about, with a different selection each time the game is played
 
 ## Basket
 
