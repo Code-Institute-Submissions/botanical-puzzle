@@ -204,17 +204,7 @@ a {
   max-height: 70%;
 }
 
-@media (max-width: 576px){
-    #plant-map-image {
-        height:60em;
-    }
-}
 
-@media (max-width: 1200px){
-    #plant-map-image {
-        height: 100em;
-    }
-}
 
 
 /* scoreboard */
