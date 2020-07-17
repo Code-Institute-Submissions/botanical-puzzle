@@ -29,7 +29,13 @@ const plantmap = document.querySelector('#plantmap');
 
 const numberOfPlantsToFind = 20;
 
-// ------------ Instructions Variables
+
+
+
+
+
+
+
 const instruction1 = document.querySelector('.instruction-1');
 const instruction2 = document.querySelector('.instruction-2');
 const instruction3 = document.querySelector('.instruction-3');
@@ -42,14 +48,13 @@ const nextButton4 = document.querySelector('.nav-next-4');
 const letsGo = document.querySelector('#lets-go');
 const letsGoBack = document.querySelector('.nav-back');
 
-const blingSound = document.querySelector('#correct');
-    function playBling(){
-        blingSound.play();
-    }
+
+
+
 
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
-function soundOfTheForest(){
+function playBackgroundMusic(){
     music.loop = true;
     music.play()
 }
@@ -66,13 +71,13 @@ const buttonOn = document.querySelector('#sound-on').onclick = function(){
     document.querySelector('#sound-on').style.visibility="hidden";
 }
 
+const correctAnswerSound = document.querySelector('#correct');
+    function playCorrectAnswerSound(){
+        correctAnswerSound.play();
+    }
 
 
-
-
-
-
-function startInstructions() {
+function startGameInstructions() {
     instruction1.style.visibility="visible";
 }
 nextButton2.onclick = function slideTwo(){
@@ -110,6 +115,8 @@ function showPlantImage() {
     console.log(selectedPlant);
 }
 
+
+
 function showRandomPlant(){
     getRandomPlant();
     showPlantImage();
@@ -144,7 +151,7 @@ function showEndOfGameDisplay(){
     document.querySelector('#end-game-modal').style.visibility="visible";
 }
 
-function checkPlantsArray(){
+function checkPlantsArrayLength(){
     let basketArrayLength = basket.length;
         if (basketArrayLength == numberOfPlantsToFind) {
                 showEndOfGameDisplay();
@@ -152,7 +159,7 @@ function checkPlantsArray(){
                     showRandomPlant();}
 }
 
-function createTable() {
+function displayPlantsFoundEndOfGame() {
   var plantTable="<table border='1|1'>";
   for (var i=0; i< basket.length; i++){
       plantTable+= "<tr>";
@@ -170,13 +177,13 @@ function createTable() {
 
             
 //----------------------------------------------------------------------------------Event Handlers
-window.onload = startInstructions();
+window.onload = startGameInstructions();
 
 // ------------ Start the game
 letsGo.onclick = function startGame() {
         instruction4.style.visibility="hidden";
         showPlantImage();
-        soundOfTheForest();
+        playBackgroundMusic();
     };
 
 // ------------ Check if plant clicked by user matches the plant being displayed
@@ -187,9 +194,9 @@ plantmap.addEventListener('click', (e) => {
             showTryAgainModal();
 // If it does match, show Correct Modal
         } else {
-            setTimeout(checkPlantsArray, 1500);
+            setTimeout(checkPlantsArrayLength, 1500);
             showCorrectAnswerModal();
-            playBling();
+            playCorrectAnswerSound();
                 
 // Push the correct plant to the 'basket' array & remove it from the 'plants' array  
             basket.push(selectedPlant);
@@ -210,7 +217,7 @@ document.querySelector('#basket-button').onclick = function() {
 }
 
 document.querySelector('#exit-button').onclick = function() {
-    createTable();
+    displayPlantsFoundEndOfGame();
     document.querySelector('#learn-about-plants').style.visibility="visible";
     document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
