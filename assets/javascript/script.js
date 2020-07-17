@@ -185,6 +185,7 @@ function showEndOfGameDisplay(){
     document.querySelector('#end-game-modal').style.visibility="visible";
 }
 
+// the plants 'basket' -------
 function displayPlantsFoundEndOfGame() {
   var plantTable="<table border='1|1'>";
   for (var i=0; i< basket.length; i++){

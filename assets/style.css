@@ -204,6 +204,12 @@ a {
   max-height: 70%;
 }
 
+@media (max-width: 576px){
+    #plant-map-image {
+        height: 80em;
+    }
+}
+
 
 /* scoreboard */
 
@@ -624,9 +630,10 @@ td>img {
 
 @media (min-width: 1200px) {
     .basket-buttons-div {
-        margin-left: 20em;
+        margin-left: 15em;
     }
 }
+
 .home-button>a {
   display:inline-block;
   color:#fff;
