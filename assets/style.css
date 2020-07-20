@@ -2,12 +2,10 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
-
 .row {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
@@ -35,8 +33,6 @@ a {
 }
 
 /*-------------------- Index Buttons ------------------------------*/
-
-
 .button-play, .button-about {
   font-size: 25px;
   font-weight: 400;
@@ -78,11 +74,9 @@ a {
   0% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.1);
   }
-
   100% {
     transform: scale(1);
   }
@@ -136,9 +130,6 @@ a {
     top:20rem;
   }
 }
-
-
-
 
 .instruction {
     background-color: #009933;
@@ -199,27 +190,7 @@ a {
     }
 }
 
-
-/* gotogame button*/
-.gotogame>a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #009933;
-  font-weight: 400;
-  font-size: 20px;
-  padding: 30px;
-  border-radius: 5%;
-  margin: 10px;
-}
-
-.gotogame>a:hover {
-  color: #009933;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 /*----------------------------- Game -----------------------*/
-
 #plant-map {
   position: absolute;
   z-index: 1;
@@ -234,7 +205,6 @@ a {
 }
 
 /* scoreboard */
-
 .counter-display {
   visibility: hidden;
   background-color: rgba(0, 153, 51, 1);
