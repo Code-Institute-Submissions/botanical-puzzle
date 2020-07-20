@@ -164,7 +164,7 @@ function displayPlantsFoundEndOfGame() {
 
 // ------- buttons that lead to the end of game 'basket' (plants found at end of game)
 document.querySelector('#basket-button').onclick = function() {
-    createTable();
+    displayPlantsFoundEndOfGame();
     document.querySelector('#learn-about-plants').style.visibility="visible";
     document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
