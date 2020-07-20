@@ -84,9 +84,9 @@ function drawScore() {
 
 // ------------ Start the game
 window.onload = function startGame() {
-        runGame();
-        playBackgroundMusic();
-    };
+    playBackgroundMusic();    
+    runGame();
+};
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 plantmap.addEventListener('click', (e) => {
