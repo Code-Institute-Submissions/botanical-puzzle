@@ -205,13 +205,13 @@ a {
 }
 
 @media (max-width: 576px){
-    #plant-map-image {
+    #plant-map {
         height:60em;
     }
 }
 
 @media (max-width: 1200px){
-    #plant-map-image {
+    #plant-map {
         height: 100em;
     }
 }
