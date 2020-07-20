@@ -68,7 +68,7 @@ function displayAPlantImage() {
     console.log(selectedPlant);
 }
 
-function showPlantForUserToFind(){
+function runGame(){
     getRandomPlantFromPlantsArray();
     displayAPlantImage();
 }
@@ -84,7 +84,7 @@ function drawScore() {
 
 // ------------ Start the game
 window.onload = function startGame() {
-        showPlantForUserToFind();
+        runGame();
         playBackgroundMusic();
     };
 
@@ -115,7 +115,7 @@ function checkPlantsArrayLength(){
         if (basketArrayLength == numberOfPlantsToFind) {
                 showEndOfGameDisplay();
                 } else { 
-                    showPlantForUserToFind();}
+                    runGame();}
 }
 //----
 
