@@ -28,7 +28,7 @@ let newCorrectAnswer = document.createElement('p');
 const plantmap = document.querySelector('#plantmap');
 
 // Number of plants to find
-const numberOfPlantsToFind = 20;
+const numberOfPlantsToFind = 10;
 
 //Start Game modal
 
