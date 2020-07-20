@@ -33,11 +33,6 @@ const numberOfPlantsToFind = 20;
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
 
-function playBackgroundMusic(){
-    music.loop = true;
-    music.play()
-}
-
 const buttonOff = document.querySelector('#sound-off').onclick = function(){
     music.pause();
     document.querySelector('#sound-off').style.visibility="hidden";
@@ -54,44 +49,6 @@ const correctAnswerSound = document.querySelector('#correct');
     function playCorrectAnswerSound(){
         correctAnswerSound.play();
     }
-
-
-//Start game instructions---//
-const instruction1 = document.querySelector('.instruction-1');
-const instruction2 = document.querySelector('.instruction-2');
-const instruction3 = document.querySelector('.instruction-3');
-const instruction4 = document.querySelector('.instruction-4');
-
-const nextButton2 = document.querySelector('.nav-next-2');
-const nextButton3 = document.querySelector('.nav-next-3');
-const nextButton4 = document.querySelector('.nav-next-4');
-
-const letsGo = document.querySelector('#lets-go');
-const letsGoBack = document.querySelector('.nav-back');
-
-function startGameInstructions() {
-    instruction1.style.visibility="visible";
-}
-nextButton2.onclick = function slideTwo(){
-    instruction1.style.visibility="hidden";
-    instruction2.style.visibility="visible";
-};
-nextButton3.onclick = function slideThree(){
-    instruction2.style.visibility="hidden";
-    instruction3.style.visibility="visible";
-};
-nextButton4.onclick = function slideFour(){
-    instruction3.style.visibility="hidden";
-    instruction4.style.visibility="visible";
-};
-letsGoBack.onclick = function goBack() {
-    instruction4.style.visibility="hidden";
-    instruction1.style.visibility="visible";
-};
-
-window.onload = startGameInstructions();
-
-
 
 //Functions for game to run-------------------------------------------------
 
@@ -116,13 +73,17 @@ function showPlantForUserToFind(){
     displayAPlantImage();
 }
 
+function playBackgroundMusic(){
+    music.loop = true;
+    music.play()
+}
+
 function drawScore() {
     scoreboard.textContent = (score);
 }
 
 // ------------ Start the game
-letsGo.onclick = function startGame() {
-        instruction4.style.visibility="hidden";
+window.onload = function startGame() {
         showPlantForUserToFind();
         playBackgroundMusic();
     };

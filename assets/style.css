@@ -84,16 +84,17 @@ a {
   transition-duration: 0.4s;
 }
 
-@media (min-width:992px) {
+@media (max-width: 768px) {
   .homescreen-options {
     position: absolute;
     box-sizing: border-box;
     display: inline-flex;
     margin: 0 auto;
-    left: 50%;
-    top: 50%;
-    margin-left: -250px;
+    left: 40%;
+    top: 40%;
+    margin-left: -150px;
     margin-top: -250px;
+    padding: 30px;
   }
 }
 
@@ -103,27 +104,42 @@ a {
     box-sizing: border-box;
     display: inline-flex;
     margin: 0 auto;
-    left: 40%;
-    top: 50%;
+    top: 40%;
+    left: 35%;
+    width: 85%;
+    padding: 30px;
     margin-left: -250px;
     margin-top: -250px;
   }
 }
 
-@media (max-width: 540px) {
+@media (min-width:992px) {
   .homescreen-options {
     position: absolute;
     box-sizing: border-box;
     display: inline-flex;
-    margin: 0 auto;
-    left: 70%;
-    top: 40%;
-    margin-left: -250px;
-    margin-top: -250px;
+    width:60%;
+    margin-left:-250px;
+    margin-top:-250px;
   }
 }
 
 
+
+
+.instruction {
+    background-color: #009933;
+    color: #fff;
+    border-radius:30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 30px;
+}
+
+.instruction>hr {
+    width: 200px;
+}
 /*---------------------------- Credits Page -----------------------*/
 .credits-text-box {
   background: #fff;
@@ -203,19 +219,6 @@ a {
   z-index: 2;
   max-height: 70%;
 }
-/*
-@media (max-width: 576px){
-    #plant-map {
-        height:60em;
-    }
-}
-
-@media (max-width: 1200px){
-    #plant-map {
-        height: 100em;
-    }
-}
-*/
 
 /* scoreboard */
 
@@ -358,7 +361,7 @@ a {
 
 
 /*----------------------- Instructions -----------------------------*/
-
+/*
 .instruction-1 {
   visibility: hidden;
 }
@@ -374,6 +377,7 @@ a {
 .instruction-4 {
   visibility: hidden;
 }
+
 
 @media (max-width: 576px) {
   .instruction {
@@ -440,11 +444,9 @@ a {
 
 @media (min-width:1200px) {
   .instruction {
-    position: fixed;
-    width: 280px;
-    height: 300px;
-    margin-left: 35%;
+    width: 70%;
     margin-top: 10%;
+    margin-left: 0;
     background-color: #009933;
     color: #fff;
     padding-top: 20px;
@@ -455,10 +457,9 @@ a {
     font-size: 25px;
     font-weight: 300;
     text-align: center;
-    z-index: 4;
   }
-}
-/*------------------- instructions navigation------*/
+}*/
+/*------------------- instructions navigation------*//*
 .instructions>button {
   font-size: 30px;
   font-weight: 400;
@@ -494,7 +495,7 @@ a {
   color: #009933;
   border-radius: 3%;
 }
-
+*/
 
 /*---------------- Gamescreen Modals ----------------*/
 .modal {
