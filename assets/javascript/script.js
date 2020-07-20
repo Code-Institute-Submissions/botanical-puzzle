@@ -30,6 +30,9 @@ const plantmap = document.querySelector('#plantmap');
 // Number of plants to find
 const numberOfPlantsToFind = 20;
 
+//Start Game modal
+
+
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
 
@@ -73,20 +76,17 @@ function runGame(){
     displayAPlantImage();
 }
 
+function drawScore() {
+    scoreboard.textContent = (score);
+}
+
 function playBackgroundMusic(){
     music.loop = true;
     music.play()
 }
 
-function drawScore() {
-    scoreboard.textContent = (score);
-}
-
 // ------------ Start the game
-window.onload = function startGame() {
-    playBackgroundMusic();    
-    runGame();
-};
+window.onload = runGame();
 
 // ------------ Check if plant clicked by user matches the plant being displayed
 plantmap.addEventListener('click', (e) => {
