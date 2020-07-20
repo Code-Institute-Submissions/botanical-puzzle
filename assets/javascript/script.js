@@ -30,9 +30,6 @@ const plantmap = document.querySelector('#plantmap');
 // Number of plants to find
 const numberOfPlantsToFind = 10;
 
-//Start Game modal
-
-
  // ---------------------- Atmos Sounds & controls
 const music = document.querySelector('#summer-forest');
 
@@ -117,8 +114,6 @@ function checkPlantsArrayLength(){
                 } else { 
                     runGame();}
 }
-//----
-
 
 //Modals----
 function showTryAgainModal() {
