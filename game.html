@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <title>Wild Plants</title>
 </head>
 
@@ -29,16 +30,18 @@
     
     <div id="end-game-modal" class="modal">
         <p>Well Done!<br>You found all the wild plants!</p>
-        <button id="basket-button" class="button basket-button">next</button>
+        <span id="basket-button" class="button basket-button">next</span>
     </div>
 
 <!-- Basket -->
     <div id="learn-about-plants">
+    
         <div id="container">
+    <!--<div class="container-title"><p> Discover more about your plants... </div>-->
         </div>
         <div class="basket-buttons-div">
-            <a id="home-button" class="button" href="index.html" style="display:inline-block; color:#fff; background-color:#009933; font-weight:400; font-size:20px; padding:30px; border-radius:5%; margin:10px;"> Home </a>
-            <a id="playagain-button" class="button" href="game.html" style="display:inline-block; color:#fff; background-color:#009933; font-weight:400; font-size:20px; padding:30px; border-radius:5%; margin:10px;"> Play Again </a>
+            <span type="button" id="home-button" class="home-button"><a href="index.html"> Home </a></span>
+            <span type="button" id="playagain-button" class="home-button"><a href="game.html"> Play Again </a></span>
         </div>
     </div>
 
@@ -50,13 +53,13 @@
         <div class="image-display">
             <img id="token" src="." alt="image display of plant to be found"></div>
 
-        <div>
-            <button id="exit-button" class="basket-button basket-button-exit"> exit </button>
+        <div id="exit-button">
+            <span class="basket-button basket-button-exit"> exit </span>
         </div>
 
         <div class="music-controls">
-            <button class="sound-button" id="sound-off"><i class="fas fa-volume-mute"></i></button>
-            <button class="sound-button" id="sound-on"><i class="fas fa-volume-up"></i></button>
+            <span class="sound-button" id="sound-off"><i class="fas fa-volume-mute"></i></span>
+            <span class="sound-button" id="sound-on"><i class="fas fa-volume-up"></i></span>
         </div>
 
     </div>
