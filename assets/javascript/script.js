@@ -78,7 +78,6 @@ function playBackgroundMusic(){
 function runGame(){
     getRandomPlantFromPlantsArray();
     displayAPlantImage();
-  	playBackgroundMusic();
 }
 
 
@@ -89,7 +88,7 @@ window.onload = runGame();
 plantmap.addEventListener('click', (e) => {
     e.preventDefault();
 // If it does not match, show try again modal       
-        if (e.target.id !== selectedPlant.name) {
+        if (e.target.alt !== selectedPlant.name) {
             showTryAgainModal();
 // If it does match, show Correct Modal
         } else {
