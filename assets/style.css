@@ -463,10 +463,6 @@ td>img {
 
 /* -------------------- Basket options------------------*/
 
-#basket-button-exit {
-    background-color: none;
-}
-
 .basket-buttons-div {
     margin-left:18em;
     visibility:hidden;
