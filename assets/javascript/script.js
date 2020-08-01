@@ -1,4 +1,3 @@
-
 /*global PLANTS*/
 
 // Global selectedPlant values
@@ -20,7 +19,6 @@ const scoreboard = document.querySelector("#score");
 let score = 0;
 
 // Variables for Display Correct Plant Modal
-const body = document.querySelector('#plant-map');
 const correctAnswerDisplay = document.querySelector('#correct-answer-modal');
 let newCorrectAnswer = document.createElement('p');
 
@@ -37,20 +35,20 @@ const buttonOff = document.querySelector('#sound-off').onclick = function(){
     music.pause();
     document.querySelector('#sound-off').style.visibility="hidden";
     document.querySelector('#sound-on').style.visibility="visible";
-}
+};
 
 const buttonOn = document.querySelector('#sound-on').onclick = function(){
     music.play();
     document.querySelector('#sound-off').style.visibility="visible";
     document.querySelector('#sound-on').style.visibility="hidden";
-}
+};
 
 const correctAnswerSound = document.querySelector('#correct');
     function playCorrectAnswerSound(){
         correctAnswerSound.play();
     }
 
-//Functions for game to run-------------------------------------------------
+// ---------------------- Functions for game to run
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -68,19 +66,21 @@ function displayAPlantImage() {
     console.log(selectedPlant);
 }
 
-function runGame(){
-    getRandomPlantFromPlantsArray();
-    displayAPlantImage();
-}
-
 function drawScore() {
     scoreboard.textContent = (score);
 }
 
 function playBackgroundMusic(){
     music.loop = true;
-    music.play()
+    music.play();
 }
+
+function runGame(){
+    getRandomPlantFromPlantsArray();
+    displayAPlantImage();
+  	playBackgroundMusic();
+}
+
 
 // ------------ Start the game
 window.onload = runGame();
@@ -123,10 +123,6 @@ function showTryAgainModal() {
         }, 1000);
     }
 
-function clearCorrectAnswerModal() {
-        correctAnswerDisplay.removeChild(correctAnswerDisplay.lastElementChild);
-    }
-
 function showCorrectAnswerModal() {
     correctAnswerDisplay.style.visibility="visible";
     newCorrectAnswer.textContent = "You found " + selectedPlant.name + "!";
@@ -149,13 +145,11 @@ function displayPlantsFoundEndOfGame() {
       plantTable+= "<td>"+ basket[i].name + "</td>";
       plantTable+= "<td>"+ basket[i].description + "</td>";
       plantTable+= "<td>"+ "<img src=\"" + baseImagePath + basket[i].image_name + "\">" + "</td>";
-      plantTable+="</tr>"
+      plantTable+="</tr>";
   }
     plantTable+="</table>";
     document.querySelector('#container').innerHTML = plantTable;
 }
-
-
 
 // ------- buttons that lead to the end of game 'basket' (plants found at end of game)
 document.querySelector('#basket-button').onclick = function() {
@@ -164,7 +158,7 @@ document.querySelector('#basket-button').onclick = function() {
     document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
-}
+};
 
 document.querySelector('#exit-button').onclick = function() {
     displayPlantsFoundEndOfGame();
@@ -172,4 +166,4 @@ document.querySelector('#exit-button').onclick = function() {
     document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
-}
+};
