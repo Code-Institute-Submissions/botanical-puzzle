@@ -353,7 +353,6 @@ a {
   z-index: 2;
 }
 
-
 @media (max-width: 576px) {
     .modal {
         position: fixed;
@@ -390,7 +389,6 @@ a {
         font-size:50px;
         font-weight:600;
     }
-
     #correct-answer-modal {
         position: fixed;
         left:7em;
@@ -458,8 +456,6 @@ td>img {
     width:100px;
 }
 
-
-
 /* -------------------- Basket options------------------*/
 
 #basket-button-exit {
@@ -504,4 +500,3 @@ td>img {
   color: #009933;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
