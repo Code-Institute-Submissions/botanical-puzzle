@@ -339,11 +339,11 @@ a {
 }
 
 #sound-on {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #sound-off {
-  visibility: visible;
+  visibility: hidden;
 }
 
 /*---------------- Gamescreen Modals ----------------*/
