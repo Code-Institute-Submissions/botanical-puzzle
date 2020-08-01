@@ -70,11 +70,6 @@ function drawScore() {
     scoreboard.textContent = (score);
 }
 
-function playBackgroundMusic(){
-    music.loop = true;
-    music.play();
-}
-
 function runGame(){
     getRandomPlantFromPlantsArray();
     displayAPlantImage();
