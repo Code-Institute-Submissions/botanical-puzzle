@@ -490,8 +490,10 @@ td>img {
     }
 }
 
-.home-button>a {
+.home-button {
   display:inline-block;
+  border: none;
+  text-decoration: none;
   color:#fff;
   background-color:#009933;
   font-weight:400;
@@ -501,7 +503,7 @@ td>img {
   margin:10px;
 }
 
-.home-button>a:hover {
+.home-button:hover {
   color: #009933;
   background-color: rgba(255, 255, 255, 0.8);
 }
