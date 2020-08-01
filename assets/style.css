@@ -254,12 +254,10 @@ a {
     position: fixed;
     right: 1%;
     top: 90%;
-    /* text-align: center; */
     border: none;
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    /* padding-top: 20px; */
     font-size: 25px;
     font-weight: 600;
     z-index: 3;
