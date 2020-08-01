@@ -254,6 +254,7 @@ a {
     position: fixed;
     right: 1%;
     top: 90%;
+    text-align: center;
     border: none;
     border-radius: 50%;
     width: 80px;
@@ -280,6 +281,10 @@ a {
     font-weight: 600;
     z-index: 3;
   }
+}
+
+.basket-button-exit {
+    margin-top: 20px;
 }
 
 /* --------------------plant to find display--------------- */
