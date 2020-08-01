@@ -75,7 +75,6 @@ function runGame(){
     displayAPlantImage();
 }
 
-
 // ------------ Start the game
 window.onload = runGame();
 
