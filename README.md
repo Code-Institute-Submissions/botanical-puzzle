@@ -9,7 +9,6 @@
 
 *This is an educational game, which aims to increase the user's knowledge of the wild plants of the British Isles and promote an interest in environment and conservation.*
 
-
 ## Strategy
 -----------------------------------------
 
@@ -61,6 +60,9 @@ As there are over 100 plants on the plant map and the images are randomly genera
 Wireframes for mobile, iPad and Desktop can be seen [HERE](https://xd.adobe.com/view/5c23c360-4653-4a02-8cd0-d7dbf0153f9e-0970/).
 
 ### Features (& Rationale)
+Across the project, the colours are white and green with hand drawn illustrations of wild plants. This design is consistent. These choices have been made to promote a 'natural' 'countryside' experience of the game, in line with the theme of the game.
+The background picture of the home screen represents the plant map shown in the game.
+
 ## Home Page
 * pulsing 'play' button
 * 'about' button to encourage user to explore more on the topic
