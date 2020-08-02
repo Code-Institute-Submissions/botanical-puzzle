@@ -122,10 +122,16 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 ## Testing user stories
 
 "I want the game to be easy to use and have clear instructions."
+![Image of instructions](assets/images/testingimages/instructions.jpg)
 "I want to find out something different each time I play."
+![Image of instructions](assets/images/testingimages/interestinginfo.jpg)
 "I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
+![Image of instructions](assets/images/testingimages/feedbackcorrectanswer.jpg)
 "I want feedback on how I am doing."
+![Image of instructions](assets/images/testingimages/feedbackwelldone.jpg)
 "I want a chance to find out more about the topic."
+![Image of instructions](assets/images/testingimages/moreinformation.jpg)
 "I want to discover interesting facts."
-"I want to play a game whch is visually attractive."
+![Image of instructions](assets/images/testingimages/interestinginfo2.jpg)
+"I want to play a game which is visually attractive."
 
