@@ -138,10 +138,10 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 [Image of correct answer feedback](assets/images/testingimages/feedbackcorrectanswer.jpg)
 "I want feedback on how I am doing."
 [Image of scoreboard](assets/images/testingimages/feedbackscore.jpg)
-[Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.jpg)
+[Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.png)
 "I want a chance to find out more about the topic."
 [Image of about page](assets/images/testingimages/moreinformation.jpg)
 "I want to discover interesting facts."
-[Image of end of game basket](assets/images/testingimages/interestinginfo2.jpg)
+[Image of end of game basket](assets/images/testingimages/interestinginfo2.png)
 "I want to play a game which is visually attractive."
 
