@@ -141,7 +141,7 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 <br>
 ### "I want feedback on how I am doing."
 ![Image of scoreboard](assets/images/testingimages/feedbackscore.jpg)
-[Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.png)
+![Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.png)
 <br>
 ### "I want a chance to find out more about the topic."
 ![Image of about page](assets/images/testingimages/moreinformation.jpg)
