@@ -30,11 +30,11 @@
 * Play a game which is easy and pleasant to use.<br>
 
 ### User stories
-* "I want the game to be easy to use and have clear intructions."
+* "I want the game to be easy to use and have clear instructions."
 * "I want to find out something different each time I play."
 * "I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
 * "I want feedback on how I am doing."
-* "I want a chance to find out more about the topic"
+* "I want a chance to find out more about the topic."
 * "I want to discover interesting facts."
 
 
