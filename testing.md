@@ -66,6 +66,11 @@ i. **token image**
 * A plant image is displayed in top left hand corner when game screen opens:
 * It is different each time the game loads:
 * It is clear to see and responsively sized:
+ii. **scoreboard** 
+* A scoreboard displays the user's current score:
+* It is located to the top left of the token, correctly aligned and easy to read:
+* The score updates each time a correct plant is clicked:
+* When the score is 10, the game ends:
 ii. **plant map** 
 * Map is easy to view and navigate using drag function:
 * Is visible on different sizes. It is resizeable on mobile devices:
@@ -74,6 +79,7 @@ iii. **correct answer given by user**
 * When correct plant picture is clicked, a modal appears to say the correct plant name:
 * The modal disappears on its own after a brief pause:
 * When correct plant picture is clicked, a bling sound plays:
+* When correct plant picture is clicked, the points icons goes up by one point:
 * When the correct plant is clicked, a new plant image is displayed in the token:
 iv. **incorrect answer given**
 * When wrong plant is clicked, a try again modal appears:

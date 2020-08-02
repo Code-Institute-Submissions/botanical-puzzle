@@ -18,6 +18,7 @@
 * To improve the user's knowledge of different wild plants of the British Isles.<br>
 * Display images of plants and informative descriptions.<br>
 * Promote an interest in the topic and provide further learning resources.<br>
+* Provide a positive user experience to associate with the topic.<br>
 
 ### Client Objectives
 * Wants to play a game which involves matching.<br>
@@ -74,15 +75,16 @@ The background picture of the home screen represents the plant map shown in the 
 * Game instructions and pulsing 'play' button.
 
 ## Game
+* Token image of the plant to be found shown in the top left corner so as not to obscure the map and be constantly available to compare to the images on the map.
+* A scoreboard located to the top left of the token image to keep track of how many plants have been successfully found.
+* Exit button bottom right hand corner to navigate to the 'basket' where info about the plants found can be seen.
+* Sound control button in top right hand corner to switch sound on and off with corresponding icons.
 * Gamescreen can be resized to switch between seeing the plants in more detail and viewing the wider plant map, especially for mobile devices.
 * Background sound can be switched on and off.
 * Over 100 different plants to learn about, with a different selection each time the game is played.
 * Sounds to confirm a correct selection. No sound is given if the wrong plant is selected.
 * A modal is displayed when a correct plant is chosen, giving the name of that plant.
 * A modal is displayed if an incorrect plant is chosen, saying 'Try Again'.
-* Icon of the plant to be found shown in the top left corner so as not to obscure the map and be constantly available to compare to the images on the map.
-* Exit button bottom right hand corner to navigate to the 'basket' where info about the plants found can be seen.
-* Sound control button in top right hand corner to switch sound on and off with corresponding icons.
 * When all 10 plants have been found, modal displayed congratulating user and a 'next' button to navigate to the 'basket' to read more about plants which have been found.
 
 ## Basket
