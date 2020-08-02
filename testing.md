@@ -60,33 +60,40 @@ vii. **Play Button** animated, link works to take user to game:
 
 ### Game
 * No errors in console during the game:
+
 i. **token image**
 * A plant image is displayed in top left hand corner when game screen opens:
 * It is different each time the game loads:
 * It is clear to see and responsively sized:
+
 ii. **scoreboard** 
 * A scoreboard displays the user's current score:
 * It is located to the top left of the token, correctly aligned and easy to read:
 * The score updates each time a correct plant is clicked:
 * When the score is 10, the game ends:
+
 ii. **plant map** 
 * Map is easy to view and navigate using drag function:
 * Is visible on different sizes. It is resizeable on mobile devices:
 * It responds to the user's click when a plant is selected:
+
 iii. **correct answer given by user**
 * When correct plant picture is clicked, a modal appears to say the correct plant name:
 * The modal disappears on its own after a brief pause:
 * When correct plant picture is clicked, a bling sound plays:
 * When correct plant picture is clicked, the points icons goes up by one point:
 * When the correct plant is clicked, a new plant image is displayed in the token:
+
 iv. **incorrect answer given**
 * When wrong plant is clicked, a try again modal appears:
 * The modal leaves the screen after a short pause:
 * When wrong plant is clicked, the plant image does not change and the game continues unaffected:
+
 v. **exit button**
 * Clear to see and read:
 * Located in bottom right hand corner of screen:
 * When clicked, displays the 'basket' of plants the user has found so far and two buttons to choose either to navigate to 'home' or 'play again':
+
 vi. **basket**
 * Displays a table of the 10 plants the user has found:
 * Table text is easy to read and information is displayed about each plant, along with a thumbnail image and the name of each plant:
@@ -94,11 +101,13 @@ vi. **basket**
 * The 'home' button navigates to the home page when clicked:
 * The 'play again' button restarts the game when clicked:
 * If the game has been exited early, the number of plants the user has found so far is displayed:
+
 vii. **sound controls**
 * Button to switch sound on and off in top right hand corner:
 * When window opens, a button to switch sound on is displayed:
 * When that button is clicked, the sound plays and the icon changes to a button to switch sound off:
 * When it is clicked again, then sound is turned off:
+
 viii.**End of game**
 * When 10 plants are found, no more plants are displayed in the token:
 * When 10 plants ahve been found, a modal appears saying that all the plants have been found:
