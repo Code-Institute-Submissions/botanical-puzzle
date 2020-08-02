@@ -147,7 +147,7 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 ![Image of about page](assets/images/testingimages/moreinformation.jpg)
 <br>
 ### "I want to discover interesting facts."
-[Image of end of game basket](assets/images/testingimages/interestinginfo2.png)
+![Image of end of game basket](assets/images/testingimages/interestinginfo2.png)
 <br>
 ### "I want to play a game which is visually attractive."
 
