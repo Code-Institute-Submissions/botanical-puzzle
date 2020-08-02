@@ -130,18 +130,24 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 
 ## Testing user stories
 
-"I want the game to be easy to use and have clear instructions."
-[Image of instructions](assets/images/testingimages/instructions.jpg)
-"I want to find out something different each time I play."
-[Image of Info given](assets/images/testingimages/interestinginfo.jpg)
-"I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
-[Image of correct answer feedback](assets/images/testingimages/feedbackcorrectanswer.jpg)
-"I want feedback on how I am doing."
-[Image of scoreboard](assets/images/testingimages/feedbackscore.jpg)
+###"I want the game to be easy to use and have clear instructions."
+![Image of instructions](assets/images/testingimages/instructions.jpg)
+<br>
+###"I want to find out something different each time I play."
+![Image of Info given](assets/images/testingimages/interestinginfo.jpg)
+<br>
+###"I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
+![Image of correct answer feedback](assets/images/testingimages/feedbackcorrectanswer.jpg)
+<br>
+###"I want feedback on how I am doing."
+![Image of scoreboard](assets/images/testingimages/feedbackscore.jpg)
 [Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.png)
-"I want a chance to find out more about the topic."
-[Image of about page](assets/images/testingimages/moreinformation.jpg)
-"I want to discover interesting facts."
+<br>
+###"I want a chance to find out more about the topic."
+![Image of about page](assets/images/testingimages/moreinformation.jpg)
+<br>
+###"I want to discover interesting facts."
 [Image of end of game basket](assets/images/testingimages/interestinginfo2.png)
-"I want to play a game which is visually attractive."
+<br>
+###"I want to play a game which is visually attractive."
 
