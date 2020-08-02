@@ -63,7 +63,6 @@ function displayAPlantImage() {
     document.querySelector('.image-display').style.visibility = "visible";
     document.querySelector('.counter-display').style.visibility = "visible";
     img.src = baseImagePath + selectedPlant.image_name;
-    console.log(selectedPlant);
 }
 
 function drawScore() {
