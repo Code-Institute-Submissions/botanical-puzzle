@@ -102,7 +102,7 @@ const PLANTS =
 {"name": "Sea Beet","description":"Found 'on banks and shingle near the sea', also called <em>Wild Spinach</em>. Grows up to 90cm with 'shiny, fleshy leaves'. Flowers tiny and green, June-Sept. An ancestor of cultivated beetroots and chard: a process which began 'at least 2,000 years ago'.","image_name":"seabeet.png"},
 {"name": "Sea-Holly","description":"Found on sand or shingle, on beaches. Looks like a thistle and grows 20-60cm, 'ice-blue leaves... edged with a fine white tracery of veins'. Flowers blue, June-Aug. Candied sea holly roots were once used widely in cooking. ","image_name":"seaholly.png"},
 {"name": "Sea-Kale","description":"Found on 'sand and shingle near the sea'. Similar to a cabbage with large fleshy leaves, grey-green in colour. Flowers white June-Aug. Was a very popular vegetable in 16th & 17th C, and as a result, is now fairly scarce.","image_name":"seakale.png"},
-{"name": "Sea-Purslane","description":"","image_name":"seapurslane.png"},
+{"name": "Sea-Purslane","description":"Found on salt marshed in south and east of England. Flowers July-Oct. Leaves can be eaten in salads and stir-fries.","image_name":"seapurslane.png"},
 {"name": "Shepherds-Purse","description":"Flowers have small white petals, fruit in 'heart-shaped pods'. Popular in China where it is used like cabbage or Chinese leaf.","image_name":"shepherdspurse.png"},
 {"name": "Sorrel","description":"Arrow-shaped leaves Flowers May-August with small red and green flowers. Leaves can be picked as early in the year as Feb. Many edible uses.","image_name":"sorrel.png"},
 {"name": "Sow Thistle","description":"Found on roadsides, common across the British Isles, flowers July-Oct.","image_name":"sowthistle.png"},
