@@ -9,7 +9,7 @@
 ## Browser Compatibility testing
 The web page was opened in [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/), [Google Chrome](https://www.google.com/chrome/), [Safari](https://www.apple.com/uk/safari/) and [Microsoft Edge](https://www.microsoft.com/en-us/edge): all functional.
 
-## Manual testing
+## Post Development Manual Testing
 
 **General font sizing, margins, padding and content visibility, plus responsive specific elements and features (listed below) to be checked at all sizes & breakpoints. Checked in four ways:**
     
@@ -43,7 +43,6 @@ iv.**Text visibility** text not obscured by background image; easy to read on al
 
 v.**Button animation** works on all devices, cross-browser:
 
-
 ### About
 i.**Book photo**  responsive columns and sizing, does not obscure text, appropriate margins:
 
@@ -58,7 +57,6 @@ v. **Font sizing** responsive, clear to read:
 vi.	**Margins** responsive and appropriate to screen size:
 
 vii. **Play Button** animated, link works to take user to game:
-
 
 ### Game
 * No errors in console during the game:
@@ -106,8 +104,20 @@ viii.**End of game**
 * When 10 plants ahve been found, a modal appears saying that all the plants have been found:
 * Beneath the modal, a button is displayed saying 'next'. When clicked, the next button takes the user to the 'basket', as described above:
 
-## Notes on problems found during testing and problems during development
 
+## Testing during development : JavaScript
+* As each function was created, is was tested individually for functionality.
+* Once individual functions were working, they were grouped together, and tested again.
+* At every step and stage of development and implementation of the project, the javascript functionality was tested and re-tested using live demos, and changed when and where necessary.
+* Chrome inspect tools were utlilised, and the console checked regularly to ensure no errors were occuring. 
+* Where possible, variables have been declared inside functions, but in some cases it was necessary or appropriate to declare global variables so that the code worked.<br>
+For example, score, selectedPlantIndex and selectedPlant needed to be global let values as their value is used and changed elsewhere in the code as the game progresses.
+* The code has been run through jshint checker at various stages along the way to make sure that no onvious problems were occuring.
+
+### Notes on problems found during testing and problems during development
+* The necessity of delcaring some variables outside of functions.
+* Decision to include Plants array in a seperate js file to keep code tidy. The way in which the plants array has been included in this project was down to advice from course tutors, who felt that it was unnecessary, given the scope of this project, to fetch the data.
+* Decision to put drag function inside a seperate js file also to keep code tidy, and because the functionality is to do with the navigation of the website and the game page, rather than the actual game process functionality. For me it made logical sense to separate it.
 
 ## Testing user stories
 
@@ -118,3 +128,4 @@ viii.**End of game**
 "I want a chance to find out more about the topic."
 "I want to discover interesting facts."
 "I want to play a game whch is visually attractive."
+

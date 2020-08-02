@@ -78,7 +78,7 @@ The background picture of the home screen represents the plant map shown in the 
 * Token image of the plant to be found shown in the top left corner so as not to obscure the map and be constantly available to compare to the images on the map.
 * A scoreboard located to the top left of the token image to keep track of how many plants have been successfully found.
 * Exit button bottom right hand corner to navigate to the 'basket' where info about the plants found can be seen.
-* Sound control button in top right hand corner to switch sound on and off with corresponding icons.
+* Sound control button in top right hand corner to switch sound on and off with corresponding icons. The sound does not play on opening the screen, but can be switched on (and off again) by the user.
 * Gamescreen can be resized to switch between seeing the plants in more detail and viewing the wider plant map, especially for mobile devices.
 * Background sound can be switched on and off.
 * Over 100 different plants to learn about, with a different selection each time the game is played.
