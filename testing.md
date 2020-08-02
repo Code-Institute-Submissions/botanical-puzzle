@@ -61,40 +61,40 @@ vii. **Play Button** animated, link works to take user to game:
 ### Game
 * No errors in console during the game:
 
-i. **token image**
+i. **Token Image**
 * A plant image is displayed in top left hand corner when game screen opens:
 * It is different each time the game loads:
 * It is clear to see and responsively sized:
 
-ii. **scoreboard** 
+ii. **Scoreboard** 
 * A scoreboard displays the user's current score:
 * It is located to the top left of the token, correctly aligned and easy to read:
 * The score updates each time a correct plant is clicked:
 * When the score is 10, the game ends:
 
-ii. **plant map** 
+ii. **Plant Map** 
 * Map is easy to view and navigate using drag function:
 * Is visible on different sizes. It is resizeable on mobile devices:
 * It responds to the user's click when a plant is selected:
 
-iii. **correct answer given by user**
+iii. **Correct Answer given by user**
 * When correct plant picture is clicked, a modal appears to say the correct plant name:
 * The modal disappears on its own after a brief pause:
 * When correct plant picture is clicked, a bling sound plays:
 * When correct plant picture is clicked, the points icons goes up by one point:
 * When the correct plant is clicked, a new plant image is displayed in the token:
 
-iv. **incorrect answer given**
+iv. **Incorrect Answer given**
 * When wrong plant is clicked, a try again modal appears:
 * The modal leaves the screen after a short pause:
 * When wrong plant is clicked, the plant image does not change and the game continues unaffected:
 
-v. **exit button**
+v. **Exit Button**
 * Clear to see and read:
 * Located in bottom right hand corner of screen:
 * When clicked, displays the 'basket' of plants the user has found so far and two buttons to choose either to navigate to 'home' or 'play again':
 
-vi. **basket**
+vi. **Basket**
 * Displays a table of the 10 plants the user has found:
 * Table text is easy to read and information is displayed about each plant, along with a thumbnail image and the name of each plant:
 * Beneth the table are two buttons 'home' and 'play again':
@@ -102,13 +102,13 @@ vi. **basket**
 * The 'play again' button restarts the game when clicked:
 * If the game has been exited early, the number of plants the user has found so far is displayed:
 
-vii. **sound controls**
+vii. **Sound Controls**
 * Button to switch sound on and off in top right hand corner:
 * When window opens, a button to switch sound on is displayed:
 * When that button is clicked, the sound plays and the icon changes to a button to switch sound off:
 * When it is clicked again, then sound is turned off:
 
-viii.**End of game**
+viii.**End of Game**
 * When 10 plants are found, no more plants are displayed in the token:
 * When 10 plants ahve been found, a modal appears saying that all the plants have been found:
 * Beneath the modal, a button is displayed saying 'next'. When clicked, the next button takes the user to the 'basket', as described above:
@@ -130,24 +130,24 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 
 ## Testing user stories
 
-###"I want the game to be easy to use and have clear instructions."
+### "I want the game to be easy to use and have clear instructions."
 ![Image of instructions](assets/images/testingimages/instructions.jpg)
 <br>
-###"I want to find out something different each time I play."
+### "I want to find out something different each time I play."
 ![Image of Info given](assets/images/testingimages/interestinginfo.jpg)
 <br>
-###"I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
+### "I want to feel like I am learning and improving as I play, and start to recognise the plants and remember things about them."
 ![Image of correct answer feedback](assets/images/testingimages/feedbackcorrectanswer.jpg)
 <br>
-###"I want feedback on how I am doing."
+### "I want feedback on how I am doing."
 ![Image of scoreboard](assets/images/testingimages/feedbackscore.jpg)
 [Image of end of game feedbcak](assets/images/testingimages/feedbackwelldone.png)
 <br>
-###"I want a chance to find out more about the topic."
+### "I want a chance to find out more about the topic."
 ![Image of about page](assets/images/testingimages/moreinformation.jpg)
 <br>
-###"I want to discover interesting facts."
+### "I want to discover interesting facts."
 [Image of end of game basket](assets/images/testingimages/interestinginfo2.png)
 <br>
-###"I want to play a game which is visually attractive."
+### "I want to play a game which is visually attractive."
 
