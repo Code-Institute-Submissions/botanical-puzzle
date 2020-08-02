@@ -36,6 +36,7 @@
 * "I want feedback on how I am doing."
 * "I want a chance to find out more about the topic."
 * "I want to discover interesting facts."
+* "I want to play a game whch is visually attractive."
 
 
 ## Scope/ Structure
