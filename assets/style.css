@@ -275,8 +275,7 @@ a {
     border: none;
     border-radius: 50%;
     width: 65px;
-    height: 50px;
-    padding-top: 20px;
+    height: 65px;
     font-size: 20px;
     font-weight: 600;
     z-index: 3;
@@ -434,8 +433,10 @@ table {
 
 @media (max-width: 576px) {
     table {
-        margin-left:0em;
-        margin-top:5em;
+        margin-left: 0em;
+        margin-top: 5em;
+        width: 800px;
+        position: relative;
     }
 }
 
