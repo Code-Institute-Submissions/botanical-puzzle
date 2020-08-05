@@ -420,7 +420,7 @@ a {
 #learn-about-plants {
     visibility:hidden;
     z-index: 3;
-    position: relative;
+    position: fixed;
 }
 
 table {
@@ -436,7 +436,6 @@ table {
         margin-left: 0em;
         margin-top: 5em;
         width: 800px;
-        position: relative;
     }
 }
 
