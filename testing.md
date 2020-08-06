@@ -113,7 +113,7 @@ viii.**End of Game**
 
 
 ## Testing during development : JavaScript
-* As each function was created, is was tested individually for functionality.
+* As each function was created, it was tested individually for functionality.
 * Once individual functions were working, they were grouped together, and tested again.
 * At every step and stage of development and implementation of the project, the javascript functionality was tested and re-tested using live demos on mobile, tablet and desktop devices, and changed when and where necessary.
 * Chrome inspect tools were utlilised, and the console checked regularly to ensure no errors were occuring. 
