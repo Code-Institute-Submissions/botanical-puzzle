@@ -435,6 +435,7 @@ table {
     table {
         margin-left: 0em;
         margin-top: 5em;
+        width: 600px;
     }
 }
 
@@ -465,9 +466,6 @@ td>img {
 .basket-buttons-div {
     margin-left:18em;
     visibility:hidden;
-}
-
-.basket-buttons-div>p {
     background-color: #fff;
     color: #009933;
 }
@@ -475,6 +473,7 @@ td>img {
 @media (max-width: 576px) {
     .basket-buttons-div {
         margin-left:0em;
+        width: 600px;
     }
 }
 
