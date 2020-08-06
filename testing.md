@@ -26,92 +26,92 @@ _**Details below itemise elements and features to be tested with expected outcom
 
 -------------------------------------------------------------------------------------------------------------------
 ### General
-i. **Layout** no gaps at the edges of the page
+i. **Layout** no gaps at the edges of the page __PASS__
 
-ii. **Text and formatting** everything aligned correctly, font sizing consistent, styling consistent, chosen fonts working correctly and easy to read
+ii. **Text and formatting** everything aligned correctly, font sizing consistent, styling consistent, chosen fonts working correctly and easy to read __PASS__
 
-iii. **Map drag behaviour** map is draggable to search for different plants
+iii. **Map drag behaviour** map is draggable to search for different plants __PASS__
 
 ### Home Page
-i.**Instructions** correctly aligned on all devices and easy to read:
+i.**Instructions** correctly aligned on all devices and easy to read:__PASS__
 
-ii.**Play button** takes user to game; correctly aligned, text responsive sizing:
+ii.**Play button** takes user to game; correctly aligned, text responsive sizing:__PASS__
 
-iii.**About button** visible on all devices; when clicked takes user to about page:
+iii.**About button** visible on all devices; when clicked takes user to about page:__PASS__
 
-iv.**Text visibility** text not obscured by background image; easy to read on all devices: 
+iv.**Text visibility** text not obscured by background image; easy to read on all devices: __PASS__
 
-v.**Button animation** works on all devices, cross-browser:
+v.**Button animation** works on all devices, cross-browser:__PASS__
 
 ### About
-i.**Book photo**  responsive columns and sizing, does not obscure text, appropriate margins:
+i.**Book photo**  responsive columns and sizing, does not obscure text, appropriate margins: __PASS__
 
 ii.**Credits text** clear to read on all devices: __PASS__ 
 
-iii. **Game Instructions** visible on large devices and obscured along with paragraph on medium and small devices; appears when ‘read more’ is clicked; when clicked, takes the user to the contact section of the website; colour change when hovered or clicked from dark to light green: __PASS__ 
+iii. **Game Instructions** visible on all devices: __PASS__
 
-iv.	**Paragraph sizes** responsive; inline 'get in in touch' link is bold and takes user to contact page':
+iv.	**Paragraph sizes** responsive: __PASS__
 
-v. **Font sizing** responsive, clear to read:
+v. **Font sizing** responsive, clear to read: __PASS__
 
-vi.	**Margins** responsive and appropriate to screen size:
+vi.	**Margins** responsive and appropriate to screen size:__PASS__
 
-vii. **Play Button** animated, link works to take user to game:
+vii. **Play Button** animated, link works to take user to game:__PASS__
 
 ### Game
-* No errors in console during the game:
+* No errors in console during the game: __PASS__
 
 i. **Token Image**
-* A plant image is displayed in top left hand corner when game screen opens:
-* It is different each time the game loads:
-* It is clear to see and responsively sized:
+* A plant image is displayed in top left hand corner when game screen opens: __PASS__
+* It is different each time the game loads: __PASS__
+* It is clear to see and responsively sized: __PASS__
 
 ii. **Scoreboard** 
-* A scoreboard displays the user's current score:
-* It is located to the top left of the token, correctly aligned and easy to read:
-* The score updates each time a correct plant is clicked:
-* When the score is 10, the game ends:
+* A scoreboard displays the user's current score: __PASS__
+* It is located to the top left of the token, correctly aligned and easy to read:__PASS__
+* The score updates each time a correct plant is clicked:__PASS__
+* When the score is 10, the game ends:__PASS__
 
 ii. **Plant Map** 
-* Map is easy to view and navigate using drag function:
-* Is visible on different sizes. It is resizeable on mobile devices:
-* It responds to the user's click when a plant is selected:
+* Map is easy to view and navigate using drag function:__PASS__
+* Is visible on different sizes. It is resizeable on mobile devices:__PASS__
+* It responds to the user's click when a plant is selected:__PASS__
 
 iii. **Correct Answer given by user**
-* When correct plant picture is clicked, a modal appears to say the correct plant name:
-* The modal disappears on its own after a brief pause:
-* When correct plant picture is clicked, a bling sound plays:
-* When correct plant picture is clicked, the points icons goes up by one point:
-* When the correct plant is clicked, a new plant image is displayed in the token:
+* When correct plant picture is clicked, a modal appears to say the correct plant name: __PASS__
+* The modal disappears on its own after a brief pause:__PASS__
+* When correct plant picture is clicked, a bling sound plays:__PASS__
+* When correct plant picture is clicked, the points icons goes up by one point:__PASS__
+* When the correct plant is clicked, a new plant image is displayed in the token:__PASS__
 
 iv. **Incorrect Answer given**
-* When wrong plant is clicked, a try again modal appears:
-* The modal leaves the screen after a short pause:
-* When wrong plant is clicked, the plant image does not change and the game continues unaffected:
+* When wrong plant is clicked, a try again modal appears:__PASS__
+* The modal leaves the screen after a short pause:__PASS__
+* When wrong plant is clicked, the plant image does not change and the game continues unaffected:__PASS__
 
 v. **Exit Button**
-* Clear to see and read:
-* Located in bottom right hand corner of screen:
-* When clicked, displays the 'basket' of plants the user has found so far and two buttons to choose either to navigate to 'home' or 'play again':
+* Clear to see and read:__PASS__
+* Located in bottom right hand corner of screen:__PASS__
+* When clicked, displays the 'basket' of plants the user has found so far and two buttons to choose either to navigate to 'home' or 'play again':__PASS__
 
 vi. **Basket**
-* Displays a table of the 10 plants the user has found:
-* Table text is easy to read and information is displayed about each plant, along with a thumbnail image and the name of each plant:
-* Beneth the table are two buttons 'home' and 'play again':
-* The 'home' button navigates to the home page when clicked:
-* The 'play again' button restarts the game when clicked:
-* If the game has been exited early, the number of plants the user has found so far is displayed:
+* Displays a table of the 10 plants the user has found:__PASS__
+* Table text is easy to read and information is displayed about each plant, along with a thumbnail image and the name of each plant:__PASS__
+* Beneth the table are two buttons 'home' and 'play again':__PASS__
+* The 'home' button navigates to the home page when clicked:__PASS__
+* The 'play again' button restarts the game when clicked:__PASS__
+* If the game has been exited early, the number of plants the user has found so far is displayed:__PASS__
 
 vii. **Sound Controls**
-* Button to switch sound on and off in top right hand corner:
-* When window opens, a button to switch sound on is displayed:
-* When that button is clicked, the sound plays and the icon changes to a button to switch sound off:
-* When it is clicked again, then sound is turned off:
+* Button to switch sound on and off in top right hand corner:__PASS__
+* When window opens, a button to switch sound on is displayed:__PASS__
+* When that button is clicked, the sound plays and the icon changes to a button to switch sound off:__PASS__
+* When it is clicked again, then sound is turned off:__PASS__
 
 viii.**End of Game**
-* When 10 plants are found, no more plants are displayed in the token:
-* When 10 plants ahve been found, a modal appears saying that all the plants have been found:
-* Beneath the modal, a button is displayed saying 'next'. When clicked, the next button takes the user to the 'basket', as described above:
+* When 10 plants are found, no more plants are displayed in the token:__PASS__
+* When 10 plants ahve been found, a modal appears saying that all the plants have been found:__PASS__
+* Beneath the modal, a button is displayed saying 'next'. When clicked, the next button takes the user to the 'basket', as described above:__PASS__
 
 
 ## Testing during development : JavaScript
