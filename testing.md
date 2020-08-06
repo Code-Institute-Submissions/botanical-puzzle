@@ -107,6 +107,7 @@ vii. **Sound Controls**
 * When window opens, a button to switch sound on is displayed:__PASS__
 * When that button is clicked, the sound plays and the icon changes to a button to switch sound off:__PASS__
 * When it is clicked again, then sound is turned off:__PASS__
+* Sound should loop when playing:
 
 viii.**End of Game**
 * When 10 plants are found, no more plants are displayed in the token:__PASS__
