@@ -58,7 +58,7 @@ As there are over 100 plants on the plant map and the images are randomly genera
 -----------------------------------------
 
 ### Wireframes
-Wireframes for mobile, iPad and Desktop can be seen [HERE](https://xd.adobe.com/view/5c23c360-4653-4a02-8cd0-d7dbf0153f9e-0970/).
+Wireframes can be seen [HERE](https://xd.adobe.com/view/8af92e45-70f2-4671-bb8a-a8dc6981c3c4-dfaa/). With one or two minor exceptions, the layout and design is the same across devices.
 
 ### Features (& Rationale)
 Across the project, the colours are white and green with hand drawn illustrations of wild plants. This design is consistent. These choices have been made to promote a 'natural' 'countryside' experience of the game, in line with the theme of the game.
