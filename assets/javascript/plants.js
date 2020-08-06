@@ -55,7 +55,7 @@ const PLANTS =
 {"name": "Horseradish","description":"Originally from Asia, now naturalised in Europe. Large leaves are dock-like. Grows in abundance on waste ground throughout England, particularly likes very rough ground. The very same Horse-radish root which is used commercially in food.","image_name":"horseradish.png"},
 {"name": "Juneberry","description":"Found often in Sussex on sandy soils. Up to 10m high blossoms April-May. Black fruit in June.","image_name":"juneberry.png"},
 {"name": "Juniper","description":"A shrub, found on 'chalk downs, limestone hills, heaths and moors'. Juniper berries are best known for flavouring gin.","image_name":"juniper.png"},
-{"name": "Kanpweed","description":"Found commonly my roads and paths, grows up to 1m, and purple flower petals and be used in salads.","image_name":"knapweed.png"},
+{"name": "Kanpweed","description":"Found commonly my roads and paths, grows up to 1m; purple flower petals can be used in salads.","image_name":"knapweed.png"},
 {"name": "Lambs Lettuce","description":"Also <em>Cornsalad</em>, found 'on banks and walls'. Flowers very small and lilac April-Aug.","image_name":"lambslettuce.png"},
 {"name": "Lime","description":"A tall tree, often found in parks and by roads. Smooth dark brown trunk and yellow flowers in July. Large, heart-shaped leaves.","image_name":"lime.png"},
 {"name": "Lungwort","description":"Leaves covered in white spots; used to be grown in gardens as a medicine to protect the lungs.","image_name":"lungwort.png"},

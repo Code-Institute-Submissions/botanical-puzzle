@@ -150,6 +150,7 @@ document.querySelector('#basket-button').onclick = function() {
     document.querySelector('.basket-buttons-div').style.visibility = "visible";
     document.querySelector('#end-game-modal').style.visibility = "hidden";
     img.style.visibility = "hidden";
+    document.querySelector('#plant-map-image').style.visibility = "hidden";
 };
 
 document.querySelector('#exit-button').onclick = function() {
