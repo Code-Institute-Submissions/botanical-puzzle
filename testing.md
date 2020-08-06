@@ -14,7 +14,7 @@ The web page was opened in [Mozilla Firefox](https://www.mozilla.org/en-US/firef
 **General font sizing, margins, padding and content visibility, plus responsive specific elements and features (listed below) plus game functionality, to be checked at all sizes & breakpoints. Checked in four ways:**
     
 1.	Via Google Chrome’s ‘inspect’ feature (motoG4, Galaxy S5, Pixel2 Pixel2sl, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro ) and the ‘responsive’ setting which allows horizontal and vertical resizing of the viewport.
-
+ ** !! Note on Chrome inspect: The inspect feature in Chrome wrongly represents the layout of the game controls, modals etc. on mobile devices. I deduced this because the game was working fine and its layout was fine on the physical devices which I had available to view the project. Chrome has therefore been used to test functionality but not layout.
 2.	By viewing and manually checking the website on my mobile (apple), tablet(apple), laptop(hp) and desktop(apple) devices.
 
 3.	By opening the page in Firefox, Chrome, Edge & Safari (most used web browsers) on the different devices mentioned above.
@@ -115,7 +115,7 @@ viii.**End of Game**
 ## Testing during development : JavaScript
 * As each function was created, is was tested individually for functionality.
 * Once individual functions were working, they were grouped together, and tested again.
-* At every step and stage of development and implementation of the project, the javascript functionality was tested and re-tested using live demos, and changed when and where necessary.
+* At every step and stage of development and implementation of the project, the javascript functionality was tested and re-tested using live demos on mobile, tablet and desktop devices, and changed when and where necessary.
 * Chrome inspect tools were utlilised, and the console checked regularly to ensure no errors were occuring. 
 * Where possible, variables have been declared inside functions, but in some cases it was necessary or appropriate to declare global variables so that the code worked.<br>
 For example, score, selectedPlantIndex and selectedPlant needed to be global let values as their value is used and changed elsewhere in the code as the game progresses.
