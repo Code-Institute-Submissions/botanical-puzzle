@@ -11,15 +11,13 @@ The web page was opened in [Mozilla Firefox](https://www.mozilla.org/en-US/firef
 
 ## Post Development Manual Testing
 
-**General font sizing, margins, padding and content visibility, plus responsive specific elements and features (listed below) to be checked at all sizes & breakpoints. Checked in four ways:**
+**General font sizing, margins, padding and content visibility, plus responsive specific elements and features (listed below) plus game functionality, to be checked at all sizes & breakpoints. Checked in four ways:**
     
 1.	Via Google Chrome’s ‘inspect’ feature (motoG4, Galaxy S5, Pixel2 Pixel2sl, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro ) and the ‘responsive’ setting which allows horizontal and vertical resizing of the viewport.
 
-2.	By viewing and manually checking the website on my mobile, tablet and desktop devices.
+2.	By viewing and manually checking the website on my mobile (apple), tablet(apple), laptop(hp) and desktop(apple) devices.
 
-3.	By opening the page in Firefox, Chrome, Edge & Safari (most used web browsers) on different devices.
-
-4.  By asking users to visit the site and report any problems.
+3.	By opening the page in Firefox, Chrome, Edge & Safari (most used web browsers) on the different devices mentioned above.
 
     
 _**Details below itemise elements and features to be tested with expected outcome, followed by a PASS or FAIL statement. Where an issue has been found, solution is stated after the 'FAIL' with a correction of 'PASS' if appropriate.**_
@@ -107,7 +105,6 @@ vii. **Sound Controls**
 * When window opens, a button to switch sound on is displayed:__PASS__
 * When that button is clicked, the sound plays and the icon changes to a button to switch sound off:__PASS__
 * When it is clicked again, then sound is turned off:__PASS__
-* Sound should loop when playing:
 
 viii.**End of Game**
 * When 10 plants are found, no more plants are displayed in the token:__PASS__
@@ -125,10 +122,10 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 * The code has been run through jshint checker at various stages along the way to make sure that no obvious problems were occuring.
 
 ### Notes on problems found during testing and problems during development
+* A huge barrier to finishing this project has been testing. The inspect feature in Chrome wrongly represents the layout of the game controls, modals etc. on mobile devices. I deduced this because the game was working fine and its layout was fine on the physical devices which I had available to view the website. I did not have access to android devices.
 * The necessity of delcaring some variables outside of functions due to their need to be accessed from elsewhere in the code.
 * Decision to include Plants array in a seperate js file to keep code tidy. The way in which the plants array has been included in this project was down to advice from course tutors, who felt that it was unnecessary, given the scope of this project, to fetch the data.
 * Decision to put drag function inside a seperate js file also to keep code tidy, and because the functionality is to do with the navigation of the website and the game page, rather than the actual game process functionality. For me it made logical sense to separate it.
-* The game displays and buttons appear differently in chrome's inspect to how they appear in reality on mobile devices; the exit button and the basket/table specifically appear to be located offscreen in chrome's inspect, whilst on real mobile devices they are located correctly.
 
 ## Testing user stories
 
