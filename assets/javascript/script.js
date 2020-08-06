@@ -46,7 +46,6 @@ const buttonOn = document.querySelector('#sound-on').onclick = function(){
 const correctAnswerSound = document.querySelector('#correct');
     function playCorrectAnswerSound(){
         correctAnswerSound.play();
-        correctAnswerSound.loop();
     }
 
 // ---------------------- Functions for game to run
