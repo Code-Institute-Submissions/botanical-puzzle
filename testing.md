@@ -124,9 +124,10 @@ For example, score, selectedPlantIndex and selectedPlant needed to be global let
 * The code has been run through jshint checker at various stages along the way to make sure that no obvious problems were occuring.
 
 ### Notes on problems found during testing and problems during development
-* The necessity of delcaring some variables outside of functions.
+* The necessity of delcaring some variables outside of functions due to their need to be accessed from elsewhere in the code.
 * Decision to include Plants array in a seperate js file to keep code tidy. The way in which the plants array has been included in this project was down to advice from course tutors, who felt that it was unnecessary, given the scope of this project, to fetch the data.
 * Decision to put drag function inside a seperate js file also to keep code tidy, and because the functionality is to do with the navigation of the website and the game page, rather than the actual game process functionality. For me it made logical sense to separate it.
+* The game displays and buttons appear differently in chrome's inspect to how they appear in reality on mobile devices; the exit button and the basket/table specifically appear to be located offscreen in chrome's inspect, whilst on real mobile devices they are located correctly.
 
 ## Testing user stories
 
