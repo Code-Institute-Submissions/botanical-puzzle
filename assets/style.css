@@ -420,6 +420,7 @@ a {
 #learn-about-plants {
     visibility:hidden;
     z-index: 3;
+    position: fixed;
 }
 
 table {
